@@ -236,16 +236,15 @@ class LlavaWrapper:
     def __init__(self, root_dir, device,method):
         
         if method=='scaling_vis' or method=='adapt_vis':
-            self.model = LlavaForConditionalGenerationScal.from_pretrained(MODEL, cache_dir=root_dir,ignore_mismatched_sizes=True).eval().to(device)
+            self.model = LlavaForConditionalGenerationScal.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir,ignore_mismatched_sizes=True).eval().to(device)
 
         else:
-            self.model = LlavaForConditionalGeneration.from_pretrained(MODEL, cache_dir=root_dir,ignore_mismatched_sizes=True).eval().to(device)
+            self.model = LlavaForConditionalGeneration.from_pretrained(MODEL, revision='a272c74', cache_dir=root_dir,ignore_mismatched_sizes=True).eval().to(device)
 
-       
-        self.feature_extractor = CLIPImageProcessor.from_pretrained(MODEL, cache_dir=root_dir)
-        self.tokenizer = LlamaTokenizerFast.from_pretrained(MODEL, cache_dir=root_dir)
-        self.processor = AutoProcessor.from_pretrained("llava-hf/llava-1.5-13b-hf", cache_dir=root_dir)
-        
+        self.feature_extractor = CLIPImageProcessor.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir)
+        self.tokenizer = LlamaTokenizerFast.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir)
+        self.processor = AutoProcessor.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir)
+
         self.device = device
     
     @torch.no_grad()
@@ -340,7 +339,7 @@ class LlavaWrapper:
             answer_list = [answer_list[i] for i in sampled_indices]
 
         # Create directory for saving attention maps
-        save_attn_dir = f"/outputs/{dataset}_weight{weight:.2f}"
+        save_attn_dir = f"./output/{dataset}_weight{weight:.2f}"
         os.makedirs(save_attn_dir, exist_ok=True)
 
         results = []  # Store results for each generated sequence
