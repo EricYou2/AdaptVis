@@ -30,7 +30,7 @@ The data all lives in `whatsup_vlms/data`, which is also where your models will 
 For all the datasets, setting `--download=True` (while running `python main_aro.py` or while instantiating the dataset directly, as mentioned later in this README) will download the data JSONs and images if the files don't already exist.
 
 You can also download the data directly from [this Google Drive link](https://drive.google.com/drive/u/3/folders/164q6X9hrvP-QYpi3ioSnfMuyHpG5oRkZ).
-Alternatively, you can download from huggingface datasets: [VGQA-One-Object](https://huggingface.co/datasets/tyzhu/vg_qa_one_obj), [VGQA-Two-Object](https://huggingface.co/datasets/tyzhu/vg_qa_two_obj), [COCOQA-One-Object](https://huggingface.co/datasets/tyzhu/coco_qa_one_obj), [COCOQA-Two-Object](https://huggingface.co/datasets/tyzhu/coco_qa_two_obj), [Controlled-Images-Dataset](https://huggingface.co/datasets/tyzhu/controlled_images_dataset), [Controlled-CLEVR-Dataset](https://huggingface.co/datasets/tyzhu/controlled_clevr_dataset)
+Alternatively, you can download from HuggingFace datasets: [VGQA‑One‑Object](https://huggingface.co/datasets/AdaptVis/VG_one_obj), [VGQA‑Two‑Object](https://huggingface.co/datasets/AdaptVis/VG_two_obj), [COCOQA‑One‑Object](https://huggingface.co/datasets/AdaptVis/COCO_one_obj), [COCOQA‑Two‑Object](https://huggingface.co/datasets/AdaptVis/COCO_two_obj), [Controlled‑A](https://huggingface.co/datasets/AdaptVis/Controlled_A), [Controlled‑B](https://huggingface.co/datasets/AdaptVis/Controlled_B)
 
 
 ## Running experiments scaling_vis and adapt_vis
