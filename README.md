@@ -11,7 +11,7 @@ This code is based on the code of, **What's "up" with vision-language models? In
 
 
 # Datasets
- The code to load and evaluate each dataset in `dataset_zoo/aro_datasets.py`. The Question and Answering data is in `prompt/`
+ The code to load and evaluate each dataset in `dataset_zoo/aro_datasets.py`. The Question and Answering data is in `prompt/`.
 
 # ScalingVis and AdaptVis
 
@@ -39,6 +39,7 @@ You can fast implement an example by:
 bash run.sh
 ```
 ### Argument
+All parameter choices are indicated in `run.sh`.
 | Argument       | Example               | Description                                                                                   |
 |----------------|-----------------------|-----------------------------------------------------------------------------------------------|
 | `dataset`          | `Controlled_Images_A` | Specifies the dataset you want to evaluate. Can choose from `Controlled_Images_A, Controlled_Images_B..`. |
