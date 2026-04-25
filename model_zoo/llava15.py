@@ -256,6 +256,24 @@ class LlavaWrapper:
         self.processor = AutoProcessor.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir)
 
         self.device = device
+        # Keep original preprocessing by default; enable dynamic preprocessing only when explicitly requested.
+        self.use_dynamic_preprocess = os.getenv("ADAPTVIS_DYNAMIC_PREPROCESS", "False") == "True"
+
+    def _build_processor_inputs(self, text, image):
+        if self.use_dynamic_preprocess:
+            return self.processor(
+                text=text,
+                images=image,
+                return_tensors="pt",
+                truncation=True,
+            ).to(self.device)
+        return self.processor(
+            text=text,
+            images=image,
+            padding="max_length",
+            return_tensors="pt",
+            max_length=77,
+        ).to(self.device)
     
     @torch.no_grad()
     def get_text_embeddings(self, texts, text_batch_size=64, normalize=False):
@@ -368,9 +386,7 @@ class LlavaWrapper:
                     prompt = prompt_list[index_of_total]
                     
                     # Preprocess input for the model
-                    single_input = self.processor(
-                        text=prompt, images=_, padding="max_length", return_tensors="pt", max_length=77
-                    ).to(self.device)
+                    single_input = self._build_processor_inputs(prompt, _)
                     
                     # Create key mask for special token
                     keys = [torch.where(input_id == 32001, 1, 0) for input_id in single_input['input_ids']]
@@ -513,7 +529,7 @@ class LlavaWrapper:
                     # Generate responses for each concatenated input
                     for idx, text in enumerate(concatenated_list):
                         # Prepare input data for the model
-                        single_input = self.processor(text=text, images=list(i_option)[idx], padding="max_length", return_tensors="pt", max_length=77).to(self.device)
+                        single_input = self._build_processor_inputs(text, list(i_option)[idx])
                         keys = [torch.where(input_id == 32001, 1, 0) for input_id in single_input['input_ids']]
                         
                         # Apply different attention adjustment methods based on the 'method' argument

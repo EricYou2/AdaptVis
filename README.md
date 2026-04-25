@@ -19,9 +19,26 @@ This code is based on the code of, **What's "up" with vision-language models? In
 
 ```
 git clone https://github.com/shiqichen17/AdaptVis.git
+cd AdaptVis
 mkdir data
 mkdir output
-pip install requirements.txt
+mkdir outputs
+pip install -r requirements.txt
+```
+
+### Recommended Python and environment
+
+- Recommended Python version: 3.11
+- This repository is primarily tested in Linux/HPC-style environments.
+- On Windows, some dependency pins may require small compatibility updates.
+
+Example conda setup:
+
+```bash
+conda create -n adaptvis_py311 python=3.11 -y
+conda activate adaptvis_py311
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
 ## Downloading the data
@@ -38,6 +55,48 @@ You can fast implement an example by:
 ```
 bash run.sh
 ```
+
+## Batch jobs on Oscar (GPU)
+
+This repository includes ready-to-submit Slurm scripts in [jobs/main_aro_gpu.sbatch](jobs/main_aro_gpu.sbatch), [jobs/sanity_main_aro.sbatch](jobs/sanity_main_aro.sbatch), [jobs/run_sh_gpu.sbatch](jobs/run_sh_gpu.sbatch), [jobs/debug_one_sample.sbatch](jobs/debug_one_sample.sbatch), and [jobs/debug_one_sample_no_fixed_len.sbatch](jobs/debug_one_sample_no_fixed_len.sbatch).
+
+Common usage:
+
+```bash
+sbatch jobs/sanity_main_aro.sbatch
+cat logs/sanity-<jobid>.out
+cat logs/sanity-<jobid>.err
+```
+
+Run `run.sh` via Slurm:
+
+```bash
+sbatch jobs/run_sh_gpu.sbatch
+```
+
+The scripts assume conda env `adaptvis_py311` and a valid conda base path. If needed, update the conda base path in the job scripts.
+
+## Reproducibility toggle for preprocessing
+
+The default behavior in [model_zoo/llava15.py](model_zoo/llava15.py) keeps original fixed-length preprocessing (`max_length=77`).
+
+To enable dynamic preprocessing (compatibility mode), set:
+
+```bash
+export ADAPTVIS_DYNAMIC_PREPROCESS=True
+```
+
+For Slurm submission:
+
+```bash
+sbatch --export=ALL,ADAPTVIS_DYNAMIC_PREPROCESS=True jobs/sanity_main_aro.sbatch
+```
+
+This lets you run:
+
+- Original mode (default) for strict replication attempts.
+- Compatibility mode (env-var enabled) when generation is empty in your runtime stack.
+
 ### Argument
 All parameter choices are indicated in `run.sh`.
 | Argument       | Example               | Description                                                                                   |
