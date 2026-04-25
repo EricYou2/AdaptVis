@@ -1,0 +1,18 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1897127
+##  Job Name : adaptvis.debug1
+##  Nodelist : gpu2109
+##      CPUs : 1
+##  Mem/Node : 32768 MB
+## Directory : /oscar/data/class/csci1430/students/eyou3/CSCI1470/AdaptVis
+##   Job Started : Sat Apr 25 02:44:31 AM EDT 2026
+###############################################################################
+Torch: 2.4.1+cu121 CUDA: True
+Input length: 77
+Image token count (id=32001): 41
+Gold: On
+Output total length: 97
+New token length: 20
+First new token id: 0
+Decoded NEW: ''
+Decoded FULL: '\nUSER: Where is the beer bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:'
