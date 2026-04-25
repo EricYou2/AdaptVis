@@ -1,3 +1,4 @@
+accelerate
 bcrypt==3.2.0
 beautifulsoup4==4.12.3
 blinker==1.4
