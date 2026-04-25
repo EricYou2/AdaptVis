@@ -234,12 +234,22 @@ def change_greedy_to_add_weight():
 
 class LlavaWrapper:
     def __init__(self, root_dir, device,method):
-        
+        load_kwargs = {
+            "revision": "a272c74",
+            "cache_dir": root_dir,
+            "ignore_mismatched_sizes": True,
+            "low_cpu_mem_usage": True,
+        }
+
+        # LLaVA-1.5 can exceed 24GB in fp32; prefer fp16 on CUDA for inference.
+        if str(device).startswith("cuda"):
+            load_kwargs["torch_dtype"] = torch.float16
+
         if method=='scaling_vis' or method=='adapt_vis':
-            self.model = LlavaForConditionalGenerationScal.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir,ignore_mismatched_sizes=True).eval().to(device)
+            self.model = LlavaForConditionalGenerationScal.from_pretrained(MODEL, **load_kwargs).eval().to(device)
 
         else:
-            self.model = LlavaForConditionalGeneration.from_pretrained(MODEL, revision='a272c74', cache_dir=root_dir,ignore_mismatched_sizes=True).eval().to(device)
+            self.model = LlavaForConditionalGeneration.from_pretrained(MODEL, **load_kwargs).eval().to(device)
 
         self.feature_extractor = CLIPImageProcessor.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir)
         self.tokenizer = LlamaTokenizerFast.from_pretrained(MODEL, revision='a272c74',cache_dir=root_dir)
