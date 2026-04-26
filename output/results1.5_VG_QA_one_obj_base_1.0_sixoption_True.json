@@ -1,0 +1,4642 @@
+[
+    {
+        "Prompt": "<image>\nUSER: Where is the purse in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toddler in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the kite in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stove in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the carriage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the surfboard in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the heater in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the suitcase in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tray in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the plate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bed in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the monitor in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the paddle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the laptop in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sausage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the pastries in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the receipt in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the flag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the scooter in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the soda in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the airplane in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the motorcycles in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the umbrellas in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the apartment building in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee cup in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the purse in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the goats in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the container in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the kites in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the entertainment center in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the clock in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the horse in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the computer monitor in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tent in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the jar in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the kite in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the people in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the gray bag in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the plate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pastry in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bed sheet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the houses in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the computer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the carrot in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the scooter in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stove in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the helmet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the train in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the laptop in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bench in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bench in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the guy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the speaker in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the broccoli in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tent in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stuffed animal in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bookcase in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the white refrigerator in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the monitor in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the broth in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tomato in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the oven in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bed in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the glasses in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the painting in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sheet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tennis player in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee cup in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the television in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the heater in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the grass in the photo? Answer with behind or front.\nASSISTANT:",
+        "Generation": "Behind",
+        "Golden": "Behind"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the banana in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the floor lamp in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the wine in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the gray car in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the floor lamp in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the table cloth in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the remote control in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cabinets in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the teddy bear in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the wine in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the blanket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the soap dispenser in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the sheets in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tennis racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the suitcase in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stove in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the scissors in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the red couch in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the ladder in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the container in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the food in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the drawer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dresser in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the train car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bell tower in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the plate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the surfboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vehicle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the piano in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bird in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bacon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the blanket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the saucer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the towels in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the can in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tray in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dishwasher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bucket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the monitor in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the people in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dishwasher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the books in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the omelette in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the flag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the umbrellas in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tray in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the child in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bull in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the brown chair in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shower curtain in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the jar in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the surfboard in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cart in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bench in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bed in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cake in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cathedral in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the blanket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the soup in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the truck in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the giraffe in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the ice cream in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the blender in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the laptop in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the palm tree in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bird in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee mug in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee table in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the broccoli in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the faucet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the laptop in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the microwave in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the blinds in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the batter in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cutting board in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the loaf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spectator in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rope in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the waffle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee table in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cake in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lettuce in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the horse in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the sheets in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sofa in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sandwich in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bench in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the red blanket in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the picnic table in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the yellow towel in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the towel in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the nightstand in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mobile phone in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the printer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rope in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the truck in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bookshelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the blinds in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the truck in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the chairs in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the nuts in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the umbrellas in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the plate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the flower bouquet in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the television in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pan in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the curtain in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the truck in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spatula in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mattress in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the saucer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the monitor in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the train in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the truck in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the spectators in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the plate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vehicle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the computer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cars in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dumpster in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the clock in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the paper towel in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sofa in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the juice in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the oven in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the chairs in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the blender in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the scissors in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the palm in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the bottles in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the child in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the van in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cans in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the carriage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vehicle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tower in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stove in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the container in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bucket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tray in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the packet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cooking utensils in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fruit in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the kite in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cheese in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the microwave in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the white plate in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bun in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the glasses in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tennis racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the baseball in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vase in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cabinets in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza cutter in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the potato in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vase in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bench in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bookcase in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the banana in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the closet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the curtains in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the meat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lady in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the box in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the container in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the phone in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the player in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the motorcycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pot in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toddler in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the boats in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the phone in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the curtain in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the clock in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the computer monitor in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the houses in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the boxes in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cars in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tomato in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stove in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the biscuit in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the ladder in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the beverage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bed in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the nightstand in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tomato in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the crab in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cooker in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rope in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the kite in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tower in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rope in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fire truck in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dispenser in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the kite in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the napkins in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dresser in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mattress in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the towel in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pasta in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skier in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the giraffe in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the radio in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the painting in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the benches in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the napkin in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the chairs in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bicycle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the palm tree in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the chairs in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the palm tree in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rope in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bacon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the bags in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the ham in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the television in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the remote in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the stove in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the drawer in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the paddle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cars in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the goat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vase in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the donut in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the food in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bench in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mouse pad in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the papers in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tablecloth in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the microwave in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the surfboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tea pot in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the shelves in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the oven in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the scissors in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the umbrellas in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the towel in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the banana in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the salt shaker in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the magazine in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the planter in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the oven in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the helmet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the train in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the van in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the spoons in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tennis racket in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cake in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bun in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tennis racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pan in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the hot dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the customers in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sandwich in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the palm tree in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the placemat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the eggs in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the orange in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the television in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the skis in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the ladder in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the people in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the black car in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the speakers in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the plate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sofa in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the phone in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee mug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pastry in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the onion in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the frisbee in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the guy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabinet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the blanket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cupboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bear in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the instrument in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the drinks in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the player in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the soap dispenser in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the couch in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the papers in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the house in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the lamp in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the container in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fork in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the boxes in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the noodles in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the guy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the truck in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the onions in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the coffee cup in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet brush in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the snowboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the net in the photo? Answer with behind or front.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Behind"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rug in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the television in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sandwich in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bear in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the train in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the comforter in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the monitor in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the cabinets in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the box in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the pillows in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the surfboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bookshelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the closet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tablecloth in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the microwave oven in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the curtain in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the beverage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabbage in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the palm trees in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the salad in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the microwave in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the broccoli in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the tools in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the meter in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Right",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the oven in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the airplane in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the salad in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cabin in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the clock in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the guy in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the boat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the parent in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mobile phone in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umpire in the photo? Answer with left, right, front, behind, top or bottom..\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the train in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the curtains in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vehicle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shelf in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bike in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bag in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toaster in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mat in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sandwich in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the screen in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the catcher in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the van in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the surfboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the girl in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bread in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spoon in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the food in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cart in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bear in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mirror in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skier in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the man in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the skateboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pillow in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the baby in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pig in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the crate in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the container in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the keyboard in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the meter in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tennis racket in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the towel in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Top",
+        "Golden": "Top"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the palm tree in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Bottom",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tray in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the car in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where are the people in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Bottom"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in the photo? Answer with left, right, front, behind, top or bottom.\nASSISTANT:",
+        "Generation": "Front",
+        "Golden": "Top"
+    }
+]
