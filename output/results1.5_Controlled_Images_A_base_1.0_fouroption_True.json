@@ -841,7 +841,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pan in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "Under",
         "Golden": "Under"
     },
     {
