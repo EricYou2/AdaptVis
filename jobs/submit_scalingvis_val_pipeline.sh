@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p logs
 
-echo "[step] submit validation sweep array (7 datasets x 5 alphas = 35 jobs)"
+echo "[step] submit validation sweep array (6 datasets x 5 alphas = 30 jobs)"
 VAL_OUT=$(sbatch --export=ALL,ADAPTVIS_DYNAMIC_PREPROCESS=${ADAPTVIS_DYNAMIC_PREPROCESS:-True} jobs/scalingvis_val_sweep_array.sbatch)
 VAL_JOBID=$(echo "$VAL_OUT" | awk '{print $4}')
 echo "[ok] val sweep job array id: $VAL_JOBID"

@@ -4,7 +4,6 @@
 #SBATCH -n 1
 #SBATCH --mem=8G
 #SBATCH -t 00:30:00
-#SBATCH -p cpu
 #SBATCH -o logs/scalingvis-plot-%j.out
 #SBATCH -e logs/scalingvis-plot-%j.err
 
