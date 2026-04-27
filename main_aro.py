@@ -79,13 +79,37 @@ def main(args):
         print("Got the following shape of scores",scores.shape)
         # change from (82, 4, 1) to (82, 1, 4)
         scores = scores.transpose(0,2,1)
-        dataset.evaluate_scores(scores,args.output_dir,args.dataset, args.model_name,args.method,args.weight,sampled_indices,args.option)
+        dataset.evaluate_scores(
+            scores,
+            args.output_dir,
+            args.dataset,
+            args.model_name,
+            args.method,
+            args.weight,
+            sampled_indices,
+            args.option,
+            args.weight1,
+            args.weight2,
+            args.threshold,
+        )
         # dataset.save_scores(scores,correct_id,args.output_dir,args.dataset,args.method,args.weight,args.model_name,args.option)
 
     else:
         
         scores,correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option,args.threshold,args.weight1,args.weight2)
-        dataset.save_scores(scores,correct_id,args.output_dir,args.dataset,args.method,args.weight,args.model_name,args.option)
+        dataset.save_scores(
+            scores,
+            correct_id,
+            args.output_dir,
+            args.dataset,
+            args.method,
+            args.weight,
+            args.model_name,
+            args.option,
+            args.weight1,
+            args.weight2,
+            args.threshold,
+        )
 
         
 if __name__ == "__main__":

@@ -258,7 +258,7 @@ class Controlled_Images(Dataset):
 
 
 
-    def evaluate_scores(self, scores,path,dataset,model,method,weight,sampled_indices,option):
+    def evaluate_scores(self, scores,path,dataset,model,method,weight,sampled_indices,option,weight1=None,weight2=None,threshold=None):
         """
         Scores: N x 1 x 4, i.e. first caption is right, next three captions are wrong
         """
@@ -329,17 +329,41 @@ class Controlled_Images(Dataset):
             })
         import json
         path_=os.path.join(path, 'res.json')
-        data = {"dataset":dataset, "model":model,"option":option,"method":method,"weight":weight, "Individual accuracy":metrics['Accuracy']*100,"Pair accuracy":pair_accuracy,"Set accuracy":set_accuracy,"correct_id":correct_id}
+        data = {
+            "dataset":dataset,
+            "model":model,
+            "option":option,
+            "method":method,
+            "weight":weight,
+            "weight1":weight1,
+            "weight2":weight2,
+            "threshold":threshold,
+            "Individual accuracy":metrics['Accuracy']*100,
+            "Pair accuracy":pair_accuracy,
+            "Set accuracy":set_accuracy,
+            "correct_id":correct_id,
+        }
         with open(path_, 'a+') as file:
             json.dump(data, file)
             file.write('\n')
 
         return result_records
 
-    def save_scores(self, scores,correct_id,path,dataset,method,weight,model_name,option):
+    def save_scores(self, scores,correct_id,path,dataset,method,weight,model_name,option,weight1=None,weight2=None,threshold=None):
         import json
         path_=os.path.join(path, 'res.json')
-        data = {"dataset":dataset, "model":model_name,"option":option,"method":method,"weight":weight, "Individual accuracy":scores,"correct_id":correct_id}
+        data = {
+            "dataset":dataset,
+            "model":model_name,
+            "option":option,
+            "method":method,
+            "weight":weight,
+            "weight1":weight1,
+            "weight2":weight2,
+            "threshold":threshold,
+            "Individual accuracy":scores,
+            "correct_id":correct_id,
+        }
         with open(path_, 'a+') as file:
             json.dump(data, file)
             file.write('\n')
@@ -412,15 +436,26 @@ class COCO_QA(Dataset):
         subprocess.call(["gdown", "--no-cookies",  "1zp5vBRRM4_nSik6o9PeVspDvOsHgPT4l", "--output", image_zip_file])
         subprocess.call(["unzip", "val2017.zip"], cwd=self.root_dir)
 
-    def save_scores(self, scores,correct_id,path,dataset,method,weight,model_name,option):
+    def save_scores(self, scores,correct_id,path,dataset,method,weight,model_name,option,weight1=None,weight2=None,threshold=None):
         import json
         path_=os.path.join(path, 'res.json')
-        data = {"dataset":dataset, "model":model_name,"option":option,"method":method,"weight":weight, "Individual accuracy":scores,"correct_id":correct_id}
+        data = {
+            "dataset":dataset,
+            "model":model_name,
+            "option":option,
+            "method":method,
+            "weight":weight,
+            "weight1":weight1,
+            "weight2":weight2,
+            "threshold":threshold,
+            "Individual accuracy":scores,
+            "correct_id":correct_id,
+        }
         with open(path_, 'a+') as file:
             json.dump(data, file)
             file.write('\n')
     # def evaluate_scores(self, scores):
-    def evaluate_scores(self, scores,path,dataset,model,method,weight,sampled_indices,option):
+    def evaluate_scores(self, scores,path,dataset,model,method,weight,sampled_indices,option,weight1=None,weight2=None,threshold=None):
 
     # def evaluate_scores(self, scores,path,dataset,mode):
         """
@@ -469,7 +504,17 @@ class COCO_QA(Dataset):
         import json
         path_=os.path.join(path, 'res.json')
         # data = {"dataset":dataset, "mode":mode,"Individual accuracy":metrics['Accuracy']*100}
-        data = {"dataset":dataset, "method":method, "option":option,"Individual accuracy":metrics['Accuracy']*100,"correct_id":correct_id}
+        data = {
+            "dataset":dataset,
+            "method":method,
+            "option":option,
+            "weight":weight,
+            "weight1":weight1,
+            "weight2":weight2,
+            "threshold":threshold,
+            "Individual accuracy":metrics['Accuracy']*100,
+            "correct_id":correct_id,
+        }
 
         with open(path_, 'a+') as file:
             json.dump(data, file)
@@ -539,15 +584,26 @@ class VG_QA(Dataset):
         subprocess.call(["gdown", "--no-cookies",  "1idW7Buoz7fQm4-670n-oERw9U-2JLJvE", "--output", image_zip_file])
         subprocess.call(["tar", "-xvf", "vg_images.tar.gz"], cwd=self.root_dir)
 
-    def save_scores(self, scores,correct_id,path,dataset,method,weight,model_name,option):
+    def save_scores(self, scores,correct_id,path,dataset,method,weight,model_name,option,weight1=None,weight2=None,threshold=None):
         import json
         path_=os.path.join(path, 'res.json')
-        data = {"dataset":dataset,"model":model_name,"option":option,"method":method,"weight":weight,"Individual accuracy":scores,"correct_id":correct_id}
+        data = {
+            "dataset":dataset,
+            "model":model_name,
+            "option":option,
+            "method":method,
+            "weight":weight,
+            "weight1":weight1,
+            "weight2":weight2,
+            "threshold":threshold,
+            "Individual accuracy":scores,
+            "correct_id":correct_id,
+        }
         with open(path_, 'a+') as file:
             json.dump(data, file)
             file.write('\n')
     # def evaluate_scores(self, scores,path,dataset,mode):
-    def evaluate_scores(self, scores,path,dataset,model,method,weight,sampled_indices,option):
+    def evaluate_scores(self, scores,path,dataset,model,method,weight,sampled_indices,option,weight1=None,weight2=None,threshold=None):
         """
         Scores: N x 1 x 2, i.e. first caption is right, next is wrong
         """
@@ -593,7 +649,17 @@ class VG_QA(Dataset):
             })
         import json
         path_=os.path.join(path, 'res.json')
-        data = {"dataset":dataset, "method":method, "option":option,"Individual accuracy":metrics['Accuracy']*100,"correct_id":correct_id}
+        data = {
+            "dataset":dataset,
+            "method":method,
+            "option":option,
+            "weight":weight,
+            "weight1":weight1,
+            "weight2":weight2,
+            "threshold":threshold,
+            "Individual accuracy":metrics['Accuracy']*100,
+            "correct_id":correct_id,
+        }
         with open(path_, 'a+') as file:
             json.dump(data, file)
             file.write('\n')
