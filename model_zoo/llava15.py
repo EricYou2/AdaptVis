@@ -498,11 +498,9 @@ class LlavaWrapper:
         index = 0
         TP, TN, FP, FN = 0, 0, 0, 0
 
-        # Set the directory to save attention maps
-        save_attn_dir = f"/home/user/shiqi/mmlm_mech/whatsup_vlms/outputs/{dataset}_weight{weight:.2f}"
-        if not os.path.exists(save_attn_dir):
-            print("Creating directory for saving attention maps:", save_attn_dir)
-            os.makedirs(save_attn_dir)
+        # Save attention maps inside the current repo outputs directory.
+        save_attn_dir = os.path.join("./outputs", f"{dataset}_weight{weight:.2f}")
+        os.makedirs(save_attn_dir, exist_ok=True)
         
         index_of_total = 0
         results = []

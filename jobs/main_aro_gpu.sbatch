@@ -40,6 +40,7 @@ WEIGHT1="${WEIGHT1:-0.5}"
 WEIGHT2="${WEIGHT2:-1.5}"
 THRESHOLD="${THRESHOLD:-0.4}"
 SEED="${SEED:-1}"
+NUM_WORKERS="${NUM_WORKERS:-4}"
 DOWNLOAD_FLAG="${DOWNLOAD_FLAG:---download}"
 
 echo "Job ID: $SLURM_JOB_ID"
@@ -55,6 +56,7 @@ python -u main_aro.py \
   --model-name "$MODEL_NAME" \
   --method "$METHOD" \
   --option "$OPTION" \
+  --num_workers "$NUM_WORKERS" \
   --weight "$WEIGHT" \
   --weight1 "$WEIGHT1" \
   --weight2 "$WEIGHT2" \
