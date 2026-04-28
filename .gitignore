@@ -171,7 +171,8 @@ tags
 # *.sh
 /data
 /features
-# /outputs
+/outputs
+/output
 /save_activations
 /probe_res
 /plot/outputs
