@@ -82,8 +82,8 @@ for row in ds:
 
     idx += 1
 
-    if idx == 100:
-        break
+    #if idx == 100:
+        #break
 
 os.makedirs("prompts", exist_ok=True)
 
