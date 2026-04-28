@@ -304,15 +304,35 @@ class LLaMAAttention(nn.Module):
             save_path = os.getenv("SAVE_ATTN_PATH")
             if not save_path:
                 raise ValueError("SAVE_ATTN_PATH not set.")
-            unchanged_attn_weights = unchanged_attn_weights + attention_mask
-            unchanged_attn_weights = torch.max(unchanged_attn_weights, torch.tensor(torch.finfo(unchanged_attn_weights.dtype).min))
-            if SAVE_ORI:
-                ori=unchanged_attn_weights[:,:,-1,:]
-                # pdb.set_trace()
-                np.save(f"{save_path}diff_{idx}_start{start_idx}_end{end_idx}.npy", ori.cpu().detach().numpy())
+            if attention_mask is not None:
+                unchanged_attn_weights = unchanged_attn_weights + attention_mask
+                unchanged_attn_weights = torch.max(
+                    unchanged_attn_weights,
+                    torch.tensor(torch.finfo(unchanged_attn_weights.dtype).min),
+                )
 
-            unchanged_attn_weights = nn.functional.softmax(unchanged_attn_weights, dim=-1, dtype=torch.float32).to(
-                query_states.dtype)
+            if SAVE_ORI:
+                ori = unchanged_attn_weights[:, :, -1, :]
+                np.save(
+                    f"{save_path}diff_{idx}_start{start_idx}_end{end_idx}.npy",
+                    ori.cpu().detach().numpy(),
+                )
+
+            pre_attn = nn.functional.softmax(
+                unchanged_attn_weights, dim=-1, dtype=torch.float32
+            ).to(query_states.dtype)
+            post_attn = attn_weights
+
+            pre_slice = pre_attn[:, :, -1, :]
+            post_slice = post_attn[:, :, -1, :]
+            np.save(
+                f"{save_path}pre_{idx}_start{start_idx}_end{end_idx}.npy",
+                pre_slice.cpu().detach().numpy(),
+            )
+            np.save(
+                f"{save_path}post_{idx}_start{start_idx}_end{end_idx}.npy",
+                post_slice.cpu().detach().numpy(),
+            )
 
         attn_weights = self.att_out(attn_weights)       
         value_states = self.value_out(value_states)

@@ -375,7 +375,7 @@ class LlavaWrapper:
             batch_scores = []
             
             # Set environment variable for attention map save path
-            os.environ['SAVE_ATTN_PATH'] = f'{save_attn_dir}/{index_of_total}/'
+            os.environ['SAVE_ATTN_PATH'] = f"{save_attn_dir}/{index_of_total}/"
             os.makedirs(os.environ['SAVE_ATTN_PATH'], exist_ok=True)
 
             # Iterate over each image option in the batch
@@ -498,11 +498,9 @@ class LlavaWrapper:
         index = 0
         TP, TN, FP, FN = 0, 0, 0, 0
 
-        # Set the directory to save attention maps
-        save_attn_dir = f"/home/user/shiqi/mmlm_mech/whatsup_vlms/outputs/{dataset}_weight{weight:.2f}"
-        if not os.path.exists(save_attn_dir):
-            print("Creating directory for saving attention maps:", save_attn_dir)
-            os.makedirs(save_attn_dir)
+        # Save attention maps inside the current repo outputs directory.
+        save_attn_dir = os.path.join("./outputs", f"{dataset}_weight{weight:.2f}")
+        os.makedirs(save_attn_dir, exist_ok=True)
         
         index_of_total = 0
         results = []
@@ -554,7 +552,7 @@ class LlavaWrapper:
                             gen = self.processor.decode(output[0][0][len(single_input['input_ids'][-1]):], skip_special_tokens=True, output_attentions=True)
 
                         else:
-                            output = self.model.generate(**single_input, keys=keys, weight=weight, max_new_tokens=100, output_scores=True, return_dict_in_generate=True)
+                            output = self.model.generate(**single_input, max_new_tokens=100, output_scores=True, return_dict_in_generate=True)
                             uncertainty = np.round(float(max(torch.nn.functional.softmax(output['scores'][0], dim=-1)[0])), 2)
                             gen = self.processor.decode(output[0][0][len(single_input['input_ids'][-1]):], skip_special_tokens=True, output_attentions=True)
                         
