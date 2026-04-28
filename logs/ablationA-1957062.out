@@ -1,0 +1,41 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1957062
+##  Job Name : adaptvis.ablationA
+##  Nodelist : gpu2102
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/scratch/hnaung/AdaptVis
+##   Job Started : Tue Apr 28 02:37:26 PM EDT 2026
+###############################################################################
+=== Ablation A: Sharpening Only ===
+Job ID: 1957062
+Host: gpu2102.oscar.ccv.brown.edu
+Dataset: VSR
+Option count: six
+Weight1: 1.0
+Weight2: 2.0
+CUDA_VISIBLE_DEVICES=0
+Python 3.11.15
+torch 2.4.1+cu121 cuda? True
+Tue Apr 28 14:37:33 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 3090        On  |   00000000:A1:00.0 Off |                  N/A |
+| 30%   31C    P8             25W /  350W |      18MiB /  24576MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A          156562      G   /usr/libexec/Xorg                         5MiB |
++-----------------------------------------------------------------------------------------+
+Downloading https://huggingface.co/datasets/cambridgeltl/vsr_zeroshot/raw/main/test.jsonl to data/test.jsonl
+Image Directory for VG_Relation could not be found!
