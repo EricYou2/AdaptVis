@@ -82,20 +82,30 @@ def main():
     # Find attention directories for the dataset and method
     method_prefix = f"{args.method}_"
     base_dir = os.path.join(args.attn_root, args.dataset)
-    if not os.path.exists(base_dir):
-        raise FileNotFoundError(f"Attention root not found: {base_dir}")
 
-    candidates = [
-        d for d in os.listdir(base_dir)
-        if d.startswith(method_prefix) and f"_{args.option}opt_" in d
-    ]
-    if not candidates:
-        raise ValueError(f"No attention directories for method={args.method} under {base_dir}")
+    run_dir = None
+    if os.path.exists(base_dir):
+        candidates = [
+            d for d in os.listdir(base_dir)
+            if d.startswith(method_prefix) and f"_{args.option}opt_" in d
+        ]
+        if candidates:
+            candidates.sort()
+            tag = candidates[-1]
+            run_dir = os.path.join(base_dir, tag)
 
-    # Use most recent (lexicographic) tag if multiple
-    candidates.sort()
-    tag = candidates[-1]
-    run_dir = os.path.join(base_dir, tag)
+    # Fallback for legacy layout: ./output/<dataset>_weight<weight>/
+    if run_dir is None:
+        legacy_candidates = sorted(
+            glob(os.path.join(args.attn_root, f"{args.dataset}_weight*"))
+        )
+        if legacy_candidates:
+            run_dir = legacy_candidates[-1]
+        else:
+            raise FileNotFoundError(
+                "No attention directories found. Checked: "
+                f"{base_dir} and {os.path.join(args.attn_root, args.dataset + '_weight*')}"
+            )
 
     sample_dirs = sorted([d for d in glob(os.path.join(run_dir, "*")) if os.path.isdir(d)])
 
