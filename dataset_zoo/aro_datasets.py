@@ -10,6 +10,7 @@ from tqdm import tqdm
 from torch.utils.data import Dataset
 from easydict import EasyDict as edict
 from torchvision.datasets.utils import download_url
+from datasets import load_dataset
 
 # from .perturbations import TextShuffler
 # from .constants import ARO_ROOT, COCO_ROOT
@@ -598,8 +599,153 @@ class VG_QA(Dataset):
             json.dump(data, file)
             file.write('\n')
         return result_records
-        
 
+class SpatialSense(Dataset):
+    def __init__(
+        self,
+        image_preprocess=None,
+        root_dir="data",
+        split="train",
+        download=False,
+        num_options=9,
+        max_examples=100,
+    ):
+        self.root_dir = root_dir
+        self.image_preprocess = image_preprocess
+        self.num_options = num_options
+        self.max_examples = max_examples
+
+        self.dataset = load_dataset(
+            "AsphyXIA/spatial-sense-flattened",
+            split=split,
+        )
+
+        self.relations = [
+            "on",
+            "under",
+            "in front of",
+            "behind",
+            "to the left of",
+            "to the right of",
+            "above",
+            "below",
+            "next to",
+        ]
+
+        self.test_cases = []
+        for row in self.dataset:
+            case = self._convert_row(row)
+            if case is not None:
+                self.test_cases.append(case)
+
+            if self.max_examples is not None and len(self.test_cases) >= self.max_examples:
+                break
+
+    def _parse_caption(self, caption):
+        words = caption.lower().strip().split()
+
+        if len(words) < 3:
+            return None
+
+        subject = words[0]
+
+        # Single-word relations
+        if words[1] in ["on", "under", "behind", "above", "below"]:
+            relation = words[1]
+            obj = " ".join(words[2:])
+
+        # Multi-word relations
+        elif words[1] == "in" and len(words) >= 5 and words[2] == "front" and words[3] == "of":
+            relation = "in front of"
+            obj = " ".join(words[4:])
+
+        elif words[1] == "to" and words[2] == "the" and words[3] == "left" and len(words) >= 6 and words[4] == "of":
+            relation = "to the left of"
+            obj = " ".join(words[5:])
+
+        elif words[1] == "to" and words[2] == "the" and words[3] == "right" and len(words) >= 6 and words[4] == "of":
+            relation = "to the right of"
+            obj = " ".join(words[5:])
+
+        elif words[1] == "next" and len(words) >= 4 and words[2] == "to":
+            relation = "next to"
+            obj = " ".join(words[3:])
+
+        else:
+            return None
+
+        if obj.strip() == "":
+            return None
+
+        return subject, relation, obj
+
+    def _convert_row(self, row):
+        image = row["image"]
+        caption = row["caption"]
+
+        parsed = self._parse_caption(caption)
+        if parsed is None:
+            return None
+
+        subject, relation, obj = parsed
+
+        if relation not in self.relations:
+            return None
+
+        correct_caption = f"The {subject} is {relation} the {obj}."
+
+        wrong_relations = [r for r in self.relations if r != relation]
+        wrong_relations = wrong_relations[: self.num_options - 1]
+
+        wrong_captions = [
+            f"The {subject} is {wrong_relation} the {obj}."
+            for wrong_relation in wrong_relations
+        ]
+
+        return {
+            "image": image,
+            "caption_options": [correct_caption] + wrong_captions,
+            "relation": relation,
+        }
+
+    def __len__(self):
+        return len(self.test_cases)
+
+    def __getitem__(self, index):
+        test_case = self.test_cases[index]
+        image = test_case["image"]
+
+        if self.image_preprocess is not None:
+            image = self.image_preprocess(image)
+
+        return edict({
+            "image_options": [image],
+            "caption_options": test_case["caption_options"],
+        })
+
+    def evaluate_scores(self, scores, path, dataset, model, method, weight, sampled_indices, option):
+        scores = np.squeeze(scores, axis=1)
+        preds = np.argmax(scores, axis=-1)
+        correct_mask = preds == 0
+        acc = np.mean(correct_mask)
+        correct_id = np.where(correct_mask)[0].tolist()
+
+        print("Accuracy:", acc * 100)
+
+        os.makedirs(path, exist_ok=True)
+        data = {
+            "dataset": dataset,
+            "model": model,
+            "option": option,
+            "method": method,
+            "weight": weight,
+            "Individual accuracy": acc * 100,
+            "correct_id": correct_id,
+        }
+
+        with open(os.path.join(path, "res.json"), "a+") as file:
+            json.dump(data, file)
+            file.write("\n")
 
 def get_controlled_images_a(image_preprocess, text_perturb_fn=None, image_perturb_fn=None, download=False):
     return Controlled_Images(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn,
@@ -630,4 +776,9 @@ def get_vsr(image_preprocess, image_perturb_fn, text_perturb_fn, max_words=30, d
     return VSR(root_dir=root_dir, split=split, image_preprocess=image_preprocess, image_perturb_fn=image_perturb_fn, max_words=max_words, 
                             download=download)
 
-
+def get_spatialsense(image_preprocess, text_perturb_fn=None, image_perturb_fn=None, download=False):
+    return SpatialSense(
+        image_preprocess=image_preprocess,
+        download=download,
+        split="train",
+    )

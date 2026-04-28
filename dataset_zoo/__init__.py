@@ -39,6 +39,9 @@ def get_dataset(dataset_name, image_preprocess=None, text_perturb_fn=None, image
     elif dataset_name== "VSR":
         from .aro_datasets import get_vsr
         return get_vsr(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn, image_perturb_fn=image_perturb_fn, download=download, *args, **kwargs)
+    elif dataset_name== "SpatialSense":
+        from .aro_datasets import get_spatialsense
+        return get_spatialsense(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn, image_perturb_fn=image_perturb_fn, download=download, *args, **kwargs)
     
 
         

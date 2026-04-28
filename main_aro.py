@@ -19,7 +19,7 @@ def config():
             choices=[ "llava1.5","llava1.6"])
     parser.add_argument("--dataset", default="Controlled_Images_A", type=str, \
             choices=[ "Controlled_Images_A", "Controlled_Images_B", \
-            "COCO_QA_one_obj", "COCO_QA_two_obj", "VG_QA_one_obj", "VG_QA_two_obj", "VSR"])
+            "COCO_QA_one_obj", "COCO_QA_two_obj", "VG_QA_one_obj", "VG_QA_two_obj", "VSR", "SpatialSense"])
     parser.add_argument("--seed", default=1, type=int)
     parser.add_argument("--method",  type=str)
     parser.add_argument("--dola-decoding",   action="store_true")
@@ -31,7 +31,7 @@ def config():
     parser.add_argument("--weight1", default=1.0, type=float)
     parser.add_argument("--weight2", default=1.0, type=float)
     parser.add_argument("--threshold", default=1.0, type=float)
-    parser.add_argument("--option", default='four', type=str, choices=['two','four','six'])
+    parser.add_argument("--option", default='four', type=str, choices=['two','four','six','nine'])
 
     return parser.parse_args()
 
@@ -74,7 +74,7 @@ def main(args):
         result_records = dataset.evaluate_scores(args.model_name,scores, labels, args.output_dir,args.dataset)
    
 
-    elif args.dataset in ['Controlled_Images_B','Controlled_Images_A']:    
+    elif args.dataset in ['Controlled_Images_B','Controlled_Images_A','SpatialSense']:    
         scores, correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option,args.threshold,args.weight1,args.weight2)
         print("Got the following shape of scores",scores.shape)
         # change from (82, 4, 1) to (82, 1, 4)
