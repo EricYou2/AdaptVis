@@ -1,0 +1,2076 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1969176
+##  Job Name : adaptvis.main
+##  Nodelist : gpu3001
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/scratch/hnaung/AdaptVis
+##   Job Started : Wed Apr 29 02:30:26 AM EDT 2026
+###############################################################################
+Job ID: 1969176
+Host: gpu3001.oscar.ccv.brown.edu
+CUDA_VISIBLE_DEVICES=0
+Python 3.11.15
+torch 2.4.1+cu121 cuda? True
+Wed Apr 29 02:30:31 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:01:00.0 Off |                    0 |
+| N/A   32C    P8             32W /  350W |      77MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A          157596      G   /usr/libexec/Xorg                        64MiB |
++-----------------------------------------------------------------------------------------+
+VG_QA_two_obj llava1.5
+0.28 0.4
+Prompt: <image>
+USER: Where is the cart in relation to the green trees? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+1 1 1.0
+0.36 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the drawer? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+1 2 0.5
+0.46 0.4
+Prompt: <image>
+USER: Where is the tall tree in relation to the fence? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+1 3 0.3333333333333333
+0.66 0.4
+Prompt: <image>
+USER: Where are the drawers in relation to the table? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+2 4 0.5
+0.4 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+3 5 0.6
+0.32 0.4
+Prompt: <image>
+USER: Where is the bag in relation to the cat? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+3 6 0.5
+0.35 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the roof?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+3 7 0.42857142857142855
+0.66 0.4
+Prompt: <image>
+USER: Where is the towel in relation to the toilet? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+4 8 0.5
+0.49 0.4
+Prompt: <image>
+USER: Where is the table in relation to the tree? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+4 9 0.4444444444444444
+0.36 0.4
+Prompt: <image>
+USER: Where is the boy in relation to the girl?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+4 10 0.4
+0.32 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the cart? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+4 11 0.36363636363636365
+0.29 0.4
+Prompt: <image>
+USER: Where is the catcher in relation to the batter? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+4 12 0.3333333333333333
+0.29 0.4
+Prompt: <image>
+USER: Where is the round clock in relation to the person? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+4 13 0.3076923076923077
+0.36 0.4
+Prompt: <image>
+USER: Where are the noodles in relation to the fruit? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+5 14 0.35714285714285715
+0.31 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the vegetables?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+6 15 0.4
+0.21 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the painting? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Behind
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+6 16 0.375
+0.28 0.4
+Prompt: <image>
+USER: Where is the guitar in relation to the console?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+6 17 0.35294117647058826
+0.43 0.4
+Prompt: <image>
+USER: Where is the small screen in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+6 18 0.3333333333333333
+0.43 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the table? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+7 19 0.3684210526315789
+0.37 0.4
+Prompt: <image>
+USER: Where is the black bag in relation to the laptop? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 20 0.4
+0.39 0.4
+Prompt: <image>
+USER: Where is the comb in relation to the bag?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 21 0.38095238095238093
+0.46 0.4
+Prompt: <image>
+USER: Where is the man in relation to the boy?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 22 0.36363636363636365
+0.33 0.4
+Prompt: <image>
+USER: Where is the pan in relation to the microwave?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 23 0.34782608695652173
+0.32 0.4
+Prompt: <image>
+USER: Where is the lady in relation to the soldier?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 24 0.3333333333333333
+0.35 0.4
+Prompt: <image>
+USER: Where is the shelf in relation to the toilet?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 25 0.32
+0.26 0.4
+Prompt: <image>
+USER: Where is the catcher in relation to the batter? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 26 0.3076923076923077
+0.35 0.4
+Prompt: <image>
+USER: Where is the truck in relation to the bus?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+8 27 0.2962962962962963
+0.41 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 28 0.32142857142857145
+0.48 0.4
+Prompt: <image>
+USER: Where is the melon in relation to the kettle? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Right
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 29 0.3103448275862069
+0.31 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the man?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 30 0.3
+0.36 0.4
+Prompt: <image>
+USER: Where is the guy in relation to the chair?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 31 0.2903225806451613
+0.33 0.4
+Prompt: <image>
+USER: Where is the statue in relation to the broom? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 32 0.28125
+0.35 0.4
+Prompt: <image>
+USER: Where are the children in relation to the trees? Answer with left, right, front, behind, top, or bottom.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 33 0.2727272727272727
+0.32 0.4
+Prompt: <image>
+USER: Where is the heater in relation to the white toilet? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+9 34 0.2647058823529412
+0.31 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the tree? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 35 0.2857142857142857
+0.39 0.4
+Prompt: <image>
+USER: Where is the white bowl in relation to the girl? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 36 0.2777777777777778
+0.37 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the cabinet?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 37 0.2702702702702703
+0.31 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the toilet?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 38 0.2631578947368421
+0.3 0.4
+Prompt: <image>
+USER: Where is the pizza in relation to the bowl?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 39 0.2564102564102564
+0.24 0.4
+Prompt: <image>
+USER: Where is the rhino in relation to the giraffe? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 40 0.25
+0.28 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the sandwich? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+10 41 0.24390243902439024
+0.56 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+11 42 0.2619047619047619
+0.33 0.4
+Prompt: <image>
+USER: Where is the man in relation to the fence? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+11 43 0.2558139534883721
+0.31 0.4
+Prompt: <image>
+USER: Where is the computer in relation to the chair?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+11 44 0.25
+0.38 0.4
+Prompt: <image>
+USER: Where are the carrots in relation to the potatoes? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+11 45 0.24444444444444444
+0.4 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the pillow? Answer with left, right, front, behind, top, or bottom.
+ASSISTANT:
+Generation: Front
+Golden: Above
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+11 46 0.2391304347826087
+0.28 0.4
+Prompt: <image>
+USER: Where is the fence in relation to the trees? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 47 0.2553191489361702
+0.31 0.4
+Prompt: <image>
+USER: Where is the animal in relation to the trees?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 48 0.25
+0.32 0.4
+Prompt: <image>
+USER: Where are the nuts in relation to the purple cabbage? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Above
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 49 0.24489795918367346
+0.26 0.4
+Prompt: <image>
+USER: Where is the bridge in relation to the mountains? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 50 0.24
+0.27 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the bicycle? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 51 0.23529411764705882
+0.45 0.4
+Prompt: <image>
+USER: Where is the boy in relation to the chairs? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 52 0.23076923076923078
+0.36 0.4
+Prompt: <image>
+USER: Where is the book in relation to the blanket?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 53 0.22641509433962265
+0.25 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the knife? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 54 0.2222222222222222
+0.32 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the woman?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 55 0.21818181818181817
+0.24 0.4
+Prompt: <image>
+USER: Where is the dishwasher in relation to the drawer? 
+
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 56 0.21428571428571427
+0.27 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the wine?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+12 57 0.21052631578947367
+0.59 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the tray? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+13 58 0.22413793103448276
+0.32 0.4
+Prompt: <image>
+USER: Where is the bicycle in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+13 59 0.22033898305084745
+0.4 0.4
+Prompt: <image>
+USER: Where is the chocolate cake in relation to the knife? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+13 60 0.21666666666666667
+0.29 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+13 61 0.21311475409836064
+0.27 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the bike?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+13 62 0.20967741935483872
+0.33 0.4
+Prompt: <image>
+USER: Where is the catcher in relation to the batter? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+14 63 0.2222222222222222
+0.34 0.4
+Prompt: <image>
+USER: Where is the white bag in relation to the cup? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+14 64 0.21875
+0.36 0.4
+Prompt: <image>
+USER: Where is the round bowl in relation to the book? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+14 65 0.2153846153846154
+0.22 0.4
+Prompt: <image>
+USER: Where is the white curtain in relation to the couch? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+14 66 0.21212121212121213
+0.28 0.4
+Prompt: <image>
+USER: Where is the bicycle in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+14 67 0.208955223880597
+0.48 0.4
+Prompt: <image>
+USER: Where is the white refrigerator in relation to the oven? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+15 68 0.22058823529411764
+0.25 0.4
+Prompt: <image>
+USER: Where is the curtain in relation to the lamp?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+16 69 0.2318840579710145
+0.31 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the cheese? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+16 70 0.22857142857142856
+0.47 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman?
+Answer with left, right, front, behind, above or below.
+Option A photo of a man to the right of a woman.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+17 71 0.23943661971830985
+0.53 0.4
+Prompt: <image>
+USER: Where is the green bag in relation to the bike? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+18 72 0.25
+0.23 0.4
+Prompt: <image>
+USER: Where is the table in relation to the refrigerator?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+18 73 0.2465753424657534
+0.28 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the kite? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+18 74 0.24324324324324326
+0.65 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+19 75 0.25333333333333335
+0.28 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the table?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+19 76 0.25
+0.71 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the couch? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+20 77 0.2597402597402597
+0.34 0.4
+Prompt: <image>
+USER: Where is the soup in relation to the spoon?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+20 78 0.2564102564102564
+0.61 0.4
+Prompt: <image>
+USER: Where is the black bag in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 79 0.26582278481012656
+0.29 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the coffee table? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 80 0.2625
+0.41 0.4
+Prompt: <image>
+USER: Where is the donut in relation to the cup?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 81 0.25925925925925924
+0.31 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the lamp? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 82 0.25609756097560976
+0.24 0.4
+Prompt: <image>
+USER: Where is the suitcase in relation to the backpack? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 83 0.25301204819277107
+0.47 0.4
+Prompt: <image>
+USER: Where is the lady in relation to the man?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 84 0.25
+0.25 0.4
+Prompt: <image>
+USER: Where is the metal lamp in relation to the laptop? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 85 0.24705882352941178
+0.31 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the table?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+21 86 0.2441860465116279
+0.41 0.4
+Prompt: <image>
+USER: Where is the television in relation to the bookcase? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+22 87 0.25287356321839083
+0.27 0.4
+Prompt: <image>
+USER: Where is the keyboard in relation to the notebook? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+22 88 0.25
+0.28 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the umbrella? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+22 89 0.24719101123595505
+0.72 0.4
+Prompt: <image>
+USER: Where is the fence in relation to the train? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+23 90 0.25555555555555554
+0.45 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the man?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+24 91 0.26373626373626374
+0.29 0.4
+Prompt: <image>
+USER: Where is the black umbrella in relation to the woman? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+24 92 0.2608695652173913
+0.33 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+24 93 0.25806451612903225
+0.29 0.4
+Prompt: <image>
+USER: Where is the man in relation to the lamp? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+24 94 0.2553191489361702
+0.27 0.4
+Prompt: <image>
+USER: Where is the stove in relation to the woman?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+24 95 0.25263157894736843
+0.44 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the computer? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+25 96 0.2604166666666667
+0.37 0.4
+Prompt: <image>
+USER: Where is the man in relation to the carriage?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 97 0.26804123711340205
+0.37 0.4
+Prompt: <image>
+USER: Where is the man in relation to the bike?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 98 0.2653061224489796
+0.42 0.4
+Prompt: <image>
+USER: Where is the man in relation to the cupboard? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 99 0.26262626262626265
+0.49 0.4
+Prompt: <image>
+USER: Where is the blond woman in relation to the laptop? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 100 0.26
+0.29 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the cake? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 101 0.25742574257425743
+0.33 0.4
+Prompt: <image>
+USER: Where is the shower curtain in relation to the toilet? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 102 0.2549019607843137
+0.32 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the stove?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 103 0.2524271844660194
+0.44 0.4
+Prompt: <image>
+USER: Where is the kite in relation to the girl?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 104 0.25
+0.26 0.4
+Prompt: <image>
+USER: Where is the wood fence in relation to the bushes? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 105 0.24761904761904763
+0.33 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the lamp?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+26 106 0.24528301886792453
+0.56 0.4
+Prompt: <image>
+USER: Where is the car in relation to the carriage? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 107 0.2523364485981308
+0.27 0.4
+Prompt: <image>
+USER: Where is the bookshelf in relation to the pillow? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 108 0.25
+0.29 0.4
+Prompt: <image>
+USER: Where is the table in relation to the comforter? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 109 0.24770642201834864
+0.3 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the sandwich?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 110 0.24545454545454545
+0.41 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the screen? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 111 0.24324324324324326
+0.41 0.4
+Prompt: <image>
+USER: Where is the man in relation to the surfboard? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 112 0.24107142857142858
+0.28 0.4
+Prompt: <image>
+USER: Where is the white pillow in relation to the boy? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 113 0.23893805309734514
+0.29 0.4
+Prompt: <image>
+USER: Where is the flag in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+27 114 0.23684210526315788
+0.4 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the chair? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+28 115 0.24347826086956523
+0.41 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+29 116 0.25
+0.39 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the bread?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+30 117 0.2564102564102564
+0.29 0.4
+Prompt: <image>
+USER: Where is the boat in relation to the woman?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+30 118 0.2542372881355932
+0.77 0.4
+Prompt: <image>
+USER: Where is the cabinet in relation to the toilet? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+31 119 0.2605042016806723
+0.49 0.4
+Prompt: <image>
+USER: Where is the white keyboard in relation to the mouse pad? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+32 120 0.26666666666666666
+0.47 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 121 0.2727272727272727
+0.27 0.4
+Prompt: <image>
+USER: Where is the pear in relation to the orange? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 122 0.27049180327868855
+0.33 0.4
+Prompt: <image>
+USER: Where is the man in relation to the tower? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 123 0.2682926829268293
+0.39 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 124 0.2661290322580645
+0.28 0.4
+Prompt: <image>
+USER: Where is the man in relation to the bike? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 125 0.264
+0.48 0.4
+Prompt: <image>
+USER: Where is the man in relation to the plate? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 126 0.2619047619047619
+0.28 0.4
+Prompt: <image>
+USER: Where is the bus in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 127 0.25984251968503935
+0.44 0.4
+Prompt: <image>
+USER: Where is the pizza in relation to the cup?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 128 0.2578125
+0.31 0.4
+Prompt: <image>
+USER: Where is the boy in relation to the bag? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+33 129 0.2558139534883721
+0.31 0.4
+Prompt: <image>
+USER: Where is the building in relation to the trees?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 130 0.26153846153846155
+0.33 0.4
+Prompt: <image>
+USER: Where is the racket in relation to the boy?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 131 0.2595419847328244
+0.37 0.4
+Prompt: <image>
+USER: Where is the blue tent in relation to the man? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 132 0.25757575757575757
+0.44 0.4
+Prompt: <image>
+USER: Where is the keyboard in relation to the person? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 133 0.2556390977443609
+0.35 0.4
+Prompt: <image>
+USER: Where is the umpire in relation to the batter? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 134 0.2537313432835821
+0.27 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the sofa?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 135 0.2518518518518518
+0.32 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the plate? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 136 0.25
+0.38 0.4
+Prompt: <image>
+USER: Where is the pizza in relation to the bowl? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+34 137 0.24817518248175183
+0.45 0.4
+Prompt: <image>
+USER: Where is the dark curtain in relation to the shelf? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+35 138 0.2536231884057971
+0.37 0.4
+Prompt: <image>
+USER: Where is the black cabinet in relation to the chair? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+36 139 0.2589928057553957
+0.32 0.4
+Prompt: <image>
+USER: Where is the boy in relation to the shelf?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+36 140 0.2571428571428571
+0.33 0.4
+Prompt: <image>
+USER: Where is the open laptop in relation to the keyboard? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+36 141 0.2553191489361702
+0.46 0.4
+Prompt: <image>
+USER: Where is the man in relation to the surfboard? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+36 142 0.2535211267605634
+0.36 0.4
+Prompt: <image>
+USER: Where are the white blinds in relation to the mirror? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+37 143 0.25874125874125875
+0.33 0.4
+Prompt: <image>
+USER: Where is the boy in relation to the plate? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+37 144 0.2569444444444444
+0.32 0.4
+Prompt: <image>
+USER: Where is the plastic container in relation to the bowl? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+37 145 0.25517241379310346
+0.47 0.4
+Prompt: <image>
+USER: Where is the screen in relation to the person?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+37 146 0.2534246575342466
+0.38 0.4
+Prompt: <image>
+USER: Where is the yellow bag in relation to the cabinet? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+37 147 0.25170068027210885
+0.29 0.4
+Prompt: <image>
+USER: Where is the open book in relation to the bowl? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+37 148 0.25
+0.37 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the fence? Answer with left, right, front, behind, top, or bottom.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 149 0.2550335570469799
+0.38 0.4
+Prompt: <image>
+USER: Where is the wood fence in relation to the horse? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Behind
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 150 0.25333333333333335
+0.38 0.4
+Prompt: <image>
+USER: Where is the guy in relation to the chair? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 151 0.25165562913907286
+0.27 0.4
+Prompt: <image>
+USER: Where is the computer monitor in relation to the chair? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 152 0.25
+0.35 0.4
+Prompt: <image>
+USER: Where is the building in relation to the palm?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 153 0.24836601307189543
+0.24 0.4
+Prompt: <image>
+USER: Where is the black bag in relation to the toilet? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 154 0.24675324675324675
+0.36 0.4
+Prompt: <image>
+USER: Where is the black suitcase in relation to the bed? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+38 155 0.24516129032258063
+0.45 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the keyboard? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+39 156 0.25
+0.33 0.4
+Prompt: <image>
+USER: Where is the keyboard in relation to the speaker?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+39 157 0.2484076433121019
+0.34 0.4
+Prompt: <image>
+USER: Where is the egg in relation to the knife?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+39 158 0.2468354430379747
+0.57 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+39 159 0.24528301886792453
+0.32 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the spoon? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+40 160 0.25
+0.36 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the teddy bear? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+40 161 0.2484472049689441
+0.28 0.4
+Prompt: <image>
+USER: Where are the blinds in relation to the television?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Behind
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+40 162 0.24691358024691357
+0.44 0.4
+Prompt: <image>
+USER: Where is the man in relation to the television? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+41 163 0.25153374233128833
+0.35 0.4
+Prompt: <image>
+USER: Where is the stove in relation to the man?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+41 164 0.25
+0.31 0.4
+Prompt: <image>
+USER: Where is the man in relation to the chair?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+41 165 0.24848484848484848
+0.55 0.4
+Prompt: <image>
+USER: Where is the child in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+42 166 0.25301204819277107
+0.24 0.4
+Prompt: <image>
+USER: Where is the silver table in relation to the oven? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+42 167 0.25149700598802394
+0.49 0.4
+Prompt: <image>
+USER: Where is the skateboard in relation to the boy?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+42 168 0.25
+0.29 0.4
+Prompt: <image>
+USER: Where is the metal knife in relation to the plate? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+42 169 0.2485207100591716
+0.25 0.4
+Prompt: <image>
+USER: Where is the screen in relation to the phone?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+42 170 0.24705882352941178
+0.25 0.4
+Prompt: <image>
+USER: Where is the large mirror in relation to the television? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+42 171 0.24561403508771928
+0.38 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the snowboard? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+43 172 0.25
+0.38 0.4
+Prompt: <image>
+USER: Where is the racket in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+44 173 0.2543352601156069
+0.3 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the remote? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+44 174 0.25287356321839083
+0.47 0.4
+Prompt: <image>
+USER: Where is the mirror in relation to the towel? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+45 175 0.2571428571428571
+0.47 0.4
+Prompt: <image>
+USER: Where is the man in relation to the woman?
+Answer with left, right, front, behind, above or below.
+Option A photo of a man to the right of a woman.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+46 176 0.26136363636363635
+0.34 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the fence? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+46 177 0.2598870056497175
+0.25 0.4
+Prompt: <image>
+USER: Where is the gray elephant in relation to the fence? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 178 0.2640449438202247
+0.31 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the lamp?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 179 0.26256983240223464
+0.29 0.4
+Prompt: <image>
+USER: Where is the umpire in relation to the catcher? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 180 0.2611111111111111
+0.32 0.4
+Prompt: <image>
+USER: Where is the brown dog in relation to the fence? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 181 0.2596685082872928
+0.28 0.4
+Prompt: <image>
+USER: Where is the shower curtain in relation to the toilet? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 182 0.25824175824175827
+0.31 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the blanket? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 183 0.2568306010928962
+0.37 0.4
+Prompt: <image>
+USER: Where is the small cabinet in relation to the chair? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+47 184 0.2554347826086957
+0.4 0.4
+Prompt: <image>
+USER: Where is the red motorcycle in relation to the bike? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+48 185 0.2594594594594595
+0.47 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the woman? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+49 186 0.26344086021505375
+0.48 0.4
+Prompt: <image>
+USER: Where is the skateboard in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 187 0.26737967914438504
+0.4 0.4
+Prompt: <image>
+USER: Where is the brown dog in relation to the boy? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 188 0.26595744680851063
+0.38 0.4
+Prompt: <image>
+USER: Where is the cake in relation to the man?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 189 0.26455026455026454
+0.32 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the racket? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 190 0.2631578947368421
+0.3 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the pillow?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 191 0.2617801047120419
+0.25 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the dog? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 192 0.2604166666666667
+0.28 0.4
+Prompt: <image>
+USER: Where is the stove in relation to the refrigerator? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 193 0.25906735751295334
+0.31 0.4
+Prompt: <image>
+USER: Where is the blanket in relation to the pillow? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+50 194 0.25773195876288657
+0.44 0.4
+Prompt: <image>
+USER: Where is the shelf in relation to the boy? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+51 195 0.26153846153846155
+0.33 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the boy? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+51 196 0.2602040816326531
+0.3 0.4
+Prompt: <image>
+USER: Where is the bag in relation to the cat?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+51 197 0.25888324873096447
+0.35 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the plate? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+51 198 0.25757575757575757
+0.47 0.4
+Prompt: <image>
+USER: Where is the bike in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+52 199 0.2613065326633166
+0.32 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the boy?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+52 200 0.26
+0.29 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the man? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+52 201 0.25870646766169153
+0.48 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the side table? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+53 202 0.2623762376237624
+0.48 0.4
+Prompt: <image>
+USER: Where is the batter in relation to the catcher?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+53 203 0.26108374384236455
+0.31 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the man?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+53 204 0.25980392156862747
+0.33 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the horse? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+53 205 0.25853658536585367
+0.29 0.4
+Prompt: <image>
+USER: Where is the yellow flag in relation to the man? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+53 206 0.25728155339805825
+0.3 0.4
+Prompt: <image>
+USER: Where is the blond woman in relation to the bicycle? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+54 207 0.2608695652173913
+0.44 0.4
+Prompt: <image>
+USER: Where is the woman in relation to the computer?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+54 208 0.25961538461538464
+0.46 0.4
+Prompt: <image>
+USER: Where is the white refrigerator in relation to the oven? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Right Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 209 0.2631578947368421
+0.3 0.4
+Prompt: <image>
+USER: Where is the open laptop in relation to the girl? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 210 0.2619047619047619
+0.21 0.4
+Prompt: <image>
+USER: Where is the man in relation to the house? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 211 0.26066350710900477
+0.28 0.4
+Prompt: <image>
+USER: Where is the shelf in relation to the screen? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Behind
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 212 0.25943396226415094
+0.36 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the bowl?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 213 0.25821596244131456
+0.3 0.4
+Prompt: <image>
+USER: Where is the train in relation to the fence? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 214 0.2570093457943925
+0.31 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the cabinet?
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 215 0.2558139534883721
+0.5 0.4
+Prompt: <image>
+USER: Where is the desk in relation to the bookshelf? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 216 0.25462962962962965
+0.36 0.4
+Prompt: <image>
+USER: Where is the silver knife in relation to the fork? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+55 217 0.2534562211981567
+0.4 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the armchair? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 218 0.25688073394495414
+0.23 0.4
+Prompt: <image>
+USER: Where is the shelf in relation to the curtain?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 219 0.2557077625570776
+0.36 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the saucer? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 220 0.2545454545454545
+0.28 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the book? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 221 0.25339366515837103
+0.28 0.4
+Prompt: <image>
+USER: Where is the car in relation to the van?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 222 0.25225225225225223
+0.34 0.4
+Prompt: <image>
+USER: Where is the girl in relation to the man?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 223 0.25112107623318386
+0.37 0.4
+Prompt: <image>
+USER: Where is the open drawer in relation to the woman? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 224 0.25
+0.28 0.4
+Prompt: <image>
+USER: Where is the batter in relation to the catcher? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 225 0.24888888888888888
+0.3 0.4
+Prompt: <image>
+USER: Where is the car in relation to the elephant? Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 226 0.24778761061946902
+0.44 0.4
+Prompt: <image>
+USER: Where is the man in relation to the surfboard? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+56 227 0.24669603524229075
+0.38 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the shelf? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+57 228 0.25
+0.25 0.4
+Prompt: <image>
+USER: Where is the silk blanket in relation to the book? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+57 229 0.24890829694323144
+0.4 0.4
+Prompt: <image>
+USER: Where is the man in relation to the tablecloth? 
+Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+57 230 0.24782608695652175
+0.27 0.4
+Prompt: <image>
+USER: Where is the rug in relation to the cabinet? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+57 231 0.24675324675324675
+0.35 0.4
+Prompt: <image>
+USER: Where is the man in relation to the bike?
+Answer with left, right, front, behind, above or below.
+
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+57 232 0.24568965517241378
+0.28 0.4
+Prompt: <image>
+USER: Where is the screen in relation to the blinds? Answer with left, right, front, behind, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_VG_QA_two_obj_adapt_vis_1.0_sixoption_True.json
+57 233 0.2446351931330472
+0.2446351931330472

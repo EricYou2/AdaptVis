@@ -1,0 +1,2680 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1968871
+##  Job Name : adaptvis.main
+##  Nodelist : gpu3002
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/scratch/hnaung/AdaptVis
+##   Job Started : Wed Apr 29 01:28:26 AM EDT 2026
+###############################################################################
+Job ID: 1968871
+Host: gpu3002.oscar.ccv.brown.edu
+CUDA_VISIBLE_DEVICES=0
+Python 3.11.15
+torch 2.4.1+cu121 cuda? True
+Wed Apr 29 01:28:30 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:41:00.0 Off |                    0 |
+| N/A   31C    P8             33W /  350W |      77MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A          160743      G   /usr/libexec/Xorg                        64MiB |
++-----------------------------------------------------------------------------------------+
+Controlled_Images_A llava1.5
+0.33 0.4
+Prompt: <image>
+USER: Where is the beer bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+0 1 0.0
+0.62 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+1 2 0.5
+0.57 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+2 3 0.6666666666666666
+0.4 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+3 4 0.75
+0.76 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+4 5 0.8
+0.58 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+5 6 0.8333333333333334
+0.59 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+6 7 0.8571428571428571
+0.59 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+7 8 0.875
+0.69 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+8 9 0.8888888888888888
+0.55 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+9 10 0.9
+0.41 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+9 11 0.8181818181818182
+0.42 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+9 12 0.75
+0.85 0.4
+Prompt: <image>
+USER: Where are the shoes in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+10 13 0.7692307692307693
+0.52 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+11 14 0.7857142857142857
+0.58 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+12 15 0.8
+0.6 0.4
+Prompt: <image>
+USER: Where is the water filter in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+13 16 0.8125
+0.68 0.4
+Prompt: <image>
+USER: Where is the glove in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+14 17 0.8235294117647058
+0.62 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+15 18 0.8333333333333334
+0.61 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+16 19 0.8421052631578947
+0.33 0.4
+Prompt: <image>
+USER: Where is the water filter in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+16 20 0.8
+0.67 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+17 21 0.8095238095238095
+0.55 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+18 22 0.8181818181818182
+0.45 0.4
+Prompt: <image>
+USER: Where is the pan in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+18 23 0.782608695652174
+0.61 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+19 24 0.7916666666666666
+0.34 0.4
+Prompt: <image>
+USER: Where is the yarn in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+19 25 0.76
+0.28 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+19 26 0.7307692307692307
+0.33 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+19 27 0.7037037037037037
+0.66 0.4
+Prompt: <image>
+USER: Where is the rose in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+20 28 0.7142857142857143
+0.82 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+21 29 0.7241379310344828
+0.38 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+22 30 0.7333333333333333
+0.7 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+23 31 0.7419354838709677
+0.36 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+23 32 0.71875
+0.78 0.4
+Prompt: <image>
+USER: Where is the soda can in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+24 33 0.7272727272727273
+0.37 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+25 34 0.7352941176470589
+0.37 0.4
+Prompt: <image>
+USER: Where is the bottle of orange juice in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+25 35 0.7142857142857143
+0.33 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+25 36 0.6944444444444444
+0.34 0.4
+Prompt: <image>
+USER: Where is the rose in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+25 37 0.6756756756756757
+0.39 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+25 38 0.6578947368421053
+0.36 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+26 39 0.6666666666666666
+0.39 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+26 40 0.65
+0.71 0.4
+Prompt: <image>
+USER: Where is the plant in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+27 41 0.6585365853658537
+0.35 0.4
+Prompt: <image>
+USER: Where is the blanket in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+27 42 0.6428571428571429
+0.44 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+28 43 0.6511627906976745
+0.34 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+28 44 0.6363636363636364
+0.57 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+29 45 0.6444444444444445
+0.33 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+29 46 0.6304347826086957
+0.49 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+30 47 0.6382978723404256
+0.35 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+30 48 0.625
+0.67 0.4
+Prompt: <image>
+USER: Where is the apple in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+31 49 0.6326530612244898
+0.82 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+32 50 0.64
+0.34 0.4
+Prompt: <image>
+USER: Where is the can in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+32 51 0.6274509803921569
+0.76 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+33 52 0.6346153846153846
+0.43 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+34 53 0.6415094339622641
+0.37 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+35 54 0.6481481481481481
+0.51 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+36 55 0.6545454545454545
+0.32 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+36 56 0.6428571428571429
+0.66 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+37 57 0.6491228070175439
+0.72 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+38 58 0.6551724137931034
+0.78 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+39 59 0.6610169491525424
+0.34 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+39 60 0.65
+0.34 0.4
+Prompt: <image>
+USER: Where is the vase in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+39 61 0.639344262295082
+0.35 0.4
+Prompt: <image>
+USER: Where is the water filter in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+39 62 0.6290322580645161
+0.36 0.4
+Prompt: <image>
+USER: Where is the hat in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+39 63 0.6190476190476191
+0.3 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+39 64 0.609375
+0.51 0.4
+Prompt: <image>
+USER: Where are the glasses in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+40 65 0.6153846153846154
+0.35 0.4
+Prompt: <image>
+USER: Where are the scissors in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+40 66 0.6060606060606061
+0.31 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+40 67 0.5970149253731343
+0.32 0.4
+Prompt: <image>
+USER: Where is the microphone in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+40 68 0.5882352941176471
+0.76 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+41 69 0.5942028985507246
+0.38 0.4
+Prompt: <image>
+USER: Where is the yarn in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+41 70 0.5857142857142857
+0.32 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+41 71 0.5774647887323944
+0.3 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+41 72 0.5694444444444444
+0.46 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+42 73 0.5753424657534246
+0.5 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+43 74 0.581081081081081
+0.71 0.4
+Prompt: <image>
+USER: Where is the photograph in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+44 75 0.5866666666666667
+0.76 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+45 76 0.5921052631578947
+0.31 0.4
+Prompt: <image>
+USER: Where is the can in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+45 77 0.5844155844155844
+0.77 0.4
+Prompt: <image>
+USER: Where is the pot in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+46 78 0.5897435897435898
+0.34 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+46 79 0.5822784810126582
+0.39 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+46 80 0.575
+0.3 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+46 81 0.5679012345679012
+0.36 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+46 82 0.5609756097560976
+0.59 0.4
+Prompt: <image>
+USER: Where are the scissors in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+47 83 0.5662650602409639
+0.76 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+48 84 0.5714285714285714
+0.6 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+49 85 0.5764705882352941
+0.36 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+49 86 0.5697674418604651
+0.83 0.4
+Prompt: <image>
+USER: Where are the scissors in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+50 87 0.5747126436781609
+0.44 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+51 88 0.5795454545454546
+0.57 0.4
+Prompt: <image>
+USER: Where is the pot in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+52 89 0.5842696629213483
+0.68 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+53 90 0.5888888888888889
+0.57 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+54 91 0.5934065934065934
+0.57 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+55 92 0.5978260869565217
+0.61 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+56 93 0.6021505376344086
+0.56 0.4
+Prompt: <image>
+USER: Where is the hat in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+57 94 0.6063829787234043
+0.61 0.4
+Prompt: <image>
+USER: Where is the blanket in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+58 95 0.6105263157894737
+0.39 0.4
+Prompt: <image>
+USER: Where are the glasses in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+58 96 0.6041666666666666
+0.34 0.4
+Prompt: <image>
+USER: Where is the toy cactus in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+58 97 0.5979381443298969
+0.64 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+59 98 0.6020408163265306
+0.56 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+60 99 0.6060606060606061
+0.69 0.4
+Prompt: <image>
+USER: Where is the yarn in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+61 100 0.61
+0.39 0.4
+Prompt: <image>
+USER: Where is the book in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+62 101 0.6138613861386139
+0.31 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+62 102 0.6078431372549019
+0.38 0.4
+Prompt: <image>
+USER: Where is the toy cactus in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+62 103 0.6019417475728155
+0.66 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+63 104 0.6057692307692307
+0.5 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+64 105 0.6095238095238096
+0.46 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+65 106 0.6132075471698113
+0.48 0.4
+Prompt: <image>
+USER: Where is the glove in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+66 107 0.616822429906542
+0.86 0.4
+Prompt: <image>
+USER: Where is the bottle of orange juice in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+67 108 0.6203703703703703
+0.32 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+67 109 0.6146788990825688
+0.36 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+67 110 0.6090909090909091
+0.47 0.4
+Prompt: <image>
+USER: Where are the shoes in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+68 111 0.6126126126126126
+0.49 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+68 112 0.6071428571428571
+0.31 0.4
+Prompt: <image>
+USER: Where is the beer bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+68 113 0.6017699115044248
+0.44 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+69 114 0.6052631578947368
+0.41 0.4
+Prompt: <image>
+USER: Where is the photograph in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+70 115 0.6086956521739131
+0.27 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+70 116 0.603448275862069
+0.73 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+71 117 0.6068376068376068
+0.52 0.4
+Prompt: <image>
+USER: Where is the soda can in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+72 118 0.6101694915254238
+0.59 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+73 119 0.6134453781512605
+0.44 0.4
+Prompt: <image>
+USER: Where is the pan in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+73 120 0.6083333333333333
+0.57 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+74 121 0.6115702479338843
+0.39 0.4
+Prompt: <image>
+USER: Where is the can in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+74 122 0.6065573770491803
+0.73 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+75 123 0.6097560975609756
+0.32 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+75 124 0.6048387096774194
+0.33 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+75 125 0.6
+0.34 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+76 126 0.6031746031746031
+0.53 0.4
+Prompt: <image>
+USER: Where is the yarn in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+77 127 0.6062992125984252
+0.62 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+78 128 0.609375
+0.33 0.4
+Prompt: <image>
+USER: Where is the pot in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+79 129 0.6124031007751938
+0.36 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+79 130 0.6076923076923076
+0.56 0.4
+Prompt: <image>
+USER: Where is the glass in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+80 131 0.6106870229007634
+0.78 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+81 132 0.6136363636363636
+0.62 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+82 133 0.6165413533834586
+0.4 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+82 134 0.6119402985074627
+0.34 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+82 135 0.6074074074074074
+0.35 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+82 136 0.6029411764705882
+0.77 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+83 137 0.6058394160583942
+0.38 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+83 138 0.6014492753623188
+0.34 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+84 139 0.60431654676259
+0.31 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+84 140 0.6
+0.52 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+85 141 0.6028368794326241
+0.33 0.4
+Prompt: <image>
+USER: Where is the vase in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+85 142 0.5985915492957746
+0.37 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+86 143 0.6013986013986014
+0.65 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+87 144 0.6041666666666666
+0.33 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+88 145 0.6068965517241379
+0.36 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+89 146 0.6095890410958904
+0.57 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+90 147 0.6122448979591837
+0.58 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+90 148 0.6081081081081081
+0.71 0.4
+Prompt: <image>
+USER: Where is the pan in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+91 149 0.610738255033557
+0.36 0.4
+Prompt: <image>
+USER: Where is the plant in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+91 150 0.6066666666666667
+0.45 0.4
+Prompt: <image>
+USER: Where is the glass in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+91 151 0.6026490066225165
+0.34 0.4
+Prompt: <image>
+USER: Where is the box in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+92 152 0.6052631578947368
+0.47 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+93 153 0.6078431372549019
+0.59 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+94 154 0.6103896103896104
+0.42 0.4
+Prompt: <image>
+USER: Where is the book in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+95 155 0.6129032258064516
+0.62 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+96 156 0.6153846153846154
+0.4 0.4
+Prompt: <image>
+USER: Where is the microphone in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+96 157 0.6114649681528662
+0.57 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+96 158 0.6075949367088608
+0.31 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+96 159 0.6037735849056604
+0.6 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+97 160 0.60625
+0.64 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+98 161 0.6086956521739131
+0.31 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+98 162 0.6049382716049383
+0.54 0.4
+Prompt: <image>
+USER: Where is the banjo in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+99 163 0.6073619631901841
+0.62 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+100 164 0.6097560975609756
+0.73 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+101 165 0.6121212121212121
+0.59 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+102 166 0.6144578313253012
+0.39 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the table? Answer with left, right, on, or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+103 167 0.6167664670658682
+0.32 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+103 168 0.6130952380952381
+0.31 0.4
+Prompt: <image>
+USER: Where is the pan in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+104 169 0.6153846153846154
+0.33 0.4
+Prompt: <image>
+USER: Where is the book in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+105 170 0.6176470588235294
+0.43 0.4
+Prompt: <image>
+USER: Where is the soda can in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+105 171 0.6140350877192983
+0.69 0.4
+Prompt: <image>
+USER: Where is the book in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+106 172 0.6162790697674418
+0.29 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+106 173 0.6127167630057804
+0.34 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+106 174 0.6091954022988506
+0.81 0.4
+Prompt: <image>
+USER: Where is the water filter in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+107 175 0.6114285714285714
+0.36 0.4
+Prompt: <image>
+USER: Where is the beer bottle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+108 176 0.6136363636363636
+0.62 0.4
+Prompt: <image>
+USER: Where are the scissors in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+109 177 0.615819209039548
+0.34 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+109 178 0.6123595505617978
+0.32 0.4
+Prompt: <image>
+USER: Where is the book in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+109 179 0.6089385474860335
+0.74 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+110 180 0.6111111111111112
+0.74 0.4
+Prompt: <image>
+USER: Where is the remote in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+111 181 0.6132596685082873
+0.62 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+112 182 0.6153846153846154
+0.59 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+113 183 0.6174863387978142
+0.32 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+113 184 0.6141304347826086
+0.74 0.4
+Prompt: <image>
+USER: Where is the toy cactus in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+114 185 0.6162162162162163
+0.51 0.4
+Prompt: <image>
+USER: Where is the can in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+115 186 0.6182795698924731
+0.78 0.4
+Prompt: <image>
+USER: Where is the box in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+116 187 0.6203208556149733
+0.29 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+116 188 0.6170212765957447
+0.47 0.4
+Prompt: <image>
+USER: Where is the tape in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+116 189 0.6137566137566137
+0.45 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+116 190 0.6105263157894737
+0.36 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+117 191 0.612565445026178
+0.38 0.4
+Prompt: <image>
+USER: Where is the apple in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+117 192 0.609375
+0.72 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+118 193 0.6113989637305699
+0.34 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+118 194 0.6082474226804123
+0.78 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+119 195 0.6102564102564103
+0.35 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+119 196 0.6071428571428571
+0.63 0.4
+Prompt: <image>
+USER: Where is the can in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+120 197 0.6091370558375635
+0.78 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+121 198 0.6111111111111112
+0.74 0.4
+Prompt: <image>
+USER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+122 199 0.6130653266331658
+0.35 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+123 200 0.615
+0.46 0.4
+Prompt: <image>
+USER: Where is the book in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+124 201 0.6169154228855721
+0.5 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+125 202 0.6188118811881188
+0.56 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+126 203 0.6206896551724138
+0.67 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+127 204 0.6225490196078431
+0.35 0.4
+Prompt: <image>
+USER: Where is the plant in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+127 205 0.6195121951219512
+0.39 0.4
+Prompt: <image>
+USER: Where is the glove in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+127 206 0.616504854368932
+0.63 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+128 207 0.6183574879227053
+0.35 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+128 208 0.6153846153846154
+0.33 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+129 209 0.6172248803827751
+0.74 0.4
+Prompt: <image>
+USER: Where is the oven mitt in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+130 210 0.6190476190476191
+0.32 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+130 211 0.6161137440758294
+0.32 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+130 212 0.6132075471698113
+0.41 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+130 213 0.6103286384976526
+0.35 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+131 214 0.6121495327102804
+0.62 0.4
+Prompt: <image>
+USER: Where is the vase in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+132 215 0.6139534883720931
+0.75 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+133 216 0.6157407407407407
+0.43 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+134 217 0.6175115207373272
+0.34 0.4
+Prompt: <image>
+USER: Where are the scissors in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+134 218 0.6146788990825688
+0.4 0.4
+Prompt: <image>
+USER: Where is the notepad in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+134 219 0.6118721461187214
+0.38 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+134 220 0.6090909090909091
+0.65 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+135 221 0.6108597285067874
+0.63 0.4
+Prompt: <image>
+USER: Where is the bottle of mustard in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+136 222 0.6126126126126126
+0.61 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+136 223 0.6098654708520179
+0.51 0.4
+Prompt: <image>
+USER: Where is the beer bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+137 224 0.6116071428571429
+0.3 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+137 225 0.6088888888888889
+0.64 0.4
+Prompt: <image>
+USER: Where is the plant in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+138 226 0.6106194690265486
+0.61 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+139 227 0.6123348017621145
+0.39 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+139 228 0.6096491228070176
+0.32 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+140 229 0.611353711790393
+0.34 0.4
+Prompt: <image>
+USER: Where is the box in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+140 230 0.6086956521739131
+0.3 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+140 231 0.6060606060606061
+0.74 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+141 232 0.6077586206896551
+0.57 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+142 233 0.6094420600858369
+0.34 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+143 234 0.6111111111111112
+0.38 0.4
+Prompt: <image>
+USER: Where is the blanket in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+144 235 0.6127659574468085
+0.58 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+145 236 0.614406779661017
+0.64 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+146 237 0.6160337552742616
+0.71 0.4
+Prompt: <image>
+USER: Where is the blanket in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+147 238 0.6176470588235294
+0.35 0.4
+Prompt: <image>
+USER: Where is the remote in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+147 239 0.6150627615062761
+0.38 0.4
+Prompt: <image>
+USER: Where is the bread in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+147 240 0.6125
+0.35 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+147 241 0.6099585062240664
+0.8 0.4
+Prompt: <image>
+USER: Where is the microphone in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+148 242 0.6115702479338843
+0.7 0.4
+Prompt: <image>
+USER: Where is the bread in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+149 243 0.6131687242798354
+0.41 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+150 244 0.6147540983606558
+0.42 0.4
+Prompt: <image>
+USER: Where is the tape in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+150 245 0.6122448979591837
+0.8 0.4
+Prompt: <image>
+USER: Where is the glass in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+151 246 0.6138211382113821
+0.31 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+151 247 0.611336032388664
+0.5 0.4
+Prompt: <image>
+USER: Where is the rose in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+152 248 0.6129032258064516
+0.53 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+153 249 0.6144578313253012
+0.33 0.4
+Prompt: <image>
+USER: Where is the notepad in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+153 250 0.612
+0.34 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+153 251 0.6095617529880478
+0.34 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+153 252 0.6071428571428571
+0.52 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+154 253 0.6086956521739131
+0.45 0.4
+Prompt: <image>
+USER: Where are the glasses in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+154 254 0.6062992125984252
+0.67 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+155 255 0.6078431372549019
+0.45 0.4
+Prompt: <image>
+USER: Where is the apple in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+156 256 0.609375
+0.34 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+156 257 0.6070038910505836
+0.65 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+157 258 0.6085271317829457
+0.35 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+158 259 0.61003861003861
+0.55 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+159 260 0.6115384615384616
+0.57 0.4
+Prompt: <image>
+USER: Where is the microphone in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+160 261 0.6130268199233716
+0.42 0.4
+Prompt: <image>
+USER: Where is the oven mitt in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+160 262 0.6106870229007634
+0.6 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+161 263 0.6121673003802282
+0.36 0.4
+Prompt: <image>
+USER: Where is the rose in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+161 264 0.6098484848484849
+0.61 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+162 265 0.6113207547169811
+0.61 0.4
+Prompt: <image>
+USER: Where is the kettle in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+163 266 0.6127819548872181
+0.5 0.4
+Prompt: <image>
+USER: Where is the toy cactus in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+164 267 0.6142322097378277
+0.39 0.4
+Prompt: <image>
+USER: Where is the book in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+165 268 0.6156716417910447
+0.33 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+165 269 0.6133828996282528
+0.55 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+166 270 0.6148148148148148
+0.38 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+166 271 0.6125461254612546
+0.47 0.4
+Prompt: <image>
+USER: Where is the photograph in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+167 272 0.6139705882352942
+0.32 0.4
+Prompt: <image>
+USER: Where is the mug in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+168 273 0.6153846153846154
+0.76 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+169 274 0.6167883211678832
+0.38 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+169 275 0.6145454545454545
+0.51 0.4
+Prompt: <image>
+USER: Where is the bread in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+170 276 0.6159420289855072
+0.32 0.4
+Prompt: <image>
+USER: Where is the helmet in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+170 277 0.6137184115523465
+0.74 0.4
+Prompt: <image>
+USER: Where is the orange in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+171 278 0.6151079136690647
+0.41 0.4
+Prompt: <image>
+USER: Where is the remote in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+171 279 0.6129032258064516
+0.39 0.4
+Prompt: <image>
+USER: Where is the hat in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+172 280 0.6142857142857143
+0.43 0.4
+Prompt: <image>
+USER: Where are the scissors in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+172 281 0.6120996441281139
+0.38 0.4
+Prompt: <image>
+USER: Where is the lemon in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+172 282 0.6099290780141844
+0.39 0.4
+Prompt: <image>
+USER: Where is the apple in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+172 283 0.607773851590106
+0.34 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+172 284 0.6056338028169014
+0.5 0.4
+Prompt: <image>
+USER: Where is the remote in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+173 285 0.6070175438596491
+0.79 0.4
+Prompt: <image>
+USER: Where is the vase in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+174 286 0.6083916083916084
+0.54 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+175 287 0.6097560975609756
+0.45 0.4
+Prompt: <image>
+USER: Where is the phone in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+176 288 0.6111111111111112
+0.74 0.4
+Prompt: <image>
+USER: Where is the book in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+177 289 0.6124567474048442
+0.39 0.4
+Prompt: <image>
+USER: Where are the shoes in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+177 290 0.6103448275862069
+0.32 0.4
+Prompt: <image>
+USER: Where is the ball of yarn in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+177 291 0.6082474226804123
+0.59 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+178 292 0.6095890410958904
+0.36 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+178 293 0.6075085324232082
+0.42 0.4
+Prompt: <image>
+USER: Where is the painting in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+179 294 0.608843537414966
+0.37 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+179 295 0.6067796610169491
+0.45 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+180 296 0.6081081081081081
+0.31 0.4
+Prompt: <image>
+USER: Where is the cap in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+180 297 0.6060606060606061
+0.32 0.4
+Prompt: <image>
+USER: Where is the beer bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+181 298 0.6073825503355704
+0.3 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+182 299 0.6086956521739131
+0.51 0.4
+Prompt: <image>
+USER: Where are the shoes in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+182 300 0.6066666666666667
+0.43 0.4
+Prompt: <image>
+USER: Where is the remote in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+182 301 0.6046511627906976
+0.45 0.4
+Prompt: <image>
+USER: Where is the pot in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+182 302 0.6026490066225165
+0.54 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+183 303 0.6039603960396039
+0.42 0.4
+Prompt: <image>
+USER: Where are the headphones in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+183 304 0.6019736842105263
+0.38 0.4
+Prompt: <image>
+USER: Where is the water bottle in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+183 305 0.6
+0.3 0.4
+Prompt: <image>
+USER: Where is the dragonfruit in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+184 306 0.6013071895424836
+0.33 0.4
+Prompt: <image>
+USER: Where is the banjo in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+185 307 0.6026058631921825
+0.62 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+186 308 0.6038961038961039
+0.52 0.4
+Prompt: <image>
+USER: Where is the tape in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+186 309 0.6019417475728155
+0.67 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+187 310 0.603225806451613
+0.33 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+187 311 0.6012861736334405
+0.31 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+188 312 0.6025641025641025
+0.33 0.4
+Prompt: <image>
+USER: Where is the spatula in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+188 313 0.6006389776357828
+0.39 0.4
+Prompt: <image>
+USER: Where is the pillow in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+188 314 0.5987261146496815
+0.68 0.4
+Prompt: <image>
+USER: Where is the can in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+189 315 0.6
+0.76 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+190 316 0.6012658227848101
+0.36 0.4
+Prompt: <image>
+USER: Where is the lamp in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+190 317 0.5993690851735016
+0.48 0.4
+Prompt: <image>
+USER: Where are the sunglasses in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+191 318 0.60062893081761
+0.49 0.4
+Prompt: <image>
+USER: Where is the pan in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+192 319 0.6018808777429467
+0.33 0.4
+Prompt: <image>
+USER: Where is the bottle of orange juice in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+192 320 0.6
+0.58 0.4
+Prompt: <image>
+USER: Where is the toilet roll in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+193 321 0.6012461059190031
+0.38 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+194 322 0.6024844720496895
+0.31 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+194 323 0.6006191950464397
+0.48 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+195 324 0.6018518518518519
+0.32 0.4
+Prompt: <image>
+USER: Where is the scarf in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+195 325 0.6
+0.41 0.4
+Prompt: <image>
+USER: Where is the plate in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+196 326 0.6012269938650306
+0.51 0.4
+Prompt: <image>
+USER: Where is the remote in relation to the chair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+197 327 0.6024464831804281
+0.44 0.4
+Prompt: <image>
+USER: Where is the glove in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+197 328 0.600609756097561
+0.46 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the table? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Under
+Golden: Under
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+198 329 0.601823708206687
+0.5 0.4
+Prompt: <image>
+USER: Where is the book in relation to the armchair? Answer with left, right, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_A_adapt_vis_1.0_fouroption_True.json
+199 330 0.603030303030303
+0.603030303030303
+Got the following shape of scores (330, 4, 1)
+Individual accuracy: 60.303030303030305
+Pair accuracy: 40.60606060606061
+Set accuracy: 0.0

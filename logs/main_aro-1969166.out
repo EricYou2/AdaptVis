@@ -1,0 +1,2852 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1969166
+##  Job Name : adaptvis.main
+##  Nodelist : gpu3001
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/scratch/hnaung/AdaptVis
+##   Job Started : Wed Apr 29 02:05:18 AM EDT 2026
+###############################################################################
+Job ID: 1969166
+Host: gpu3001.oscar.ccv.brown.edu
+CUDA_VISIBLE_DEVICES=0
+Python 3.11.15
+torch 2.4.1+cu121 cuda? True
+Wed Apr 29 02:05:24 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:01:00.0 Off |                    0 |
+| N/A   26C    P8             32W /  350W |      77MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A          157596      G   /usr/libexec/Xorg                        64MiB |
++-----------------------------------------------------------------------------------------+
+COCO_QA_two_obj llava1.5
+0.38 0.4
+Prompt: <image>
+USER: Where is the dining table in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+0 1 0.0
+0.3 0.4
+Prompt: <image>
+USER:  Where is the toilet in relation to the sink? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+0 2 0.0
+0.6 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+1 3 0.3333333333333333
+0.48 0.4
+Prompt: <image>
+USER:  Where is the bird in relation to the giraffe? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+2 4 0.5
+0.45 0.4
+Prompt: <image>
+USER: Where is the bird in relation to the giraffe? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+2 5 0.4
+0.42 0.4
+Prompt: <image>
+USER: Where is the bird in relation to the cow? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+3 6 0.5
+0.3 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the TV? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+3 7 0.42857142857142855
+0.47 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+4 8 0.5
+0.28 0.4
+Prompt: <image>
+USER:  Where is the cake in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+4 9 0.4444444444444444
+0.41 0.4
+Prompt: <image>
+USER:  Where is the laptop in relation to the mouse? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+4 10 0.4
+0.63 0.4
+Prompt: <image>
+USER: Where is the microwave in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+5 11 0.45454545454545453
+0.64 0.4
+Prompt: <image>
+USER: Where is the oven in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+6 12 0.5
+0.55 0.4
+Prompt: <image>
+USER: Where is the car in relation to the bus? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+7 13 0.5384615384615384
+0.62 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the toilet? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 14 0.5714285714285714
+0.39 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: The cat is sitting on the man's lap, which is above the laptop.
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 15 0.5333333333333333
+0.32 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 16 0.5
+0.36 0.4
+Prompt: <image>
+USER: Where is the mouse in relation to the keyboard? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 17 0.47058823529411764
+0.55 0.4
+Prompt: <image>
+USER:  Where is the fork in relation to the cup? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 18 0.4444444444444444
+0.51 0.4
+Prompt: <image>
+USER:  Where is the apple in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 19 0.42105263157894735
+0.55 0.4
+Prompt: <image>
+USER: Where is the wine glass in relation to the cup? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 20 0.4
+0.28 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the laptop? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 21 0.38095238095238093
+0.3 0.4
+Prompt: <image>
+USER: Where is the person in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 22 0.36363636363636365
+0.3 0.4
+Prompt: <image>
+USER: Where is the pizza in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+8 23 0.34782608695652173
+0.39 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the pizza? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+9 24 0.375
+0.6 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+10 25 0.4
+0.54 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+11 26 0.4230769230769231
+0.66 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the sink? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 27 0.4444444444444444
+0.35 0.4
+Prompt: <image>
+USER:  Where is the dog in relation to the TV? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 28 0.42857142857142855
+0.4 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 29 0.41379310344827586
+0.42 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 30 0.4
+0.58 0.4
+Prompt: <image>
+USER: Where is the potted plant in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 31 0.3870967741935484
+0.27 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the TV? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 32 0.375
+0.43 0.4
+Prompt: <image>
+USER: Where is the bench in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 33 0.36363636363636365
+0.39 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 34 0.35294117647058826
+0.36 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+12 35 0.34285714285714286
+0.65 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the sink? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+13 36 0.3611111111111111
+0.63 0.4
+Prompt: <image>
+USER:  Where is the toilet in relation to the sink? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+13 37 0.35135135135135137
+0.35 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+13 38 0.34210526315789475
+0.46 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+14 39 0.358974358974359
+0.42 0.4
+Prompt: <image>
+USER:  Where is the potted plant in relation to the TV? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+14 40 0.35
+0.44 0.4
+Prompt: <image>
+USER: Where is the person in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+15 41 0.36585365853658536
+0.37 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+15 42 0.35714285714285715
+0.36 0.4
+Prompt: <image>
+USER:  Where is the refrigerator in relation to the bed? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+16 43 0.37209302325581395
+0.29 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+16 44 0.36363636363636365
+0.29 0.4
+Prompt: <image>
+USER:  Where is the refrigerator in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+17 45 0.37777777777777777
+0.39 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the microwave? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+17 46 0.3695652173913043
+0.41 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+18 47 0.3829787234042553
+0.51 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the microwave? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+19 48 0.3958333333333333
+0.52 0.4
+Prompt: <image>
+USER:  Where is the bed in relation to the microwave? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+19 49 0.3877551020408163
+0.58 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the bicycle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+20 50 0.4
+0.42 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the bicycle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+21 51 0.4117647058823529
+0.42 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+22 52 0.4230769230769231
+0.37 0.4
+Prompt: <image>
+USER:  Where is the bench in relation to the teddy bear? Answer with left, right, above or below.
+ASSISTANT:
+Generation:  The bench is below the teddy bear.
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+22 53 0.41509433962264153
+0.51 0.4
+Prompt: <image>
+USER:  Where is the couch in relation to the oven? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+22 54 0.4074074074074074
+0.73 0.4
+Prompt: <image>
+USER: Where is the car in relation to the motorcycle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 55 0.41818181818181815
+0.62 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the cake? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 56 0.4107142857142857
+0.45 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the teddy bear? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 57 0.40350877192982454
+0.32 0.4
+Prompt: <image>
+USER: Where is the cake in relation to the teddy bear? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 58 0.39655172413793105
+0.37 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 59 0.3898305084745763
+0.42 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the bottle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 60 0.38333333333333336
+0.39 0.4
+Prompt: <image>
+USER:  Where is the dining table in relation to the refrigerator? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 61 0.3770491803278688
+0.43 0.4
+Prompt: <image>
+USER:  Where is the orange in relation to the cup? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 62 0.3709677419354839
+0.43 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+23 63 0.36507936507936506
+0.75 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 64 0.375
+0.47 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the sandwich? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 65 0.36923076923076925
+0.46 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 66 0.36363636363636365
+0.48 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 67 0.3582089552238806
+0.31 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 68 0.35294117647058826
+0.52 0.4
+Prompt: <image>
+USER:  Where is the chair in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 69 0.34782608695652173
+0.35 0.4
+Prompt: <image>
+USER: Where is the car in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+24 70 0.34285714285714286
+0.56 0.4
+Prompt: <image>
+USER: Where is the person in relation to the elephant? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+25 71 0.352112676056338
+0.5 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the sandwich? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+26 72 0.3611111111111111
+0.35 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the bed? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+26 73 0.3561643835616438
+0.35 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the bed? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+26 74 0.35135135135135137
+0.52 0.4
+Prompt: <image>
+USER:  Where is the couch in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+27 75 0.36
+0.34 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+27 76 0.35526315789473684
+0.39 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+27 77 0.35064935064935066
+0.79 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+28 78 0.358974358974359
+0.4 0.4
+Prompt: <image>
+USER:  Where is the toilet in relation to the sink? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+28 79 0.35443037974683544
+0.58 0.4
+Prompt: <image>
+USER: Where is the train in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+29 80 0.3625
+0.41 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+30 81 0.37037037037037035
+0.27 0.4
+Prompt: <image>
+USER:  Where is the surfboard in relation to the bed? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+30 82 0.36585365853658536
+0.47 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the fork? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+30 83 0.3614457831325301
+0.46 0.4
+Prompt: <image>
+USER:  Where is the fork in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+31 84 0.36904761904761907
+0.52 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+31 85 0.36470588235294116
+0.4 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the mouse? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+31 86 0.36046511627906974
+0.38 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the mouse? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+31 87 0.3563218390804598
+0.29 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+32 88 0.36363636363636365
+0.77 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the mouse? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+33 89 0.3707865168539326
+0.36 0.4
+Prompt: <image>
+USER: Where is the person in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+33 90 0.36666666666666664
+0.83 0.4
+Prompt: <image>
+USER: Where is the oven in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+34 91 0.37362637362637363
+0.3 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+35 92 0.3804347826086957
+0.5 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the cup? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+36 93 0.3870967741935484
+0.46 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+37 94 0.39361702127659576
+0.39 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the tennis racket? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+37 95 0.3894736842105263
+0.38 0.4
+Prompt: <image>
+USER: Where is the person in relation to the handbag? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+37 96 0.3854166666666667
+0.35 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the handbag? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+37 97 0.38144329896907214
+0.51 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the book? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+38 98 0.3877551020408163
+0.42 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the backpack? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+39 99 0.3939393939393939
+0.38 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+39 100 0.39
+0.58 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the bed? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+40 101 0.39603960396039606
+0.36 0.4
+Prompt: <image>
+USER:  Where is the bird in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+41 102 0.4019607843137255
+0.39 0.4
+Prompt: <image>
+USER: Where is the person in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+41 103 0.39805825242718446
+0.54 0.4
+Prompt: <image>
+USER:  Where is the chair in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+42 104 0.40384615384615385
+0.31 0.4
+Prompt: <image>
+USER: Where is the bus in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+42 105 0.4
+0.41 0.4
+Prompt: <image>
+USER: Where is the car in relation to the elephant? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+43 106 0.4056603773584906
+0.38 0.4
+Prompt: <image>
+USER:  Where is the book in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+43 107 0.40186915887850466
+0.55 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the microwave? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+44 108 0.4074074074074074
+0.66 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the scissors? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+44 109 0.4036697247706422
+0.59 0.4
+Prompt: <image>
+USER:  Where is the couch in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+45 110 0.4090909090909091
+0.29 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+45 111 0.40540540540540543
+0.53 0.4
+Prompt: <image>
+USER:  Where is the bottle in relation to the cell phone? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+46 112 0.4107142857142857
+0.57 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+47 113 0.415929203539823
+0.79 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+48 114 0.42105263157894735
+0.36 0.4
+Prompt: <image>
+USER:  Where is the keyboard in relation to the TV? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+48 115 0.41739130434782606
+0.31 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+48 116 0.41379310344827586
+0.32 0.4
+Prompt: <image>
+USER:  Where is the refrigerator in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+48 117 0.41025641025641024
+0.81 0.4
+Prompt: <image>
+USER: Where is the potted plant in relation to the microwave? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+49 118 0.4152542372881356
+0.74 0.4
+Prompt: <image>
+USER: Where is the potted plant in relation to the oven? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+50 119 0.42016806722689076
+0.38 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+50 120 0.4166666666666667
+0.36 0.4
+Prompt: <image>
+USER:  Where is the toilet in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+50 121 0.4132231404958678
+0.56 0.4
+Prompt: <image>
+USER: Where is the bicycle in relation to the backpack? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+50 122 0.4098360655737705
+0.5 0.4
+Prompt: <image>
+USER: Where is the bicycle in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+51 123 0.4146341463414634
+0.41 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the giraffe? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+52 124 0.41935483870967744
+0.35 0.4
+Prompt: <image>
+USER:  Where is the dining table in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+52 125 0.416
+0.52 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+53 126 0.42063492063492064
+0.38 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+53 127 0.41732283464566927
+0.5 0.4
+Prompt: <image>
+USER: Where is the car in relation to the bus? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+54 128 0.421875
+0.61 0.4
+Prompt: <image>
+USER: Where is the bus in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+55 129 0.4263565891472868
+0.42 0.4
+Prompt: <image>
+USER:  Where is the umbrella in relation to the sports ball? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+55 130 0.4230769230769231
+0.3 0.4
+Prompt: <image>
+USER:  Where is the dog in relation to the cake? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+56 131 0.42748091603053434
+0.33 0.4
+Prompt: <image>
+USER:  Where is the chair in relation to the cake? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+57 132 0.4318181818181818
+0.36 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+57 133 0.42857142857142855
+0.34 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the laptop? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+58 134 0.43283582089552236
+0.34 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the TV? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+58 135 0.42962962962962964
+0.68 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+59 136 0.4338235294117647
+0.44 0.4
+Prompt: <image>
+USER:  Where is the toilet in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+60 137 0.43795620437956206
+0.57 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the apple? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+61 138 0.4420289855072464
+0.59 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the sandwich? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+62 139 0.4460431654676259
+0.59 0.4
+Prompt: <image>
+USER:  Where is the oven in relation to the microwave? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+62 140 0.44285714285714284
+0.61 0.4
+Prompt: <image>
+USER: Where is the sink in relation to the microwave? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+63 141 0.44680851063829785
+0.53 0.4
+Prompt: <image>
+USER:  Where is the sink in relation to the microwave? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+63 142 0.44366197183098594
+0.37 0.4
+Prompt: <image>
+USER:  Where is the car in relation to the train? Answer with left, right, above or below.
+ASSISTANT:
+Generation: The car is below the train.
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+64 143 0.44755244755244755
+0.43 0.4
+Prompt: <image>
+USER: Where is the car in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+64 144 0.4444444444444444
+0.33 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+65 145 0.4482758620689655
+0.5 0.4
+Prompt: <image>
+USER: Where is the person in relation to the pizza? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+66 146 0.4520547945205479
+0.37 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the dog? Answer with left, right, above or below.
+ASSISTANT:
+Generation: The couch is below the dog.
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+67 147 0.4557823129251701
+0.76 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+67 148 0.4527027027027027
+0.37 0.4
+Prompt: <image>
+USER: Where is the person in relation to the toilet? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+67 149 0.44966442953020136
+0.46 0.4
+Prompt: <image>
+USER:  Where is the dog in relation to the TV? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+68 150 0.4533333333333333
+0.33 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the cat? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+68 151 0.4503311258278146
+0.65 0.4
+Prompt: <image>
+USER:  Where is the potted plant in relation to the car? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+69 152 0.45394736842105265
+0.62 0.4
+Prompt: <image>
+USER:  Where is the potted plant in relation to the umbrella? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+69 153 0.45098039215686275
+0.57 0.4
+Prompt: <image>
+USER:  Where is the car in relation to the umbrella? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+69 154 0.44805194805194803
+0.58 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the bed? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+70 155 0.45161290322580644
+0.53 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the bed? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+70 156 0.44871794871794873
+0.64 0.4
+Prompt: <image>
+USER:  Where is the spoon in relation to the cup? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+70 157 0.445859872611465
+0.5 0.4
+Prompt: <image>
+USER:  Where is the bed in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+71 158 0.44936708860759494
+0.4 0.4
+Prompt: <image>
+USER: Where is the dining table in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+72 159 0.4528301886792453
+0.29 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the pizza? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+73 160 0.45625
+0.46 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the sandwich? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+73 161 0.453416149068323
+0.5 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+74 162 0.4567901234567901
+0.7 0.4
+Prompt: <image>
+USER:  Where is the potted plant in relation to the laptop? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+74 163 0.4539877300613497
+0.48 0.4
+Prompt: <image>
+USER: Where is the person in relation to the microwave? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+75 164 0.4573170731707317
+0.53 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the hot dog? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+76 165 0.46060606060606063
+0.5 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the bottle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+77 166 0.463855421686747
+0.45 0.4
+Prompt: <image>
+USER:  Where is the bowl in relation to the bottle? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+77 167 0.46107784431137727
+0.32 0.4
+Prompt: <image>
+USER: Where is the train in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+77 168 0.4583333333333333
+0.43 0.4
+Prompt: <image>
+USER: Where is the person in relation to the toilet? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+78 169 0.46153846153846156
+0.37 0.4
+Prompt: <image>
+USER:  Where is the dog in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+78 170 0.4588235294117647
+0.51 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+79 171 0.4619883040935672
+0.46 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+80 172 0.46511627906976744
+0.59 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the donut? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+80 173 0.4624277456647399
+0.57 0.4
+Prompt: <image>
+USER:  Where is the sandwich in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+81 174 0.46551724137931033
+0.33 0.4
+Prompt: <image>
+USER:  Where is the donut in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+81 175 0.46285714285714286
+0.29 0.4
+Prompt: <image>
+USER: Where is the dining table in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+81 176 0.4602272727272727
+0.42 0.4
+Prompt: <image>
+USER: Where is the potted plant in relation to the surfboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+81 177 0.4576271186440678
+0.42 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the bench? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+82 178 0.4606741573033708
+0.51 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+82 179 0.4581005586592179
+0.4 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+83 180 0.46111111111111114
+0.69 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+84 181 0.46408839779005523
+0.35 0.4
+Prompt: <image>
+USER: Where is the bus in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+84 182 0.46153846153846156
+0.3 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+85 183 0.4644808743169399
+0.28 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+85 184 0.46195652173913043
+0.38 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+86 185 0.4648648648648649
+0.37 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+86 186 0.46236559139784944
+0.34 0.4
+Prompt: <image>
+USER: Where is the bird in relation to the bed? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+86 187 0.45989304812834225
+0.4 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the backpack? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+86 188 0.4574468085106383
+0.43 0.4
+Prompt: <image>
+USER: Where is the bed in relation to the suitcase? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+86 189 0.455026455026455
+0.68 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the suitcase? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+87 190 0.45789473684210524
+0.37 0.4
+Prompt: <image>
+USER: Where is the broccoli in relation to the bottle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+87 191 0.45549738219895286
+0.3 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+88 192 0.4583333333333333
+0.57 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+89 193 0.46113989637305697
+0.46 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+90 194 0.4639175257731959
+0.54 0.4
+Prompt: <image>
+USER: Where is the mouse in relation to the keyboard? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+91 195 0.4666666666666667
+0.37 0.4
+Prompt: <image>
+USER:  Where is the car in relation to the bench? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+92 196 0.46938775510204084
+0.36 0.4
+Prompt: <image>
+USER: Where is the person in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+92 197 0.467005076142132
+0.73 0.4
+Prompt: <image>
+USER: Where is the cell phone in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+92 198 0.46464646464646464
+0.3 0.4
+Prompt: <image>
+USER: Where is the keyboard in relation to the teddy bear? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+93 199 0.46733668341708545
+0.37 0.4
+Prompt: <image>
+USER:  Where is the refrigerator in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+93 200 0.465
+0.45 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+94 201 0.46766169154228854
+0.45 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the oven? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+94 202 0.46534653465346537
+0.49 0.4
+Prompt: <image>
+USER:  Where is the handbag in relation to the bottle? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+94 203 0.4630541871921182
+0.33 0.4
+Prompt: <image>
+USER:  Where is the dining table in relation to the refrigerator? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+94 204 0.46078431372549017
+0.45 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the truck? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+94 205 0.4585365853658537
+0.53 0.4
+Prompt: <image>
+USER:  Where is the toilet in relation to the sink? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+94 206 0.4563106796116505
+0.63 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 207 0.45893719806763283
+0.35 0.4
+Prompt: <image>
+USER:  Where is the chair in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 208 0.4567307692307692
+0.34 0.4
+Prompt: <image>
+USER:  Where is the bench in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 209 0.45454545454545453
+0.37 0.4
+Prompt: <image>
+USER:  Where is the keyboard in relation to the TV? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 210 0.4523809523809524
+0.34 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 211 0.45023696682464454
+0.29 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the car? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 212 0.4481132075471698
+0.34 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: The TV is below the person.
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+95 213 0.4460093896713615
+0.49 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the mouse? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+96 214 0.4485981308411215
+0.42 0.4
+Prompt: <image>
+USER:  Where is the dining table in relation to the sink? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+97 215 0.4511627906976744
+0.3 0.4
+Prompt: <image>
+USER:  Where is the dining table in relation to the refrigerator? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+97 216 0.44907407407407407
+0.44 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+98 217 0.45161290322580644
+0.82 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the cat? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+99 218 0.4541284403669725
+0.74 0.4
+Prompt: <image>
+USER:  Where is the refrigerator in relation to the cat? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+99 219 0.4520547945205479
+0.32 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+99 220 0.45
+0.31 0.4
+Prompt: <image>
+USER:  Where is the cat in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+99 221 0.4479638009049774
+0.32 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+99 222 0.44594594594594594
+0.78 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the fork? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+100 223 0.4484304932735426
+0.7 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+101 224 0.45089285714285715
+0.62 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the orange? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+102 225 0.4533333333333333
+0.44 0.4
+Prompt: <image>
+USER: Where is the person in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+102 226 0.45132743362831856
+0.53 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the surfboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+102 227 0.44933920704845814
+0.33 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+103 228 0.4517543859649123
+0.29 0.4
+Prompt: <image>
+USER: Where is the person in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+103 229 0.4497816593886463
+0.34 0.4
+Prompt: <image>
+USER:  Where is the bowl in relation to the oven? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+104 230 0.45217391304347826
+0.77 0.4
+Prompt: <image>
+USER: Where is the toilet in relation to the sink? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+105 231 0.45454545454545453
+0.62 0.4
+Prompt: <image>
+USER: Where is the bus in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+106 232 0.45689655172413796
+0.34 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+107 233 0.4592274678111588
+0.27 0.4
+Prompt: <image>
+USER:  Where is the pizza in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+107 234 0.45726495726495725
+0.31 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+108 235 0.4595744680851064
+0.33 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the remote? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+109 236 0.461864406779661
+0.28 0.4
+Prompt: <image>
+USER:  Where is the person in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+110 237 0.4641350210970464
+0.56 0.4
+Prompt: <image>
+USER: Where is the potted plant in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+111 238 0.46638655462184875
+0.4 0.4
+Prompt: <image>
+USER: Where is the person in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+112 239 0.4686192468619247
+0.77 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the microwave? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+113 240 0.4708333333333333
+0.56 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+113 241 0.46887966804979253
+0.42 0.4
+Prompt: <image>
+USER: Where is the microwave in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+114 242 0.47107438016528924
+0.53 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the teddy bear? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+115 243 0.4732510288065844
+0.59 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the teddy bear? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+115 244 0.4713114754098361
+0.37 0.4
+Prompt: <image>
+USER:  Where is the couch in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+115 245 0.46938775510204084
+0.44 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the dining table? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+116 246 0.4715447154471545
+0.5 0.4
+Prompt: <image>
+USER: Where is the person in relation to the TV? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+117 247 0.47368421052631576
+0.48 0.4
+Prompt: <image>
+USER: Where is the person in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+118 248 0.47580645161290325
+0.52 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+118 249 0.4738955823293173
+0.48 0.4
+Prompt: <image>
+USER:  Where is the oven in relation to the microwave? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+118 250 0.472
+0.56 0.4
+Prompt: <image>
+USER: Where is the keyboard in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+119 251 0.47410358565737054
+0.52 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+119 252 0.4722222222222222
+0.39 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+119 253 0.47035573122529645
+0.44 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+120 254 0.47244094488188976
+0.33 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+120 255 0.47058823529411764
+0.69 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+121 256 0.47265625
+0.84 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+122 257 0.47470817120622566
+0.38 0.4
+Prompt: <image>
+USER:  Where is the umbrella in relation to the book? Answer with left, right, above or below.
+ASSISTANT:
+Generation: The umbrella is below the book.
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+123 258 0.47674418604651164
+0.3 0.4
+Prompt: <image>
+USER:  Where is the umbrella in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: The umbrella is above the bowl.
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+123 259 0.4749034749034749
+0.65 0.4
+Prompt: <image>
+USER: Where is the book in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+124 260 0.47692307692307695
+0.53 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the TV? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+125 261 0.4789272030651341
+0.4 0.4
+Prompt: <image>
+USER: Where is the keyboard in relation to the TV? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+125 262 0.4770992366412214
+0.44 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the cat? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+126 263 0.4790874524714829
+0.65 0.4
+Prompt: <image>
+USER:  Where is the wine glass in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+127 264 0.4810606060606061
+0.41 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+128 265 0.4830188679245283
+0.54 0.4
+Prompt: <image>
+USER: Where is the bench in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+129 266 0.4849624060150376
+0.58 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the potted plant? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+130 267 0.4868913857677903
+0.58 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+131 268 0.48880597014925375
+0.29 0.4
+Prompt: <image>
+USER:  Where is the bowl in relation to the sandwich? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+132 269 0.49070631970260226
+0.28 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the sandwich? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+133 270 0.4925925925925926
+0.36 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the cat? Answer with left, right, above or below.
+ASSISTANT:
+Generation: The TV is located below the cat.
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+133 271 0.4907749077490775
+0.46 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+133 272 0.4889705882352941
+0.32 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the truck? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+133 273 0.48717948717948717
+0.33 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+133 274 0.4854014598540146
+0.31 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+133 275 0.48363636363636364
+0.64 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+134 276 0.4855072463768116
+0.3 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+134 277 0.48375451263537905
+0.59 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the cup? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+135 278 0.4856115107913669
+0.33 0.4
+Prompt: <image>
+USER: Where is the donut in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+135 279 0.4838709677419355
+0.73 0.4
+Prompt: <image>
+USER: Where is the banana in relation to the sandwich? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+136 280 0.4857142857142857
+0.42 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the sandwich? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+136 281 0.48398576512455516
+0.56 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+137 282 0.4858156028368794
+0.34 0.4
+Prompt: <image>
+USER: Where is the person in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+137 283 0.4840989399293286
+0.39 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+137 284 0.4823943661971831
+0.27 0.4
+Prompt: <image>
+USER:  Where is the dining table in relation to the refrigerator? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+137 285 0.4807017543859649
+0.7 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the cup? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+138 286 0.4825174825174825
+0.32 0.4
+Prompt: <image>
+USER: Where is the person in relation to the pizza? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+139 287 0.4843205574912892
+0.49 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+140 288 0.4861111111111111
+0.37 0.4
+Prompt: <image>
+USER: Where is the bottle in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+140 289 0.4844290657439446
+0.39 0.4
+Prompt: <image>
+USER:  Where is the suitcase in relation to the oven? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+141 290 0.4862068965517241
+0.41 0.4
+Prompt: <image>
+USER: Where is the dog in relation to the handbag? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+142 291 0.4879725085910653
+0.7 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the cake? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+143 292 0.4897260273972603
+0.71 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the cake? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+143 293 0.4880546075085324
+0.58 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+144 294 0.4897959183673469
+0.28 0.4
+Prompt: <image>
+USER:  Where is the train in relation to the bench? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+145 295 0.4915254237288136
+0.47 0.4
+Prompt: <image>
+USER: Where is the bus in relation to the train? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+145 296 0.48986486486486486
+0.34 0.4
+Prompt: <image>
+USER:  Where is the cat in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+145 297 0.4882154882154882
+0.39 0.4
+Prompt: <image>
+USER: Where is the person in relation to the cake? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+145 298 0.4865771812080537
+0.48 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+146 299 0.4882943143812709
+0.46 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+147 300 0.49
+0.57 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+148 301 0.49169435215946844
+0.37 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+149 302 0.49337748344370863
+0.39 0.4
+Prompt: <image>
+USER:  Where is the kite in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: The kite is below the person.
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+149 303 0.49174917491749176
+0.54 0.4
+Prompt: <image>
+USER:  Where is the bowl in relation to the pizza? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+149 304 0.4901315789473684
+0.69 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the cup? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+150 305 0.4918032786885246
+0.4 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the hot dog? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+151 306 0.4934640522875817
+0.74 0.4
+Prompt: <image>
+USER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+152 307 0.495114006514658
+0.31 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: The TV is below the laptop.
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+152 308 0.4935064935064935
+0.31 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+152 309 0.4919093851132686
+0.84 0.4
+Prompt: <image>
+USER: Where is the laptop in relation to the keyboard? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+153 310 0.4935483870967742
+0.28 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the laptop? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+153 311 0.4919614147909968
+0.65 0.4
+Prompt: <image>
+USER: Where is the bicycle in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+154 312 0.4935897435897436
+0.55 0.4
+Prompt: <image>
+USER: Where is the train in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+155 313 0.4952076677316294
+0.43 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the keyboard? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+155 314 0.49363057324840764
+0.71 0.4
+Prompt: <image>
+USER: Where is the chair in relation to the suitcase? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+156 315 0.49523809523809526
+0.43 0.4
+Prompt: <image>
+USER: Where is the person in relation to the bowl? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+157 316 0.49683544303797467
+0.48 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+158 317 0.49842271293375395
+0.48 0.4
+Prompt: <image>
+USER:  Where is the couch in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+158 318 0.4968553459119497
+0.6 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+159 319 0.49843260188087773
+0.38 0.4
+Prompt: <image>
+USER: Where is the cat in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: The cat is below the person.
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+159 320 0.496875
+0.44 0.4
+Prompt: <image>
+USER: Where is the carrot in relation to the dining table? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+159 321 0.4953271028037383
+0.58 0.4
+Prompt: <image>
+USER:  Where is the cell phone in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+160 322 0.4968944099378882
+0.33 0.4
+Prompt: <image>
+USER:  Where is the teddy bear in relation to the person? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+160 323 0.4953560371517028
+0.32 0.4
+Prompt: <image>
+USER:  Where is the bicycle in relation to the truck? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Below
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+161 324 0.49691358024691357
+0.37 0.4
+Prompt: <image>
+USER: Where is the apple in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+161 325 0.49538461538461537
+0.49 0.4
+Prompt: <image>
+USER:  Where is the fork in relation to the orange? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+161 326 0.4938650306748466
+0.5 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the cake? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+162 327 0.4954128440366973
+0.54 0.4
+Prompt: <image>
+USER:  Where is the fork in relation to the wine glass? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+163 328 0.4969512195121951
+0.61 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the wine glass? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+163 329 0.49544072948328266
+0.43 0.4
+Prompt: <image>
+USER:  Where is the wine glass in relation to the hot dog? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+164 330 0.49696969696969695
+0.33 0.4
+Prompt: <image>
+USER: Where is the cake in relation to the dining table? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+164 331 0.4954682779456193
+0.33 0.4
+Prompt: <image>
+USER: Where is the cake in relation to the fork? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+164 332 0.4939759036144578
+0.37 0.4
+Prompt: <image>
+USER:  Where is the cake in relation to the chair? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+164 333 0.4924924924924925
+0.45 0.4
+Prompt: <image>
+USER:  Where is the refrigerator in relation to the book? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+164 334 0.49101796407185627
+0.46 0.4
+Prompt: <image>
+USER: Where is the TV in relation to the couch? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+165 335 0.4925373134328358
+0.42 0.4
+Prompt: <image>
+USER:  Where is the TV in relation to the couch? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+165 336 0.49107142857142855
+0.39 0.4
+Prompt: <image>
+USER: Where is the fork in relation to the orange? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+165 337 0.4896142433234421
+0.66 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the orange? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+166 338 0.4911242603550296
+0.66 0.4
+Prompt: <image>
+USER:  Where is the orange in relation to the cake? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+166 339 0.4896755162241888
+0.52 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the fork? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+167 340 0.49117647058823527
+0.39 0.4
+Prompt: <image>
+USER: Where is the bicycle in relation to the motorcycle? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+167 341 0.4897360703812317
+0.63 0.4
+Prompt: <image>
+USER: Where is the motorcycle in relation to the person? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+168 342 0.49122807017543857
+0.45 0.4
+Prompt: <image>
+USER: Where is the horse in relation to the chair? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+168 343 0.4897959183673469
+0.45 0.4
+Prompt: <image>
+USER: Where is the cup in relation to the spoon? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+169 344 0.49127906976744184
+0.41 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the spoon? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+169 345 0.48985507246376814
+0.5 0.4
+Prompt: <image>
+USER: Where is the knife in relation to the cup? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+170 346 0.4913294797687861
+0.53 0.4
+Prompt: <image>
+USER:  Where is the knife in relation to the cup? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Right
+Golden: Below
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+170 347 0.4899135446685879
+0.44 0.4
+Prompt: <image>
+USER:  Where is the cup in relation to the carrot? Answer with left, right, above or below.
+ASSISTANT:
+Generation: Left
+Golden: Above
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+170 348 0.4885057471264368
+0.64 0.4
+Prompt: <image>
+USER: Where is the sandwich in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+171 349 0.4899713467048711
+0.31 0.4
+Prompt: <image>
+USER: Where is the book in relation to the vase? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Below
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+171 350 0.48857142857142855
+0.3 0.4
+Prompt: <image>
+USER: Where is the person in relation to the bowl? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Left
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+171 351 0.48717948717948717
+0.33 0.4
+Prompt: <image>
+USER: Where is the bowl in relation to the refrigerator? Answer with left, right, above, or below.
+ASSISTANT:
+Generation: Above
+Golden: Right
+Saving results to ./output/results1.5_COCO_QA_two_obj_adapt_vis_1.0_fouroption_True.json
+171 352 0.48579545454545453
+0.48579545454545453

@@ -261,7 +261,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the painting in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "Left",
         "Golden": "Left"
     },
     {
@@ -1221,7 +1221,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the tape in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "Left",
         "Golden": "Right"
     },
     {
