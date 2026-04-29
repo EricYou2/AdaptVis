@@ -1,0 +1,1499 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 1975306
+##  Job Name : adaptvis.main
+##  Nodelist : gpu2709
+##      CPUs : 4
+##  Mem/Node : 49152 MB
+## Directory : /oscar/scratch/hnaung/AdaptVis
+##   Job Started : Wed Apr 29 01:28:27 PM EDT 2026
+###############################################################################
+Job ID: 1975306
+Host: gpu2709.oscar.ccv.brown.edu
+CUDA_VISIBLE_DEVICES=0
+Python 3.11.15
+torch 2.4.1+cu121 cuda? True
+Wed Apr 29 13:28:31 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L40S                    On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   37C    P0             62W /  350W |      76MiB /  46068MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A          157322      G   /usr/libexec/Xorg                        64MiB |
++-----------------------------------------------------------------------------------------+
+Controlled_Images_B llava1.5
+0.37 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+0 1 0.0
+0.3 0.35
+Prompt: <image>
+USER: Where is the can in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+1 2 0.5
+0.3 0.35
+Prompt: <image>
+USER: Where is the book in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+2 3 0.6666666666666666
+0.34 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the bowl? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+3 4 0.75
+0.55 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+4 5 0.8
+0.51 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+5 6 0.8333333333333334
+0.5 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+6 7 0.8571428571428571
+0.34 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+7 8 0.875
+0.31 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+7 9 0.7777777777777778
+0.54 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+8 10 0.8
+0.56 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+9 11 0.8181818181818182
+0.38 0.35
+Prompt: <image>
+USER: Where is the book in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+10 12 0.8333333333333334
+0.48 0.35
+Prompt: <image>
+USER: Where are the sunglasses in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+11 13 0.8461538461538461
+0.35 0.35
+Prompt: <image>
+USER: Where is the book in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+12 14 0.8571428571428571
+0.7 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+13 15 0.8666666666666667
+0.33 0.35
+Prompt: <image>
+USER: Where is the can in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+14 16 0.875
+0.62 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+15 17 0.8823529411764706
+0.69 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+16 18 0.8888888888888888
+0.32 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+17 19 0.8947368421052632
+0.27 0.35
+Prompt: <image>
+USER: Where is the can in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+18 20 0.9
+0.6 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+19 21 0.9047619047619048
+0.46 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+20 22 0.9090909090909091
+0.42 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+21 23 0.9130434782608695
+0.53 0.35
+Prompt: <image>
+USER: Where is the can in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+22 24 0.9166666666666666
+0.32 0.35
+Prompt: <image>
+USER: Where is the can in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+22 25 0.88
+0.37 0.35
+Prompt: <image>
+USER: Where is the book in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+23 26 0.8846153846153846
+0.35 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+24 27 0.8888888888888888
+0.57 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+25 28 0.8928571428571429
+0.55 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+26 29 0.896551724137931
+0.63 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+27 30 0.9
+0.71 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the plate? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+28 31 0.9032258064516129
+0.44 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+29 32 0.90625
+0.46 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+30 33 0.9090909090909091
+0.28 0.35
+Prompt: <image>
+USER: Where is the can in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+31 34 0.9117647058823529
+0.48 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+32 35 0.9142857142857143
+0.51 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+33 36 0.9166666666666666
+0.46 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+34 37 0.918918918918919
+0.34 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+34 38 0.8947368421052632
+0.61 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+35 39 0.8974358974358975
+0.43 0.35
+Prompt: <image>
+USER: Where is the book in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+36 40 0.9
+0.36 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+37 41 0.9024390243902439
+0.62 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+38 42 0.9047619047619048
+0.3 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+38 43 0.8837209302325582
+0.52 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+39 44 0.8863636363636364
+0.4 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+40 45 0.8888888888888888
+0.37 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+40 46 0.8695652173913043
+0.5 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+41 47 0.8723404255319149
+0.47 0.35
+Prompt: <image>
+USER: Where is the book in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+42 48 0.875
+0.41 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+42 49 0.8571428571428571
+0.32 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+43 50 0.86
+0.28 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+44 51 0.8627450980392157
+0.34 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+45 52 0.8653846153846154
+0.45 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+46 53 0.8679245283018868
+0.49 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+47 54 0.8703703703703703
+0.37 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+48 55 0.8727272727272727
+0.32 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+49 56 0.875
+0.52 0.35
+Prompt: <image>
+USER: Where is the book in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+50 57 0.8771929824561403
+0.51 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+51 58 0.8793103448275862
+0.42 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+52 59 0.8813559322033898
+0.32 0.35
+Prompt: <image>
+USER: Where is the book in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+53 60 0.8833333333333333
+0.46 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+54 61 0.8852459016393442
+0.5 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+55 62 0.8870967741935484
+0.39 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+55 63 0.873015873015873
+0.39 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the plate? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+56 64 0.875
+0.57 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+57 65 0.8769230769230769
+0.28 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+58 66 0.8787878787878788
+0.56 0.35
+Prompt: <image>
+USER: Where is the book in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+59 67 0.8805970149253731
+0.67 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+60 68 0.8823529411764706
+0.46 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+61 69 0.8840579710144928
+0.58 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+62 70 0.8857142857142857
+0.69 0.35
+Prompt: <image>
+USER: Where are the sunglasses in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+63 71 0.8873239436619719
+0.5 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+64 72 0.8888888888888888
+0.65 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the bowl? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+65 73 0.8904109589041096
+0.55 0.35
+Prompt: <image>
+USER: Where is the can in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+66 74 0.8918918918918919
+0.41 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+67 75 0.8933333333333333
+0.32 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+67 76 0.881578947368421
+0.48 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+68 77 0.8831168831168831
+0.43 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+69 78 0.8846153846153846
+0.6 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+70 79 0.8860759493670886
+0.38 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+71 80 0.8875
+0.77 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+72 81 0.8888888888888888
+0.28 0.35
+Prompt: <image>
+USER: Where is the book in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+73 82 0.8902439024390244
+0.35 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+74 83 0.891566265060241
+0.32 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+75 84 0.8928571428571429
+0.32 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+75 85 0.8823529411764706
+0.59 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+76 86 0.8837209302325582
+0.35 0.35
+Prompt: <image>
+USER: Where is the book in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+77 87 0.8850574712643678
+0.35 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+78 88 0.8863636363636364
+0.37 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+79 89 0.8876404494382022
+0.29 0.35
+Prompt: <image>
+USER: Where is the can in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+80 90 0.8888888888888888
+0.38 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+81 91 0.8901098901098901
+0.3 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+82 92 0.8913043478260869
+0.51 0.35
+Prompt: <image>
+USER: Where is the can in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+83 93 0.8924731182795699
+0.25 0.35
+Prompt: <image>
+USER: Where is the can in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+84 94 0.8936170212765957
+0.39 0.35
+Prompt: <image>
+USER: Where is the book in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+85 95 0.8947368421052632
+0.53 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+86 96 0.8958333333333334
+0.57 0.35
+Prompt: <image>
+USER: Where is the book in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+87 97 0.8969072164948454
+0.37 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+88 98 0.8979591836734694
+0.33 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+89 99 0.898989898989899
+0.36 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+90 100 0.9
+0.41 0.35
+Prompt: <image>
+USER: Where is the can in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+91 101 0.900990099009901
+0.35 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+92 102 0.9019607843137255
+0.47 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+93 103 0.9029126213592233
+0.66 0.35
+Prompt: <image>
+USER: Where is the can in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+94 104 0.9038461538461539
+0.36 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+95 105 0.9047619047619048
+0.44 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+96 106 0.9056603773584906
+0.32 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+97 107 0.9065420560747663
+0.57 0.35
+Prompt: <image>
+USER: Where is the book in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+98 108 0.9074074074074074
+0.35 0.35
+Prompt: <image>
+USER: Where is the can in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+98 109 0.8990825688073395
+0.44 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+99 110 0.9
+0.26 0.35
+Prompt: <image>
+USER: Where is the book in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+100 111 0.9009009009009009
+0.6 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+101 112 0.9017857142857143
+0.38 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+102 113 0.9026548672566371
+0.34 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the flower? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+103 114 0.9035087719298246
+0.58 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+104 115 0.9043478260869565
+0.51 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+105 116 0.9051724137931034
+0.76 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+106 117 0.905982905982906
+0.45 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+107 118 0.9067796610169492
+0.5 0.35
+Prompt: <image>
+USER: Where is the can in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+108 119 0.907563025210084
+0.64 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+109 120 0.9083333333333333
+0.55 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+110 121 0.9090909090909091
+0.42 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+110 122 0.9016393442622951
+0.4 0.35
+Prompt: <image>
+USER: Where is the book in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+111 123 0.9024390243902439
+0.71 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+112 124 0.9032258064516129
+0.34 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+113 125 0.904
+0.37 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the phone? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+114 126 0.9047619047619048
+0.33 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+115 127 0.905511811023622
+0.29 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+116 128 0.90625
+0.58 0.35
+Prompt: <image>
+USER: Where is the can in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+117 129 0.9069767441860465
+0.52 0.35
+Prompt: <image>
+USER: Where is the can in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+118 130 0.9076923076923077
+0.53 0.35
+Prompt: <image>
+USER: Where is the book in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+119 131 0.9083969465648855
+0.26 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+120 132 0.9090909090909091
+0.42 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+121 133 0.9097744360902256
+0.49 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the phone? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+122 134 0.9104477611940298
+0.31 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+122 135 0.9037037037037037
+0.57 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+123 136 0.9044117647058824
+0.4 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+124 137 0.9051094890510949
+0.53 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+124 138 0.8985507246376812
+0.3 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+125 139 0.8992805755395683
+0.53 0.35
+Prompt: <image>
+USER: Where is the book in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+126 140 0.9
+0.34 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+127 141 0.900709219858156
+0.48 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+128 142 0.9014084507042254
+0.39 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+129 143 0.9020979020979021
+0.32 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+129 144 0.8958333333333334
+0.26 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the cap? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+130 145 0.896551724137931
+0.34 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+131 146 0.8972602739726028
+0.47 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+132 147 0.8979591836734694
+0.57 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+133 148 0.8986486486486487
+0.45 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+134 149 0.8993288590604027
+0.38 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the phone? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+135 150 0.9
+0.39 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+136 151 0.9006622516556292
+0.43 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+137 152 0.9013157894736842
+0.4 0.35
+Prompt: <image>
+USER: Where is the book in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+138 153 0.9019607843137255
+0.38 0.35
+Prompt: <image>
+USER: Where is the can in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+139 154 0.9025974025974026
+0.58 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the sunglasses? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+140 155 0.9032258064516129
+0.47 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+141 156 0.9038461538461539
+0.52 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+142 157 0.9044585987261147
+0.35 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+142 158 0.8987341772151899
+0.49 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+143 159 0.89937106918239
+0.34 0.35
+Prompt: <image>
+USER: Where is the cap in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+144 160 0.9
+0.29 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+145 161 0.9006211180124224
+0.36 0.35
+Prompt: <image>
+USER: Where is the can in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+146 162 0.9012345679012346
+0.35 0.35
+Prompt: <image>
+USER: Where is the book in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+146 163 0.8957055214723927
+0.57 0.35
+Prompt: <image>
+USER: Where is the book in relation to the scissors? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+147 164 0.8963414634146342
+0.45 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+148 165 0.896969696969697
+0.34 0.35
+Prompt: <image>
+USER: Where is the remote in relation to the candle? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+149 166 0.8975903614457831
+0.38 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the bowl? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+150 167 0.8982035928143712
+0.32 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the spoon? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+151 168 0.8988095238095238
+0.4 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+152 169 0.8994082840236687
+0.32 0.35
+Prompt: <image>
+USER: Where is the can in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+153 170 0.9
+0.34 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+154 171 0.9005847953216374
+0.38 0.35
+Prompt: <image>
+USER: Where is the book in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+155 172 0.9011627906976745
+0.32 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the remote? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+155 173 0.8959537572254336
+0.52 0.35
+Prompt: <image>
+USER: Where is the can in relation to the headphones? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+156 174 0.896551724137931
+0.4 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+157 175 0.8971428571428571
+0.38 0.35
+Prompt: <image>
+USER: Where is the cup in relation to the tape? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+158 176 0.8977272727272727
+0.41 0.35
+Prompt: <image>
+USER: Where is the book in relation to the cup? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+159 177 0.8983050847457628
+0.42 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+160 178 0.898876404494382
+0.4 0.35
+Prompt: <image>
+USER: Where is the book in relation to the knife? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+161 179 0.8994413407821229
+0.44 0.35
+Prompt: <image>
+USER: Where is the bowl in relation to the book? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+162 180 0.9
+0.51 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the can? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+163 181 0.9005524861878453
+0.62 0.35
+Prompt: <image>
+USER: Where is the mug in relation to the plate? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+164 182 0.9010989010989011
+0.34 0.35
+Prompt: <image>
+USER: Where is the plate in relation to the fork? Answer with left, right, front or behind.
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_Controlled_Images_B_adapt_vis_1.0_fouroption_True.json
+165 183 0.9016393442622951

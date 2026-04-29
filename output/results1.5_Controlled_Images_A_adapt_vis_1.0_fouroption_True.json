@@ -1,7 +1,7 @@
 [
     {
         "Prompt": "<image>\nUSER: Where is the beer bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The beer bottle is on the armchair.",
         "Golden": "On"
     },
     {
@@ -96,7 +96,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the water filter in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The water filter is on the chair.",
         "Golden": "On"
     },
     {
@@ -121,17 +121,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the yarn in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The yarn is on the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the banana in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The banana is on the table.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the orange in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The orange is on the armchair.",
         "Golden": "On"
     },
     {
@@ -146,7 +146,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lemon in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The lemon is on the floor, under the table.",
         "Golden": "Left"
     },
     {
@@ -156,7 +156,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the plate in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The plate is on the armchair.",
         "Golden": "On"
     },
     {
@@ -166,37 +166,37 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the painting in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The painting is on the table.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the bottle of orange juice in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
-        "Golden": "Under"
-    },
-    {
-        "Prompt": "<image>\nUSER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
-        "Golden": "On"
-    },
-    {
-        "Prompt": "<image>\nUSER: Where is the rose in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
-        "Golden": "Under"
-    },
-    {
-        "Prompt": "<image>\nUSER: Where is the spatula in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
-        "Golden": "On"
-    },
-    {
-        "Prompt": "<image>\nUSER: Where is the banana in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
         "Generation": "Under",
         "Golden": "Under"
     },
     {
+        "Prompt": "<image>\nUSER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "The wineglass is on the chair.",
+        "Golden": "On"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the rose in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "The rose is on the floor, under the armchair.",
+        "Golden": "Under"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the spatula in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "The spatula is on the chair.",
+        "Golden": "On"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the banana in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "The banana is on the floor, under the table.",
+        "Golden": "Under"
+    },
+    {
         "Prompt": "<image>\nUSER: Where is the mug in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The mug is on the chair.",
         "Golden": "On"
     },
     {
@@ -206,7 +206,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the blanket in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The blanket is on the chair.",
         "Golden": "On"
     },
     {
@@ -216,7 +216,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the dragonfruit in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The dragonfruit is on the chair.",
         "Golden": "On"
     },
     {
@@ -226,7 +226,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the orange in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The orange is on the floor, under the armchair.",
         "Golden": "Under"
     },
     {
@@ -236,7 +236,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the cup in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The cup is on the armchair.",
         "Golden": "Under"
     },
     {
@@ -251,7 +251,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the can in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The can is on the armchair.",
         "Golden": "Under"
     },
     {
@@ -266,7 +266,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the painting in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The painting is under the chair.",
         "Golden": "Under"
     },
     {
@@ -276,7 +276,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the knife in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The knife is on the table.",
         "Golden": "On"
     },
     {
@@ -296,27 +296,27 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the cup in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The cup is on the table.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the vase in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The vase is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the water filter in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The water filter is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the hat in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The hat is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the lamp in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The lamp is on the chair.",
         "Golden": "On"
     },
     {
@@ -326,17 +326,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where are the scissors in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The scissors are on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the spatula in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The spatula is on the floor, under the table.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the microphone in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The microphone is on the chair.",
         "Golden": "On"
     },
     {
@@ -346,17 +346,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the yarn in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The yarn is on the armchair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where are the headphones in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The headphones are on the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the painting in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The painting is on the table.",
         "Golden": "On"
     },
     {
@@ -381,7 +381,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the can in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The can is on the chair.",
         "Golden": "On"
     },
     {
@@ -391,22 +391,22 @@
     },
     {
         "Prompt": "<image>\nUSER: Where are the sunglasses in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The sunglasses are on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the wineglass in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The wineglass is on the armchair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the bottle in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The bottle is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the cap in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The cap is on the armchair.",
         "Golden": "On"
     },
     {
@@ -426,7 +426,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the toilet roll in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The toilet roll is on the chair.",
         "Golden": "On"
     },
     {
@@ -476,12 +476,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where are the glasses in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The glasses are on the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the toy cactus in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The toy cactus is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -501,17 +501,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the book in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The book is on the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the wineglass in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The wineglass is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the toy cactus in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The toy cactus is on the chair.",
         "Golden": "On"
     },
     {
@@ -541,7 +541,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the dragonfruit in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The dragonfruit is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -561,7 +561,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the beer bottle in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The beer bottle is on the chair.",
         "Golden": "On"
     },
     {
@@ -576,7 +576,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lemon in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The lemon is on the table.",
         "Golden": "On"
     },
     {
@@ -606,7 +606,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the can in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The can is on the armchair.",
         "Golden": "On"
     },
     {
@@ -616,17 +616,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the mug in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The mug is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the kettle in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The kettle is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the cap in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The cap is on the floor, under the table.",
         "Golden": "Under"
     },
     {
@@ -641,12 +641,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pot in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The pot is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the lemon in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The lemon is on the table.",
         "Golden": "Under"
     },
     {
@@ -671,12 +671,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lamp in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The lamp is on the table.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the laptop in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The laptop is on the armchair.",
         "Golden": "On"
     },
     {
@@ -686,17 +686,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the phone in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "Under",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the phone in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The phone is on the table.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the banana in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The banana is on the chair.",
         "Golden": "On"
     },
     {
@@ -706,12 +706,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the vase in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The vase is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the laptop in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The laptop is on the chair.",
         "Golden": "Under"
     },
     {
@@ -721,12 +721,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pillow in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The pillow is on the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the bowl in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The bowl is under the chair.",
         "Golden": "Under"
     },
     {
@@ -746,7 +746,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the plant in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The plant is on the floor, under the table.",
         "Golden": "Under"
     },
     {
@@ -756,7 +756,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the box in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The box is under the chair.",
         "Golden": "Under"
     },
     {
@@ -791,7 +791,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the water bottle in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The water bottle is on the chair.",
         "Golden": "On"
     },
     {
@@ -806,7 +806,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pillow in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The pillow is on the armchair.",
         "Golden": "Under"
     },
     {
@@ -836,17 +836,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pillow in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The pillow is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the pan in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The pan is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the book in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The book is on the armchair.",
         "Golden": "Under"
     },
     {
@@ -861,12 +861,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lamp in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The lamp is on the table.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the scarf in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The scarf is on the chair.",
         "Golden": "On"
     },
     {
@@ -876,7 +876,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the beer bottle in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The beer bottle is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -886,12 +886,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the cup in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The cup is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the book in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The book is on the table.",
         "Golden": "On"
     },
     {
@@ -916,7 +916,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the orange in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The orange is on the chair.",
         "Golden": "On"
     },
     {
@@ -936,7 +936,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the cap in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The cap is on the table.",
         "Golden": "On"
     },
     {
@@ -951,12 +951,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the helmet in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The helmet is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the apple in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The apple is on the armchair.",
         "Golden": "On"
     },
     {
@@ -966,7 +966,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the ball of yarn in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The ball of yarn is on the chair.",
         "Golden": "On"
     },
     {
@@ -976,7 +976,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the phone in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The phone is on the table.",
         "Golden": "On"
     },
     {
@@ -996,7 +996,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the toilet roll in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The toilet roll is on the floor, under the table.",
         "Golden": "Under"
     },
     {
@@ -1021,12 +1021,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the plant in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The plant is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the glove in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The glove is on the floor, under the armchair.",
         "Golden": "Under"
     },
     {
@@ -1036,12 +1036,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the water bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The water bottle is on the armchair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the cup in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The cup is on the table.",
         "Golden": "Under"
     },
     {
@@ -1051,12 +1051,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pillow in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The pillow is on the table.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the kettle in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The kettle is on the chair.",
         "Golden": "On"
     },
     {
@@ -1066,7 +1066,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the pillow in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The pillow is on the table.",
         "Golden": "Under"
     },
     {
@@ -1086,7 +1086,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where are the scissors in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The scissors are on the floor, under the table.",
         "Golden": "Under"
     },
     {
@@ -1096,7 +1096,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the spatula in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The spatula is on the table.",
         "Golden": "On"
     },
     {
@@ -1121,7 +1121,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lemon in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The lemon is on the chair.",
         "Golden": "On"
     },
     {
@@ -1136,22 +1136,22 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the helmet in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The helmet is on the table.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the toilet roll in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The toilet roll is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the box in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The box is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the ball of yarn in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The ball of yarn is on the table.",
         "Golden": "On"
     },
     {
@@ -1166,12 +1166,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the banana in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The banana is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the blanket in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The blanket is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -1191,17 +1191,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the remote in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The remote is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the bread in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The bread is on the armchair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the cap in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The cap is on the chair.",
         "Golden": "On"
     },
     {
@@ -1231,7 +1231,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the cup in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The cup is under the chair.",
         "Golden": "Under"
     },
     {
@@ -1246,17 +1246,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the notepad in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "Under",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The bottle is on the armchair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the orange in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The orange is on the table.",
         "Golden": "On"
     },
     {
@@ -1281,7 +1281,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the phone in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "Under",
         "Golden": "Under"
     },
     {
@@ -1291,7 +1291,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the helmet in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The helmet is on the table.",
         "Golden": "Under"
     },
     {
@@ -1316,7 +1316,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the rose in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The rose is on the armchair.",
         "Golden": "On"
     },
     {
@@ -1336,12 +1336,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the book in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The book is on the floor, under the table.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the mug in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The mug is on the floor, under the table.",
         "Golden": "Under"
     },
     {
@@ -1351,7 +1351,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the bowl in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The bowl is on the armchair.",
         "Golden": "On"
     },
     {
@@ -1361,7 +1361,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the mug in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The mug is on the armchair.",
         "Golden": "Under"
     },
     {
@@ -1371,7 +1371,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the plate in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The plate is on the chair.",
         "Golden": "On"
     },
     {
@@ -1381,7 +1381,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the helmet in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The helmet is on the chair.",
         "Golden": "On"
     },
     {
@@ -1396,7 +1396,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the hat in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The hat is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -1406,17 +1406,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lemon in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The lemon is under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the apple in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The apple is under the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the knife in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The knife is on the chair.",
         "Golden": "On"
     },
     {
@@ -1446,12 +1446,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where are the shoes in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The shoes are on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the ball of yarn in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The ball of yarn is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -1461,7 +1461,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The bottle is under the armchair.",
         "Golden": "Under"
     },
     {
@@ -1471,7 +1471,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where are the sunglasses in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The sunglasses are on the table.",
         "Golden": "On"
     },
     {
@@ -1481,17 +1481,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the cap in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The cap is on the floor, under the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the beer bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The beer bottle is on the floor, under the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the knife in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The knife is on the floor, under the table.",
         "Golden": "Under"
     },
     {
@@ -1521,17 +1521,17 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the water bottle in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The water bottle is under the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the dragonfruit in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The dragonfruit is on the table.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the banjo in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The banjo is under the armchair.",
         "Golden": "Under"
     },
     {
@@ -1551,22 +1551,22 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the laptop in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The laptop is on the chair.",
         "Golden": "On"
     },
     {
         "Prompt": "<image>\nUSER: Where is the knife in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The knife is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the spatula in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The spatula is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the pillow in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The pillow is on the armchair.",
         "Golden": "On"
     },
     {
@@ -1581,7 +1581,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the lamp in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Right",
+        "Generation": "The lamp is on the floor, under the chair.",
         "Golden": "Under"
     },
     {
@@ -1596,7 +1596,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the bottle of orange juice in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The bottle of orange juice is on the chair.",
         "Golden": "On"
     },
     {
@@ -1606,12 +1606,12 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the plate in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The plate is under the armchair.",
         "Golden": "Under"
     },
     {
         "Prompt": "<image>\nUSER: Where is the bottle in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Left",
+        "Generation": "The bottle is on the table.",
         "Golden": "On"
     },
     {
@@ -1621,7 +1621,7 @@
     },
     {
         "Prompt": "<image>\nUSER: Where is the scarf in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
-        "Generation": "Under",
+        "Generation": "The scarf is on the table.",
         "Golden": "On"
     },
     {
