@@ -10,6 +10,17 @@ import random
 from torch.utils.data import DataLoader
 import torch
 
+def parse_layer_range(layer_range_str):
+    """Parse layer range string like '0-10' into a range object."""
+    if layer_range_str is None:
+        return None
+    parts = layer_range_str.split('-')
+    if len(parts) != 2:
+        raise ValueError(f"Invalid layer range format: {layer_range_str}. Expected format: 'start-end'")
+    start = int(parts[0])
+    end = int(parts[1]) + 1  # +1 because range end is exclusive
+    return range(start, end)
+
 def config():
     parser = argparse.ArgumentParser()
     parser.add_argument("--device", default="cuda", type=str)
@@ -32,8 +43,13 @@ def config():
     parser.add_argument("--weight2", default=1.0, type=float)
     parser.add_argument("--threshold", default=1.0, type=float)
     parser.add_argument("--option", default='four', type=str, choices=['two','four','six'])
+    parser.add_argument("--target-layers", default=None, type=str, help="Layer range for attention scaling, format: '0-10', '11-22', etc.")
 
-    return parser.parse_args()
+    args = parser.parse_args()
+    target_layers = args.target_layers or os.getenv("TARGET_LAYERS")
+    if target_layers:
+        args.target_layers = parse_layer_range(target_layers)
+    return args
 
 
 def main(args):
@@ -75,7 +91,7 @@ def main(args):
    
 
     elif args.dataset in ['Controlled_Images_B','Controlled_Images_A']:    
-        scores, correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option,args.threshold,args.weight1,args.weight2)
+        scores, correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option,args.threshold,args.weight1,args.weight2,args.target_layers)
         print("Got the following shape of scores",scores.shape)
         # change from (82, 4, 1) to (82, 1, 4)
         scores = scores.transpose(0,2,1)
@@ -84,7 +100,7 @@ def main(args):
 
     else:
         
-        scores,correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option,args.threshold,args.weight1,args.weight2)
+        scores,correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option,args.threshold,args.weight1,args.weight2,args.target_layers)
         dataset.save_scores(scores,correct_id,args.output_dir,args.dataset,args.method,args.weight,args.model_name,args.option)
 
         

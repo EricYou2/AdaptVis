@@ -41,6 +41,7 @@ WEIGHT2="${WEIGHT2:-1.5}"
 THRESHOLD="${THRESHOLD:-0.4}"
 SEED="${SEED:-1}"
 DOWNLOAD_FLAG="${DOWNLOAD_FLAG:---download}"
+TARGET_LAYERS="${TARGET_LAYERS:-}"
 
 echo "Job ID: $SLURM_JOB_ID"
 echo "Host: $(hostname)"
@@ -50,6 +51,11 @@ python -c "import torch; print('torch', torch.__version__, 'cuda?', torch.cuda.i
 nvidia-smi || true
 
 set -x
+LAYER_ARGS=()
+if [ -n "$TARGET_LAYERS" ]; then
+  LAYER_ARGS+=(--target-layers "$TARGET_LAYERS")
+fi
+
 python -u main_aro.py \
   --dataset "$DATASET" \
   --model-name "$MODEL_NAME" \
@@ -60,4 +66,5 @@ python -u main_aro.py \
   --weight2 "$WEIGHT2" \
   --threshold "$THRESHOLD" \
   --seed "$SEED" \
-  $DOWNLOAD_FLAG
+  $DOWNLOAD_FLAG \
+  "${LAYER_ARGS[@]}"

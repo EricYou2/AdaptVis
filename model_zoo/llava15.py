@@ -66,6 +66,7 @@ def _add_weight_greedy_search(
     weight: Optional[float] = None,
     adjust_method: Optional[str] = None,
     pos: Optional[torch.Tensor] = None,
+    target_layers: Optional[range] = None,
     streamer: Optional["BaseStreamer"] = None,
     **model_kwargs,
     ) -> Union[GenerateNonBeamOutput, torch.LongTensor]:
@@ -140,6 +141,7 @@ def _add_weight_greedy_search(
                 weight=weight,
                 adjust_method=adjust_method,
                 pos=pos,
+                target_layers=target_layers,
                 return_dict=True,
                 output_attentions=output_attentions,
                 output_hidden_states=output_hidden_states,
@@ -266,6 +268,7 @@ class LlavaWrapper:
                 images=image,
                 return_tensors="pt",
                 truncation=True,
+                max_length=77,
             ).to(self.device)
         return self.processor(
             text=text,
@@ -312,7 +315,7 @@ class LlavaWrapper:
     
     
     @torch.no_grad()
-    def get_out_scores_wh_batched(self, dataset, joint_loader, method, weight, option, threshold, weight1, weight2):
+    def get_out_scores_wh_batched(self, dataset, joint_loader, method, weight, option, threshold, weight1, weight2, target_layers=None):
 
         
         scores = []  # To store scores for each batch
@@ -396,7 +399,7 @@ class LlavaWrapper:
                         
                         change_greedy_to_add_weight()
                         output = self.model.generate(
-                            **single_input, keys=keys, weight=weight,
+                            **single_input, keys=keys, weight=weight, target_layers=target_layers,
                             max_new_tokens=100, output_scores=True, return_dict_in_generate=True
                         )
                         uncertainty = np.round(float(max(torch.nn.functional.softmax(output['scores'][0], dim=-1)[0])), 2)
@@ -406,7 +409,7 @@ class LlavaWrapper:
                         change_greedy_to_add_weight()
                        
                         output = self.model.generate(
-                            **single_input,weight=1.0,max_new_tokens=100, output_scores=True, return_dict_in_generate=True
+                            **single_input, weight=1.0, target_layers=target_layers, max_new_tokens=100, output_scores=True, return_dict_in_generate=True
                         )
                         uncertainty = np.round(float(max(torch.nn.functional.softmax(output['scores'][0], dim=-1)[0])), 2)
                         print(uncertainty,threshold)
@@ -414,12 +417,12 @@ class LlavaWrapper:
                         # Adjust attention based on uncertainty
                         if uncertainty < threshold:
                             output = self.model.generate(
-                                **single_input, keys=keys, weight=weight1, 
+                                **single_input, keys=keys, weight=weight1, target_layers=target_layers,
                                 max_new_tokens=100, output_scores=True, return_dict_in_generate=True
                             )
                         else:
                             output = self.model.generate(
-                                **single_input, keys=keys, weight=weight2, 
+                                **single_input, keys=keys, weight=weight2, target_layers=target_layers,
                                 max_new_tokens=100, output_scores=True, return_dict_in_generate=True
                             )
                         gen = self.processor.decode(output['sequences'][0][len(single_input['input_ids'][-1]):], skip_special_tokens=True)

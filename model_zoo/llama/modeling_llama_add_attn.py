@@ -228,7 +228,8 @@ class LLaMAAttention(nn.Module):
         pos: Optional[torch.Tensor] = None,
         idx: Optional[int] = None,
         caption_length: Optional[list] = None,
-        adjust_method: Optional[str] = None
+        adjust_method: Optional[str] = None,
+        target_layers: Optional[range] = None
     ) -> Tuple[torch.Tensor, Optional[torch.Tensor], Optional[Tuple[torch.Tensor]]]:
         """Input shape: Batch x Time x Channel"""
 
@@ -266,7 +267,11 @@ class LLaMAAttention(nn.Module):
         unchanged_attn_weights = attn_weights.clone()
 
         ######ATTENTION#######
-        if idx<32:
+        # Use provided target_layers or default to all layers
+        if target_layers is None:
+            target_layers = range(0, 32)
+        
+        if idx in target_layers:
             if attn_weights.size()[2]==attn_weights.size()[3]:
                 true_indices = torch.where(keys)[True]
                 if len(true_indices) == 0:
@@ -366,6 +371,7 @@ class LLaMADecoderLayer(nn.Module):
         idx: Optional[int] = None,
         caption_length: Optional[list] = None,
         adjust_method: Optional[str] = None,
+        target_layers: Optional[range] = None,
     ) -> Tuple[torch.FloatTensor, Optional[Tuple[torch.FloatTensor, torch.FloatTensor]]]:
         """
         Args:
@@ -397,6 +403,7 @@ class LLaMADecoderLayer(nn.Module):
             idx=idx,
             caption_length=caption_length,
             adjust_method=adjust_method,
+            target_layers=target_layers,
         )
         
         hidden_states = residual + hidden_states
@@ -543,6 +550,9 @@ class LLaMAModel(LLaMAPreTrainedModel):
         self.layers = nn.ModuleList([LLaMADecoderLayer(config) for _ in range(config.num_hidden_layers)])
         self.norm = RMSNorm(config.hidden_size, eps=config.rms_norm_eps)
 
+        # Dynamic layer range for attention scaling (default: all layers)
+        self.target_layers = range(0, config.num_hidden_layers)
+
         self.gradient_checkpointing = False
         # Initialize weights and apply final processing
         self.post_init()
@@ -589,6 +599,7 @@ class LLaMAModel(LLaMAPreTrainedModel):
         weight: Optional[float] = None,
         caption_length: Optional[list] = None,
         adjust_method: Optional[str]=None,
+        target_layers: Optional[range] = None,
     ) -> Union[Tuple, BaseModelOutputWithPast]:
         r"""
         Args:
@@ -676,6 +687,10 @@ class LLaMAModel(LLaMAPreTrainedModel):
                 )
                 use_cache = False
 
+        # Use provided target_layers or default from model config
+        if target_layers is None:
+            target_layers = self.target_layers
+
         # decoder layers
         all_hidden_states = () if output_hidden_states else None
         all_self_attns = () if output_attentions else None
@@ -716,7 +731,8 @@ class LLaMAModel(LLaMAPreTrainedModel):
                     pos=pos,
                     idx=idx,
                     caption_length=caption_length,
-                    adjust_method=adjust_method
+                    adjust_method=adjust_method,
+                    target_layers=target_layers
                 )
             
             hidden_states = layer_outputs[0]

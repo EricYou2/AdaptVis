@@ -354,6 +354,7 @@ class LlavaForConditionalGenerationScal(LlavaPreTrainedModel):
         pos: Optional[torch.Tensor] = None,
         adjust_method: Optional[str] = None,
         caption_length: Optional[list] = None,
+        target_layers: Optional[range] = None,
     ) -> Union[Tuple, LlavaCausalLMOutputWithPast]:
         r"""
         Args:
@@ -463,6 +464,7 @@ class LlavaForConditionalGenerationScal(LlavaPreTrainedModel):
             pos=pos,
             adjust_method=adjust_method,
             caption_length=caption_length,
+            target_layers=target_layers,
         )
         
 
