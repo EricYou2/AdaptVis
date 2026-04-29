@@ -482,7 +482,7 @@ class LlavaWrapper:
 
         # Concatenate all scores and return based on dataset type
         all_scores = np.concatenate(scores, axis=0)  # N x K x L
-        if dataset in ['Controlled_Images_B', 'Controlled_Images_A']:
+        if dataset in ['Controlled_Images_B', 'Controlled_Images_A', 'SpatialSense']:
             return (all_scores, [])
         else:
             return (acc / index_of_total, correct_id)

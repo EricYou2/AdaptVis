@@ -1,0 +1,442 @@
+[
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the TV in relation to the couch? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the pizza? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mouse in relation to the keyboard? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the mouse in relation to the keyboard? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the microwave in relation to the oven? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the microwave in relation to the refrigerator? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bowl in relation to the person? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the TV in relation to the couch? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in relation to the sink? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in relation to the bed? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the microwave? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the knife in relation to the wine glass? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the dog in relation to the cell phone? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the horse in relation to the refrigerator? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bed in relation to the chair? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in relation to the sink? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in relation to the wine glass? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the person in relation to the TV? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the bed in relation to the TV? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in relation to the bottle? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the person in relation to the bottle? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the laptop in relation to the bottle? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the knife in relation to the bottle? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the remote in relation to the bowl? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the umbrella in relation to the bench? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in relation to the backpack? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the sink in relation to the person? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the backpack in relation to the bowl? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the TV in relation to the laptop? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the banana in relation to the dining table? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the oven in relation to the sink? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sandwich in relation to the dining table? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza in relation to the cup? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the sandwich? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the sandwich? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the book? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the dog in relation to the fire hydrant? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "The dog is sitting below the fire hydrant.",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the bed in relation to the chair? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the refrigerator in relation to the surfboard? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in relation to the chair? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cat in relation to the keyboard? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the couch? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in relation to the dining table? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "The umbrella is above the dining table.",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the broccoli in relation to the bottle? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the laptop? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the refrigerator in relation to the oven? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the cup in relation to the bowl? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in relation to the sink? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the banana in relation to the cup? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the vase in relation to the cup? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the motorcycle in relation to the train? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the cat in relation to the suitcase? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "The cat is laying on top of the suitcase.",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the TV in relation to the cat? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "The TV is above the cat.",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the bottle in relation to the fork? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the laptop in relation to the keyboard? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in relation to the bowl? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the TV in relation to the remote? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the bowl in relation to the couch? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": " Above",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the horse in relation to the person? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "The horse is below the person.",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the clock in relation to the potted plant? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bottle in relation to the pizza? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the laptop in relation to the keyboard? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the TV in relation to the person? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the umbrella in relation to the chair? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the umbrella in relation to the chair? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the person? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the motorcycle in relation to the airplane? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the laptop in relation to the handbag? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Above"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza in relation to the book? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cake in relation to the oven? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the pizza in relation to the chair? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sandwich in relation to the chair? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the person in relation to the bowl? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the banana in relation to the bowl? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the person? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the person? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "The cup is below the person in the image.",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the bowl? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the bowl? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in relation to the sink? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cell phone in relation to the apple? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the orange in relation to the wine glass? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the cake in relation to the wine glass? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the cup in relation to the cake? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the knife in relation to the carrot? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Right"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in relation to the laptop? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Below",
+        "Golden": "Left"
+    },
+    {
+        "Prompt": "<image>\nUSER:  Where is the bowl in relation to the pizza? Answer with left, right, above or below.\nASSISTANT:",
+        "Generation": "Left",
+        "Golden": "Below"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the person in relation to the truck? Answer with left, right, above, or below.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "Left"
+    }
+]

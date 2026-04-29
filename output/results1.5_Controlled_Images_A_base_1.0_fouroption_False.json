@@ -1,0 +1,22 @@
+[
+    {
+        "Prompt": "<image>\nUSER: Where is the wineglass in relation to the table? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "",
+        "Golden": "On"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the glass in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "",
+        "Golden": "On"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mug in relation to the armchair? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "",
+        "Golden": "On"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the hat in relation to the chair? Answer with left, right, on or under.\nASSISTANT:",
+        "Generation": "",
+        "Golden": "Right"
+    }
+]

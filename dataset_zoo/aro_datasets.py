@@ -608,12 +608,12 @@ class SpatialSense(Dataset):
         split="train",
         download=False,
         num_options=9,
-        max_examples=100,
+        # max_examples=100,
     ):
         self.root_dir = root_dir
         self.image_preprocess = image_preprocess
         self.num_options = num_options
-        self.max_examples = max_examples
+        # self.max_examples = max_examples
 
         self.dataset = load_dataset(
             "AsphyXIA/spatial-sense-flattened",
@@ -638,8 +638,8 @@ class SpatialSense(Dataset):
             if case is not None:
                 self.test_cases.append(case)
 
-            if self.max_examples is not None and len(self.test_cases) >= self.max_examples:
-                break
+            # if self.max_examples is not None and len(self.test_cases) >= self.max_examples:
+                # break
 
     def _parse_caption(self, caption):
         words = caption.lower().strip().split()

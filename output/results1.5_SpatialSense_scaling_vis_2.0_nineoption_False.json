@@ -1,0 +1,102 @@
+[
+    {
+        "Prompt": "<image>\nUSER: Where is the train in relation to the tower? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "In front of",
+        "Golden": "next to"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the sky in relation to the building? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "behind"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the woman in relation to the table? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "In front of",
+        "Golden": "behind"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bear in relation to the table? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "In front of",
+        "Golden": "behind"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the toilet in relation to the toilet paper? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "Under",
+        "Golden": "to the right of"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the carrot in relation to the sandwich? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "In front of",
+        "Golden": "in front of"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the book in relation to the light? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "Under",
+        "Golden": "under"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the shoe in relation to the shoe? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "to the left of"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the tomato in relation to the table? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "on"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the egg in relation to the lemon? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "Next to",
+        "Golden": "to the right of"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the parasol in relation to the table? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "on"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the fence in relation to the chair? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "In front of",
+        "Golden": "behind"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the kite in relation to the cloud? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "next to"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the doll in relation to the wall? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "In front of",
+        "Golden": "in front of"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the legs in relation to the wall? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "in front of"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the light in relation to the wall? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "Above",
+        "Golden": "on"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the mouse in relation to the pad? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "on"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the chair in relation to the floor? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "on"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the towel in relation to the cradle? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "on"
+    },
+    {
+        "Prompt": "<image>\nUSER: Where is the bus in relation to the tree? Answer with one of: on, under, behind, in front of, to the left of, to the right of, above, below, next to.\nASSISTANT:",
+        "Generation": "On",
+        "Golden": "under"
+    }
+]
