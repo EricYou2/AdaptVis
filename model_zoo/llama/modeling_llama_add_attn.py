@@ -808,6 +808,7 @@ class LLaMAForCausalLMScal(LLaMAPreTrainedModel):
         weight: Optional[float] = None,
         caption_length: Optional[list] = None,
         adjust_method: Optional[str]=None,
+        target_layers: Optional[range]=None,
     ) -> Union[Tuple, CausalLMOutputWithPast]:
         r"""
         Args:
@@ -898,7 +899,8 @@ class LLaMAForCausalLMScal(LLaMAPreTrainedModel):
             pos=pos,
             weight=weight,
             caption_length=caption_length,
-            adjust_method=adjust_method
+            adjust_method=adjust_method,
+            target_layers=target_layers,
         )
 
         hidden_states = outputs[0]
