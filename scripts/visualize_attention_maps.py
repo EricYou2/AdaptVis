@@ -118,6 +118,11 @@ def apply_colormap(value_map: np.ndarray) -> np.ndarray:
 
 def load_attention_map(attn_path: str, head: str) -> Tuple[np.ndarray, Optional[int], Optional[int]]:
     attn = np.load(attn_path)
+    # Saved attention can be (heads, seq) or (batch, heads, seq)
+    if attn.ndim == 3:
+        if attn.shape[0] != 1:
+            raise ValueError(f"Expected batch size 1 for 3D attention array, got shape {attn.shape}")
+        attn = attn[0]
     if attn.ndim != 2:
         raise ValueError(f"Expected 2D attention array, got shape {attn.shape}")
     if head == "mean":
