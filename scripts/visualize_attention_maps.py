@@ -84,6 +84,21 @@ def choose_attn_file(sample_dir: str, mode: str, layer: int) -> Optional[str]:
     matches = sorted(glob(pattern))
     if not matches:
         return None
+    # Prefer a valid image token span over sentinel -1 spans.
+    best_path = None
+    best_span = -1
+    for path in matches:
+        start, end = parse_start_end(path)
+        if start is None or end is None:
+            continue
+        if start < 0 or end < 0 or end < start:
+            continue
+        span = end - start
+        if span > best_span:
+            best_span = span
+            best_path = path
+    if best_path is not None:
+        return best_path
     return matches[0]
 
 
