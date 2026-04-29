@@ -444,23 +444,21 @@ class LlavaWrapper:
                     
                     # Check if the generation matches the expected answer
                     c_option = batch["caption_options"]
-                    if len(list(c_option)) == 4:
-                        if (answer_list[index_of_total][0] in gen or answer_list[index_of_total][0].lower() in gen.lower()) \
-                                and not (answer_list[index_of_total][0].lower() == 'on' and 'front' in gen.strip().lower()):
-                            acc += 1
-                            correct_id.append(index_of_total)
-                            answers = [1, 0, 0, 0]
-                        else:
-                            answers = [0, 0, 1, 0]
-                    
-                    elif len(list(c_option)) == 2:
-                        if (answer_list[index_of_total][0] in gen or answer_list[index_of_total][0].lower() in gen.lower()) \
-                                and not (answer_list[index_of_total][0].lower() == 'on' and 'front' in gen.strip().lower()):
-                            acc += 1
-                            correct_id.append(index_of_total)
-                            answers = [1, 0]
-                        else:
-                            answers = [0, 1]
+                    num_options = len(list(c_option))
+                    is_correct = (answer_list[index_of_total][0] in gen or answer_list[index_of_total][0].lower() in gen.lower()) \
+                        and not (answer_list[index_of_total][0].lower() == 'on' and 'front' in gen.strip().lower())
+
+                    if is_correct:
+                        acc += 1
+                        correct_id.append(index_of_total)
+
+                    answers = [0] * num_options
+                    if num_options == 1:
+                        answers[0] = 1
+                    elif is_correct:
+                        answers[0] = 1
+                    else:
+                        answers[min(1, num_options - 1)] = 1
 
                     im_scores.append(np.expand_dims(np.array(answers), -1))
                     index_of_total += 1
