@@ -14,7 +14,7 @@ def config():
     parser = argparse.ArgumentParser()
     parser.add_argument("--device", default="cuda", type=str)
     parser.add_argument("--batch-size", default=1, type=int)
-    parser.add_argument("--num_workers", default=16, type=int)
+    parser.add_argument("--num_workers", default=4, type=int)
     parser.add_argument("--model-name", default="llava1.5", type=str, \
             choices=[ "llava1.5","llava1.6"])
     parser.add_argument("--dataset", default="Controlled_Images_A", type=str, \
