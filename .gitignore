@@ -10,7 +10,7 @@ __pycache__/
 
 # tests and logs
 tests/fixtures/cached_*_text.txt
-# logs/
+logs/
 lightning_logs/
 lang_code_data/
 
@@ -172,6 +172,7 @@ tags
 /data
 /features
 /outputs
+/output
 /save_activations
 /probe_res
 /plot/outputs
