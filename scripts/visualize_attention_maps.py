@@ -87,7 +87,12 @@ def choose_attn_file(sample_dir: str, mode: str, layer: int) -> Optional[str]:
     return matches[0]
 
 
-def reshape_attention(vec: np.ndarray) -> Optional[np.ndarray]:
+def reshape_attention(vec: np.ndarray, grid: Optional[Tuple[int, int]] = None) -> Optional[np.ndarray]:
+    if grid is not None:
+        h, w = grid
+        if h * w != vec.shape[-1]:
+            return None
+        return vec.reshape(h, w)
     n = vec.shape[-1]
     # Find a factor pair close to sqrt
     root = int(math.sqrt(n))
@@ -196,6 +201,10 @@ def render_from_dir(
     out_dir: str,
     overlay_alpha: float,
     tag: str,
+    grid: Optional[Tuple[int, int]],
+    flip_vertical: bool,
+    flip_horizontal: bool,
+    transpose: bool,
 ) -> None:
     for sample_id in sample_ids:
         sample_dir = os.path.join(attn_dir, str(sample_id))
@@ -205,10 +214,16 @@ def render_from_dir(
             continue
 
         vec, start, end = load_attention_map(attn_path, head)
-        attn_map = reshape_attention(vec)
+        attn_map = reshape_attention(vec, grid=grid)
         if attn_map is None:
             print(f"Skip sample {sample_id}: cannot reshape attention vector of length {vec.shape[-1]}")
             continue
+        if transpose:
+            attn_map = attn_map.T
+        if flip_vertical:
+            attn_map = np.flipud(attn_map)
+        if flip_horizontal:
+            attn_map = np.fliplr(attn_map)
 
         image_path = load_controlled_image_path(dataset, image_root, sample_id)
         basename = build_basename(sample_id, mode, layer, head, tag)
@@ -240,6 +255,10 @@ def main() -> None:
     parser.add_argument("--mode", choices=["pre", "post", "diff"], default="post")
     parser.add_argument("--layer", type=int, default=0)
     parser.add_argument("--head", default="mean", help="Head index or 'mean'")
+    parser.add_argument("--grid", nargs=2, type=int, default=None, help="Force grid H W, e.g. --grid 24 24")
+    parser.add_argument("--flip-vertical", action="store_true")
+    parser.add_argument("--flip-horizontal", action="store_true")
+    parser.add_argument("--transpose", action="store_true")
     parser.add_argument("--overlay-alpha", type=float, default=0.45)
     parser.add_argument("--out-dir", default="./output/attn_vis")
     args = parser.parse_args()
@@ -252,6 +271,7 @@ def main() -> None:
         all_ids = list_sample_dirs(args.attn_dir)
         sample_ids = all_ids[: args.max_samples]
 
+    grid = tuple(args.grid) if args.grid else None
     render_from_dir(
         attn_dir=args.attn_dir,
         dataset=args.dataset,
@@ -263,6 +283,10 @@ def main() -> None:
         out_dir=args.out_dir,
         overlay_alpha=args.overlay_alpha,
         tag="base",
+        grid=grid,
+        flip_vertical=args.flip_vertical,
+        flip_horizontal=args.flip_horizontal,
+        transpose=args.transpose,
     )
 
     if args.compare_dir:
@@ -277,6 +301,10 @@ def main() -> None:
             out_dir=args.out_dir,
             overlay_alpha=args.overlay_alpha,
             tag="compare",
+            grid=grid,
+            flip_vertical=args.flip_vertical,
+            flip_horizontal=args.flip_horizontal,
+            transpose=args.transpose,
         )
         # Create simple side-by-side overlays when possible
         for sample_id in sample_ids:
