@@ -147,6 +147,8 @@ def load_attention_map(attn_path: str, head: str) -> Tuple[np.ndarray, Optional[
         raise ValueError(f"Expected 2D attention array, got shape {attn.shape}")
     if head == "mean":
         vec = attn.mean(axis=0)
+    elif head == "max":
+        vec = attn.max(axis=0)
     else:
         head_idx = int(head)
         if head_idx < 0 or head_idx >= attn.shape[0]:
@@ -167,6 +169,7 @@ def save_visuals(
     out_dir: str,
     basename: str,
     overlay_alpha: float,
+    resize_nearest: bool,
 ) -> None:
     os.makedirs(out_dir, exist_ok=True)
     value_map = normalize_map(attn_map)
@@ -182,7 +185,8 @@ def save_visuals(
         return
 
     base_img = Image.open(image_path).convert("RGB")
-    heatmap_resized = heatmap_img.resize(base_img.size, resample=Image.BILINEAR)
+    resample_mode = Image.NEAREST if resize_nearest else Image.BILINEAR
+    heatmap_resized = heatmap_img.resize(base_img.size, resample=resample_mode)
     overlay = Image.blend(base_img, heatmap_resized, alpha=overlay_alpha)
     overlay_path = os.path.join(out_dir, f"{basename}_overlay.png")
     overlay.save(overlay_path)
@@ -220,6 +224,7 @@ def render_from_dir(
     flip_vertical: bool,
     flip_horizontal: bool,
     transpose: bool,
+    resize_nearest: bool,
 ) -> None:
     for sample_id in sample_ids:
         sample_dir = os.path.join(attn_dir, str(sample_id))
@@ -242,7 +247,7 @@ def render_from_dir(
 
         image_path = load_controlled_image_path(dataset, image_root, sample_id)
         basename = build_basename(sample_id, mode, layer, head, tag)
-        save_visuals(image_path, attn_map, out_dir, basename, overlay_alpha)
+        save_visuals(image_path, attn_map, out_dir, basename, overlay_alpha, resize_nearest)
 
 
 def make_side_by_side(left_path: str, right_path: str, out_path: str) -> None:
@@ -269,11 +274,12 @@ def main() -> None:
     parser.add_argument("--max-samples", type=int, default=8)
     parser.add_argument("--mode", choices=["pre", "post", "diff"], default="post")
     parser.add_argument("--layer", type=int, default=0)
-    parser.add_argument("--head", default="mean", help="Head index or 'mean'")
+    parser.add_argument("--head", default="mean", help="Head index, 'mean', or 'max'")
     parser.add_argument("--grid", nargs=2, type=int, default=None, help="Force grid H W, e.g. --grid 24 24")
     parser.add_argument("--flip-vertical", action="store_true")
     parser.add_argument("--flip-horizontal", action="store_true")
     parser.add_argument("--transpose", action="store_true")
+    parser.add_argument("--resize-nearest", action="store_true", help="Use nearest-neighbor resize for blocky heatmaps")
     parser.add_argument("--overlay-alpha", type=float, default=0.45)
     parser.add_argument("--out-dir", default="./output/attn_vis")
     args = parser.parse_args()
@@ -302,6 +308,7 @@ def main() -> None:
         flip_vertical=args.flip_vertical,
         flip_horizontal=args.flip_horizontal,
         transpose=args.transpose,
+        resize_nearest=args.resize_nearest,
     )
 
     if args.compare_dir:
@@ -320,6 +327,7 @@ def main() -> None:
             flip_vertical=args.flip_vertical,
             flip_horizontal=args.flip_horizontal,
             transpose=args.transpose,
+            resize_nearest=args.resize_nearest,
         )
         # Create simple side-by-side overlays when possible
         for sample_id in sample_ids:
