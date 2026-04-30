@@ -267,6 +267,8 @@ class LLaMAAttention(nn.Module):
         unchanged_attn_weights = attn_weights.clone()
 
         ######ATTENTION#######
+        # initialize indices used later when saving attention; ensure defined in all branches
+        start_idx, end_idx, square_size = -1, -1, -1
         # Use provided target_layers or default to all layers
         if target_layers is None:
             target_layers = range(0, 32)
@@ -309,14 +311,18 @@ class LLaMAAttention(nn.Module):
             save_path = os.getenv("SAVE_ATTN_PATH")
             if not save_path:
                 raise ValueError("SAVE_ATTN_PATH not set.")
-            unchanged_attn_weights = unchanged_attn_weights + attention_mask
-            unchanged_attn_weights = torch.max(unchanged_attn_weights, torch.tensor(torch.finfo(unchanged_attn_weights.dtype).min))
-            if SAVE_ORI:
-                ori=unchanged_attn_weights[:,:,-1,:]
-                # pdb.set_trace()
+            # If an attention mask exists, apply it; otherwise operate on unchanged_attn_weights directly
+            if attention_mask is not None:
+                tmp_unchanged = unchanged_attn_weights + attention_mask
+            else:
+                tmp_unchanged = unchanged_attn_weights
+
+            tmp_unchanged = torch.max(tmp_unchanged, torch.tensor(torch.finfo(tmp_unchanged.dtype).min))
+            if SAVE_ORI and start_idx != -1 and end_idx != -1:
+                ori = tmp_unchanged[:, :, -1, :]
                 np.save(f"{save_path}diff_{idx}_start{start_idx}_end{end_idx}.npy", ori.cpu().detach().numpy())
 
-            unchanged_attn_weights = nn.functional.softmax(unchanged_attn_weights, dim=-1, dtype=torch.float32).to(
+            unchanged_attn_weights = nn.functional.softmax(tmp_unchanged, dim=-1, dtype=torch.float32).to(
                 query_states.dtype)
 
         attn_weights = self.att_out(attn_weights)       
