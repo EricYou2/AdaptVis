@@ -4,7 +4,3 @@ data/
 # Ignore Python cache
 __pycache__/
 *.pyc
-
-*.json
-*.jsonl
-*.npy

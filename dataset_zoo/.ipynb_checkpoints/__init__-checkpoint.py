@@ -40,16 +40,6 @@ def get_dataset(dataset_name, image_preprocess=None, text_perturb_fn=None, image
         from .aro_datasets import get_vsr
         return get_vsr(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn, image_perturb_fn=image_perturb_fn, download=download, *args, **kwargs)
     
-    elif dataset_name == "stress_images_1":
-        from .aro_datasets import get_stress_images_1
-        return get_stress_images_1(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn, image_perturb_fn=image_perturb_fn, download=download, *args, **kwargs)
-    elif dataset_name == "stress_images_2":
-        from .aro_datasets import get_stress_images_2
-        return get_stress_images_2(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn, image_perturb_fn=image_perturb_fn, download=download, *args, **kwargs)
-    elif dataset_name == "stress_images_3":
-        from .aro_datasets import get_stress_images_3
-        return get_stress_images_3(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn, image_perturb_fn=image_perturb_fn, download=download, *args, **kwargs)
-    
 
         
     else:

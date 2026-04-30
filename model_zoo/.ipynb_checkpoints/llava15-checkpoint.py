@@ -272,8 +272,7 @@ class LlavaWrapper:
             images=image,
             padding="max_length",
             return_tensors="pt",
-            # truncation=True,
-            max_length=512,
+            max_length=77,
         ).to(self.device)
     
     @torch.no_grad()
@@ -341,7 +340,7 @@ class LlavaWrapper:
                 answer_list.append(data["answer"])
 
         # Sampling configuration
-        SAMPLE = False
+        SAMPLE = True
         TEST = os.getenv('TEST_MODE', 'False') == 'True'
         total_data_count = len(prompt_list)
         

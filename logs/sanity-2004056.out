@@ -1,0 +1,788 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 2004056
+##  Job Name : adaptvis.sanity
+##  Nodelist : gpu2103
+##      CPUs : 1
+##  Mem/Node : 32768 MB
+## Directory : /oscar/home/bkao2/csci1470/AdaptVis
+##   Job Started : Wed Apr 29 16:29:13 EDT 2026
+###############################################################################
+stress_images_2 llava1.5
+Prompt: <image>
+USER: Where is the child in relation to the man? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+1 1 1.0
+Prompt: <image>
+USER: Where is the pilot on the left in relation to the pilot on the right? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+2 2 1.0
+Prompt: <image>
+USER: Where is the bed on the left in relation to the bed on the right? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 3 1.0
+Prompt: <image>
+USER: Where is the person in white in relation to the person in black? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 4 0.75
+Prompt: <image>
+USER: Where is the small mirror in relation to the mirror? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 5 0.6
+Prompt: <image>
+USER: Where is the sink in relation to the tub? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 6 0.5
+Prompt: <image>
+USER: Where is the red mat in relation to the bed? Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 7 0.42857142857142855
+Prompt: <image>
+USER: Where is the gray sedan in relation to the van?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 8 0.375
+Prompt: <image>
+USER: Where is the island in relation to the lake? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 9 0.3333333333333333
+Prompt: <image>
+USER: Where is the woman in relation to the bench? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+3 10 0.3
+Prompt: <image>
+USER: Where is the tower on the left in relation to the tower on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+4 11 0.36363636363636365
+Prompt: <image>
+USER: Where is the house in relation to the road?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+4 12 0.3333333333333333
+Prompt: <image>
+USER: Where is the monitor on the right in relation to the monitor on the left? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+5 13 0.38461538461538464
+Prompt: <image>
+USER: Where is the boy in blue in relation to the girl in purple? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+5 14 0.35714285714285715
+Prompt: <image>
+USER: Where is the red car in relation to the white car? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+5 15 0.3333333333333333
+Prompt: <image>
+USER: Where is the marron apartment in relation to the beige apartment? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+6 16 0.375
+Prompt: <image>
+USER: Where is the orange seat on the left in relation to the orange seat on the right? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+6 17 0.35294117647058826
+Prompt: <image>
+USER: Where is the beach chair on the right in relation to the beach chair on the left? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+7 18 0.3888888888888889
+Prompt: <image>
+USER: Where is the dog in relation to the woman? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+8 19 0.42105263157894735
+Prompt: <image>
+USER: Where are the bed on the right in relation to the bed on the left? Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Right
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+8 20 0.4
+Prompt: <image>
+USER: Where is the lower bed in relation to the upper bed?
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+8 21 0.38095238095238093
+Prompt: <image>
+USER: Where is the table in relation to the television? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+9 22 0.4090909090909091
+Prompt: <image>
+USER: Where is the man in relation to the billiard table?
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+9 23 0.391304347826087
+Prompt: <image>
+USER: Where is the man in relation to the easel? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+10 24 0.4166666666666667
+Prompt: <image>
+USER: Where is the sink in relation to the mirror? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+10 25 0.4
+Prompt: <image>
+USER: Where is the couch in relation to the coffee table? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+10 26 0.38461538461538464
+Prompt: <image>
+USER: Where is the window on the left in relation to the window on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+11 27 0.4074074074074074
+Prompt: <image>
+USER: Where is the big rock in relation to the small rock?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+11 28 0.39285714285714285
+Prompt: <image>
+USER: Where is the trailer in relation to the car?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+12 29 0.41379310344827586
+Prompt: <image>
+USER: Where is the woman in relation to the rock?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+12 30 0.4
+Prompt: <image>
+USER: Where is the candlestick on the left in relation to the candlestick on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+12 31 0.3870967741935484
+Prompt: <image>
+USER: Where is the big cooling tower in relation to the small cooling tower? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_base_1.0_sixoption_True.json
+12 32 0.375
+0.375
+stress_images_2 llava1.5
+Prompt: <image>
+USER: Where is the child in relation to the man? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+1 1 1.0
+Prompt: <image>
+USER: Where is the pilot on the left in relation to the pilot on the right? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+2 2 1.0
+Prompt: <image>
+USER: Where is the bed on the left in relation to the bed on the right? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 3 1.0
+Prompt: <image>
+USER: Where is the person in white in relation to the person in black? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 4 0.75
+Prompt: <image>
+USER: Where is the small mirror in relation to the mirror? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 5 0.6
+Prompt: <image>
+USER: Where is the sink in relation to the tub? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 6 0.5
+Prompt: <image>
+USER: Where is the red mat in relation to the bed? Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 7 0.42857142857142855
+Prompt: <image>
+USER: Where is the gray sedan in relation to the van?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 8 0.375
+Prompt: <image>
+USER: Where is the island in relation to the lake? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 9 0.3333333333333333
+Prompt: <image>
+USER: Where is the woman in relation to the bench? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 10 0.3
+Prompt: <image>
+USER: Where is the tower on the left in relation to the tower on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 11 0.2727272727272727
+Prompt: <image>
+USER: Where is the house in relation to the road?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+3 12 0.25
+Prompt: <image>
+USER: Where is the monitor on the right in relation to the monitor on the left? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+4 13 0.3076923076923077
+Prompt: <image>
+USER: Where is the boy in blue in relation to the girl in purple? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+4 14 0.2857142857142857
+Prompt: <image>
+USER: Where is the red car in relation to the white car? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+4 15 0.26666666666666666
+Prompt: <image>
+USER: Where is the marron apartment in relation to the beige apartment? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+5 16 0.3125
+Prompt: <image>
+USER: Where is the orange seat on the left in relation to the orange seat on the right? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+5 17 0.29411764705882354
+Prompt: <image>
+USER: Where is the beach chair on the right in relation to the beach chair on the left? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+6 18 0.3333333333333333
+Prompt: <image>
+USER: Where is the dog in relation to the woman? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+7 19 0.3684210526315789
+Prompt: <image>
+USER: Where are the bed on the right in relation to the bed on the left? Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Right
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+7 20 0.35
+Prompt: <image>
+USER: Where is the lower bed in relation to the upper bed?
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+7 21 0.3333333333333333
+Prompt: <image>
+USER: Where is the table in relation to the television? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+8 22 0.36363636363636365
+Prompt: <image>
+USER: Where is the man in relation to the billiard table?
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+8 23 0.34782608695652173
+Prompt: <image>
+USER: Where is the man in relation to the easel? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+9 24 0.375
+Prompt: <image>
+USER: Where is the sink in relation to the mirror? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+9 25 0.36
+Prompt: <image>
+USER: Where is the couch in relation to the coffee table? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+9 26 0.34615384615384615
+Prompt: <image>
+USER: Where is the window on the left in relation to the window on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+9 27 0.3333333333333333
+Prompt: <image>
+USER: Where is the big rock in relation to the small rock?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+9 28 0.32142857142857145
+Prompt: <image>
+USER: Where is the trailer in relation to the car?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Behind
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+10 29 0.3448275862068966
+Prompt: <image>
+USER: Where is the woman in relation to the rock?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+10 30 0.3333333333333333
+Prompt: <image>
+USER: Where is the candlestick on the left in relation to the candlestick on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+10 31 0.3225806451612903
+Prompt: <image>
+USER: Where is the big cooling tower in relation to the small cooling tower? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_scaling_vis_0.8_sixoption_True.json
+10 32 0.3125
+0.3125
+stress_images_2 llava1.5
+0.32 0.3
+Prompt: <image>
+USER: Where is the child in relation to the man? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+1 1 1.0
+0.4 0.3
+Prompt: <image>
+USER: Where is the pilot on the left in relation to the pilot on the right? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+2 2 1.0
+0.48 0.3
+Prompt: <image>
+USER: Where is the bed on the left in relation to the bed on the right? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+3 3 1.0
+0.4 0.3
+Prompt: <image>
+USER: Where is the person in white in relation to the person in black? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+3 4 0.75
+0.28 0.3
+Prompt: <image>
+USER: Where is the small mirror in relation to the mirror? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+3 5 0.6
+0.66 0.3
+Prompt: <image>
+USER: Where is the sink in relation to the tub? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+3 6 0.5
+0.28 0.3
+Prompt: <image>
+USER: Where is the red mat in relation to the bed? Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: The red mat is on the floor in front of the bed.
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+4 7 0.5714285714285714
+0.28 0.3
+Prompt: <image>
+USER: Where is the gray sedan in relation to the van?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+4 8 0.5
+0.32 0.3
+Prompt: <image>
+USER: Where is the island in relation to the lake? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+4 9 0.4444444444444444
+0.34 0.3
+Prompt: <image>
+USER: Where is the woman in relation to the bench? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+4 10 0.4
+0.33 0.3
+Prompt: <image>
+USER: Where is the tower on the left in relation to the tower on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+5 11 0.45454545454545453
+0.41 0.3
+Prompt: <image>
+USER: Where is the house in relation to the road?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+5 12 0.4166666666666667
+0.63 0.3
+Prompt: <image>
+USER: Where is the monitor on the right in relation to the monitor on the left? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+6 13 0.46153846153846156
+0.33 0.3
+Prompt: <image>
+USER: Where is the boy in blue in relation to the girl in purple? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+6 14 0.42857142857142855
+0.46 0.3
+Prompt: <image>
+USER: Where is the red car in relation to the white car? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+6 15 0.4
+0.38 0.3
+Prompt: <image>
+USER: Where is the marron apartment in relation to the beige apartment? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+7 16 0.4375
+0.37 0.3
+Prompt: <image>
+USER: Where is the orange seat on the left in relation to the orange seat on the right? 
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+7 17 0.4117647058823529
+0.55 0.3
+Prompt: <image>
+USER: Where is the beach chair on the right in relation to the beach chair on the left? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Right
+Golden: Right
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+8 18 0.4444444444444444
+0.41 0.3
+Prompt: <image>
+USER: Where is the dog in relation to the woman? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+9 19 0.47368421052631576
+0.61 0.3
+Prompt: <image>
+USER: Where are the bed on the right in relation to the bed on the left? Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Right
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+9 20 0.45
+0.34 0.3
+Prompt: <image>
+USER: Where is the lower bed in relation to the upper bed?
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+9 21 0.42857142857142855
+0.29 0.3
+Prompt: <image>
+USER: Where is the table in relation to the television? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Front
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+10 22 0.45454545454545453
+0.38 0.3
+Prompt: <image>
+USER: Where is the man in relation to the billiard table?
+Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+10 23 0.43478260869565216
+0.34 0.3
+Prompt: <image>
+USER: Where is the man in relation to the easel? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+10 24 0.4166666666666667
+0.35 0.3
+Prompt: <image>
+USER: Where is the sink in relation to the mirror? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+10 25 0.4
+0.33 0.3
+Prompt: <image>
+USER: Where is the couch in relation to the coffee table? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+10 26 0.38461538461538464
+0.3 0.3
+Prompt: <image>
+USER: Where is the window on the left in relation to the window on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Left
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+11 27 0.4074074074074074
+0.3 0.3
+Prompt: <image>
+USER: Where is the big rock in relation to the small rock?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: On
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+11 28 0.39285714285714285
+0.26 0.3
+Prompt: <image>
+USER: Where is the trailer in relation to the car?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Under
+Golden: Behind
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+11 29 0.3793103448275862
+0.55 0.3
+Prompt: <image>
+USER: Where is the woman in relation to the rock?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Under
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+11 30 0.36666666666666664
+0.38 0.3
+Prompt: <image>
+USER: Where is the candlestick on the left in relation to the candlestick on the right?
+Answer with left, right, front, behind, on or under.
+
+ASSISTANT:
+Generation: Front
+Golden: Left
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+11 31 0.3548387096774194
+0.32 0.3
+Prompt: <image>
+USER: Where is the big cooling tower in relation to the small cooling tower? Answer with left, right, front, behind, on or under.
+ASSISTANT:
+Generation: Left
+Golden: Front
+Saving results to ./output/results1.5_stress_images_2_adapt_vis_1.0_sixoption_True.json
+11 32 0.34375
+0.34375

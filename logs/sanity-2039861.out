@@ -1,0 +1,10 @@
+## SLURM PROLOG ###############################################################
+##    Job ID : 2039861
+##  Job Name : adaptvis.sanity
+##  Nodelist : gpu3001
+##      CPUs : 1
+##  Mem/Node : 32768 MB
+## Directory : /oscar/home/bkao2/csci1470/AdaptVis
+##   Job Started : Wed Apr 29 21:46:05 EDT 2026
+###############################################################################
+stress_images_3 llava1.5

@@ -173,7 +173,7 @@ class Controlled_Images(Dataset):
                 subprocess.call(["gdown", "--id", "1ap8mmmpQjLIjPGuplkpBgc1hoEHCj4hm", "--output", annotation_file])
 
 
-        elif subset == 'B':
+        else:
             annotation_file = os.path.join(root_dir, "controlled_clevr_dataset.json")
             image_dir = os.path.join(root_dir, 'controlled_clevr')
             if not os.path.exists(image_dir):
@@ -186,27 +186,6 @@ class Controlled_Images(Dataset):
             if not os.path.exists(annotation_file):
                 subprocess.call(["gdown", "--id", "1unNNosLbdy9NDjgj4l8fsQP3WiAAGA6z", "--output", annotation_file])
 
-                
-        elif subset == 'stress_images_1':
-            annotation_file = os.path.join(root_dir, "stressed_images_1.json")
-            image_dir = os.path.join(root_dir, 'stress_images_1')
-            
-            if not os.path.exists(image_dir) or not os.path.exists(annotation_file):
-                raise RuntimeError(f"Stress Test 1 files not found in {root_dir}. Please ensure images and JSON exist.")
-        
-        elif subset == 'stress_images_2':
-            annotation_file = os.path.join(root_dir, "stressed_images_2.json")
-            image_dir = os.path.join(root_dir, 'stress_images_2')
-            
-            if not os.path.exists(image_dir) or not os.path.exists(annotation_file):
-                raise RuntimeError(f"Stress Test 2 files not found in {root_dir}. Please ensure images and JSON exist.")
-                
-        elif subset == 'stress_images_3':
-            annotation_file = os.path.join(root_dir, "stressed_images_3.json")
-            image_dir = os.path.join(root_dir, 'stress_images_3')
-            
-            if not os.path.exists(image_dir) or not os.path.exists(annotation_file):
-                raise RuntimeError(f"Stress Test 3 files not found in {root_dir}. Please ensure images and JSON exist.")
 
         self.dataset = json.load(open(annotation_file))
         self.subset = subset
@@ -235,7 +214,7 @@ class Controlled_Images(Dataset):
                                 'on': '', 'under': ''} for d in self.dataset}
 
 
-        elif subset == 'B':
+        else:
             for d in self.dataset:
                 if 'left_of' in d['image_path']:
                     self.all_prepositions.append('left_of')
@@ -253,30 +232,6 @@ class Controlled_Images(Dataset):
                                 d['image_path'].split('/')[-1].split('_')[-1][:-5]): \
                                 {'left': '', 'right': '', \
                                 'in-front': '', 'behind': ''} for d in self.dataset}
-            
-            
-        elif self.subset in ['stress_images_1', 'stress_images_2', 'stress_images_3']:
-            for d in self.dataset:
-                # Look at the ground truth caption (index 0) to find the preposition
-                target_caption = d['caption_options'][0].lower()
-
-                if 'left' in target_caption:
-                    self.all_prepositions.append('left')
-                elif 'right' in target_caption:
-                    self.all_prepositions.append('right')
-                elif 'on' in target_caption:
-                    self.all_prepositions.append('on')
-                elif 'under' in target_caption:
-                    self.all_prepositions.append('under')
-                elif 'behind' in target_caption:
-                    self.all_prepositions.append('behind')
-                elif 'front' in target_caption:
-                    self.all_prepositions.append('front')
-                else:
-                    self.all_prepositions.append('other')
-
-            self.eval_dict = {i: {p: 0 for p in ['left', 'right', 'on', 'under', 'front', 'behind', 'other']} 
-                          for i in range(len(self.dataset))}
 
         self.image_preprocess = image_preprocess
 
@@ -286,7 +241,6 @@ class Controlled_Images(Dataset):
     def __getitem__(self, index):
         test_case = self.dataset[index]
         image = Image.open(test_case["image_path"]).convert('RGB')
-        # image = Image.open(test_case["image_path"]).convert('RGB').resize((336, 336))
         if self.image_preprocess is not None:
             image = self.image_preprocess(image)
         
@@ -374,7 +328,7 @@ class Controlled_Images(Dataset):
                 "Dataset": "Controlled Images - {}".format(self.subset)
             })
         import json
-        path_=os.path.join(path, 'stress.json')
+        path_=os.path.join(path, 'res.json')
         data = {"dataset":dataset, "model":model,"option":option,"method":method,"weight":weight, "Individual accuracy":metrics['Accuracy']*100,"Pair accuracy":pair_accuracy,"Set accuracy":set_accuracy,"correct_id":correct_id}
         with open(path_, 'a+') as file:
             json.dump(data, file)
@@ -676,14 +630,4 @@ def get_vsr(image_preprocess, image_perturb_fn, text_perturb_fn, max_words=30, d
     return VSR(root_dir=root_dir, split=split, image_preprocess=image_preprocess, image_perturb_fn=image_perturb_fn, max_words=max_words, 
                             download=download)
 
-def get_stress_images_1(image_preprocess, text_perturb_fn=None, image_perturb_fn=None, download=False):
-    return Controlled_Images(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn,
-                   image_perturb_fn=image_perturb_fn, download=download, subset='stress_images_1')
 
-def get_stress_images_2(image_preprocess, text_perturb_fn=None, image_perturb_fn=None, download=False):
-    return Controlled_Images(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn,
-                   image_perturb_fn=image_perturb_fn, download=download, subset='stress_images_2')
-
-def get_stress_images_3(image_preprocess, text_perturb_fn=None, image_perturb_fn=None, download=False):
-    return Controlled_Images(image_preprocess=image_preprocess, text_perturb_fn=text_perturb_fn,
-                   image_perturb_fn=image_perturb_fn, download=download, subset='stress_images_3')

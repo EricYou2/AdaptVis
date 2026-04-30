@@ -19,8 +19,7 @@ def config():
             choices=[ "llava1.5","llava1.6"])
     parser.add_argument("--dataset", default="Controlled_Images_A", type=str, \
             choices=[ "Controlled_Images_A", "Controlled_Images_B", \
-            "COCO_QA_one_obj", "COCO_QA_two_obj", "VG_QA_one_obj", "VG_QA_two_obj", "VSR", \
-            "stress_images_1", "stress_images_2", "stress_images_3"])
+            "COCO_QA_one_obj", "COCO_QA_two_obj", "VG_QA_one_obj", "VG_QA_two_obj", "VSR"])
     parser.add_argument("--seed", default=1, type=int)
     parser.add_argument("--method",  type=str)
     parser.add_argument("--dola-decoding",   action="store_true")
@@ -41,7 +40,7 @@ def main(args):
     seed_all(args.seed) 
     model, image_preprocess = get_model(args.model_name, args.device, args.method)
     dataset = get_dataset(args.dataset, image_preprocess=image_preprocess, download=args.download)
-    SAMPLE=False
+    SAMPLE=True
     TEST=os.getenv('TEST_MODE', 'False') == 'True'
     sampled_indices=None
     collate_fn = _default_collate if image_preprocess is None else None
@@ -85,8 +84,7 @@ def main(args):
 
     else:
         
-        # scores,correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option)
-        scores, correct_id = model.get_out_scores_wh_batched(args.dataset, joint_loader, args.method, args.weight, args.option, args.threshold, args.weight1, args.weight2)
+        scores,correct_id = model.get_out_scores_wh_batched(args.dataset,joint_loader,args.method,args.weight,args.option)
         dataset.save_scores(scores,correct_id,args.output_dir,args.dataset,args.method,args.weight,args.model_name,args.option)
 
         
