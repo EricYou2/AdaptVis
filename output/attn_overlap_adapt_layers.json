@@ -10,57 +10,57 @@
   "layers": [
     {
       "layer": 12,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.11161331436658954
+      "num_samples": 330,
+      "auroc": 0.47846611954390295,
+      "avg_score": 0.11165129252212037
     },
     {
       "layer": 13,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.14142713679752256
+      "num_samples": 330,
+      "auroc": 0.43162175902389427,
+      "avg_score": 0.1438220580748748
     },
     {
       "layer": 14,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.1567121261996557
+      "num_samples": 330,
+      "auroc": 0.3429442951557847,
+      "avg_score": 0.1710879206748249
     },
     {
       "layer": 15,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.14146344301566727
+      "num_samples": 330,
+      "auroc": 0.3402570992809935,
+      "avg_score": 0.15256434880976677
     },
     {
       "layer": 16,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.15771919935433157
+      "num_samples": 330,
+      "auroc": 0.42290652915970656,
+      "avg_score": 0.1619545717166726
     },
     {
       "layer": 17,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.1732573456019478
+      "num_samples": 330,
+      "auroc": 0.3629893238434164,
+      "avg_score": 0.18332311908668614
     },
     {
       "layer": 18,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.12657316152032902
+      "num_samples": 330,
+      "auroc": 0.3853584138281647,
+      "avg_score": 0.13193781279648345
     },
     {
       "layer": 19,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.14778141630606334
+      "num_samples": 330,
+      "auroc": 0.34032972619652846,
+      "avg_score": 0.15952837631691982
     },
     {
       "layer": 20,
-      "num_samples": 281,
-      "auroc": NaN,
-      "avg_score": 0.18645104875803006
+      "num_samples": 330,
+      "auroc": 0.3587769627423923,
+      "avg_score": 0.19916758528155643
     }
   ]
 }
