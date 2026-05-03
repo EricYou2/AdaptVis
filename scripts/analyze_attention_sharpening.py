@@ -88,7 +88,13 @@ def load_image_path(dataset: str, root_dir: str, index: int) -> Optional[str]:
     return image_path
 
 
-def load_correct_map(res_path: str, dataset: str, method: str) -> Dict[int, bool]:
+def load_correct_ids(
+    res_path: str,
+    dataset: str,
+    method: str,
+    option: Optional[str],
+    weight: Optional[float],
+) -> List[int]:
     if not os.path.exists(res_path):
         raise FileNotFoundError(f"Missing results file: {res_path}")
     last = None
@@ -98,12 +104,18 @@ def load_correct_map(res_path: str, dataset: str, method: str) -> Dict[int, bool
             if not line:
                 continue
             entry = json.loads(line)
-            if entry.get("dataset") == dataset and entry.get("method") == method:
-                last = entry
+            if entry.get("dataset") != dataset or entry.get("method") != method:
+                continue
+            if option is not None and entry.get("option") != option:
+                continue
+            if weight is not None and entry.get("weight") != weight:
+                continue
+            last = entry
     if not last:
-        raise ValueError(f"No entries for dataset={dataset}, method={method} in {res_path}")
-    correct_ids = set(last.get("correct_id", []))
-    return {int(idx): (int(idx) in correct_ids) for idx in correct_ids}
+        raise ValueError(
+            f"No entries for dataset={dataset}, method={method}, option={option}, weight={weight} in {res_path}"
+        )
+    return [int(idx) for idx in last.get("correct_id", [])]
 
 
 def load_attention_vector(attn_path: str, head: str) -> Tuple[np.ndarray, Optional[int], Optional[int]]:
@@ -200,6 +212,8 @@ def main() -> None:
     parser.add_argument("--attn-dir", required=True)
     parser.add_argument("--image-root", default="data")
     parser.add_argument("--method", default="adapt_vis")
+    parser.add_argument("--option", default=None)
+    parser.add_argument("--weight", type=float, default=None)
     parser.add_argument("--mode", choices=["pre", "post", "diff"], default="post")
     parser.add_argument("--head", default="mean", help="Head index, 'mean', or 'max'")
     parser.add_argument("--layers", default="12-20")
@@ -239,7 +253,7 @@ def main() -> None:
         yolo_cache = {}
 
     yolo_model = YOLO(args.yolo_model)
-    correct_map = load_correct_map(args.res, args.dataset, args.method)
+    correct_ids = set(load_correct_ids(args.res, args.dataset, args.method, args.option, args.weight))
 
     sample_ids = [
         int(name)
@@ -253,8 +267,6 @@ def main() -> None:
     per_layer_samples = {layer: [] for layer in layer_list}
 
     for sample_id in sample_ids:
-        if sample_id not in correct_map:
-            continue
         image_path = load_image_path(args.dataset, args.image_root, sample_id)
         if not image_path or not os.path.exists(image_path):
             continue
@@ -279,7 +291,7 @@ def main() -> None:
             attn_vec = normalize_vector(attn_vec, use_minmax=use_minmax)
             score = float(np.dot(attn_vec, mask_vec))
             per_layer_scores[layer].append(score)
-            per_layer_labels[layer].append(1 if correct_map[sample_id] else 0)
+            per_layer_labels[layer].append(1 if sample_id in correct_ids else 0)
             per_layer_samples[layer].append(sample_id)
 
     os.makedirs(os.path.dirname(args.out_prefix), exist_ok=True)
@@ -288,7 +300,7 @@ def main() -> None:
         scores = per_layer_scores[layer]
         labels = per_layer_labels[layer]
         if len(set(labels)) < 2:
-            auroc = float("nan")
+            auroc = None
         else:
             auroc = float(roc_auc_score(labels, scores))
         layer_rows.append({
